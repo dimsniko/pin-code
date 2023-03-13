@@ -14,37 +14,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-<header>
-    <div class="wrapper">
-        <div class="header__contacts">
-            <ul class="header__contacts__list">
-                <li class="header__contacts__item">                    
-                    <span class="header__contacts__link" href="">Реквизиты</span>
-                </li>
-                <li class="header__contacts__item">
-                    <img src="/pin-code/assets/img/time.svg" alt="time">
-                    <span class="header__contacts__link" href="">&#x2002Время работы с 9:00 до 18:00</span>
-                </li>
-                <li class="header__contacts__item">
-                    <img src="/pin-code/assets/img/phone.svg" alt="">
-                    <a class="header__contacts__link" href="">&#x2002+7 846 9 228 200</a>
-                </li>
-                <li class="header__contacts__item">
-                    <img src="/pin-code/assets/img/mail.svg" alt="">
-                    <a class="header__contacts__link" href="">&#x2002info@pin-code.pro</a>
-                </li>    
-                <li class="header__contacts__item">
-                    <span class="header__contacts__link" href="">г.Самара</span>
-                </li>            
-            </ul>
-        </div>
-        <nav class="navbar"></nav>
-    </div>
-</header>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__contacts">
+                <ul class="header__contacts__list">
+                    <li class="header__contacts__item">                    
+                        <span class="header__contacts__link" href="">Реквизиты</span>
+                    </li>
+                    <li class="header__contacts__item">
+                        <img src="/pin-code/assets/img/header__contacts/time.svg" alt="time">
+                        <span class="header__contacts__link" href="">&#x2002Время работы с 9:00 до 18:00</span>
+                    </li>
+                    <li class="header__contacts__item">
+                        <img src="/pin-code/assets/img/header__contacts/phone.svg" alt="phone">
+                        <a class="header__contacts__link" href="">&#x2002+7 846 9 228 200</a>
+                    </li>
+                    <li class="header__contacts__item">
+                        <img src="/pin-code/assets/img/header__contacts/mail.svg" alt="mail">
+                        <a class="header__contacts__link" href="">&#x2002info@pin-code.pro</a>
+                    </li>    
+                    <li class="header__contacts__item">
+                        <span class="header__contacts__link" href="">г.Самара</span>
+                    </li>            
+                </ul>
+            </div>
+            <div class="line"></div>
+            <nav class="navbar"></nav>
+        </div>    
+    </header>
+</div>    
 </body>
 
 </html>

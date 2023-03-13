@@ -1,0 +1,31 @@
+/* HEADER START*/
+
+.header__contacts {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.line {
+    padding-top: 5px;
+    border-top: 1px solid lightgray;
+}
+
+.header__contacts__list {
+    display: flex;
+    font-size: 12px;
+}
+
+.header__contacts__item:first-child {
+    margin-right: auto;
+}
+
+.header__contacts__item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header__contacts__item:last-child {
+    margin-right: 0px;
+}
+
