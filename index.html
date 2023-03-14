@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pin-code</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">                    
+                        <span class="header__contacts-link" href="">Реквизиты</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="/pin-code/assets/img/header__contacts/time.svg" alt="time">
+                        <span class="header__contacts-link" href="">&#x2002Время работы с 9:00 до 18:00</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="/pin-code/assets/img/header__contacts/phone.svg" alt="phone">
+                        <a class="header__contacts-link" href="">&#x2002+7 846 9 228 200</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="/pin-code/assets/img/header__contacts/mail.svg" alt="mail">
+                        <a class="header__contacts-link" href="">&#x2002info@pin-code.pro</a>
+                    </li>    
+                    <li class="header__contacts-item">
+                        <span class="header__contacts-link" href="">г.Самара</span>
+                    </li>            
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <picture>
+                        <img class="logo__img "src="/pin-code/assets/img/logo.png" alt="logo">
+                    </picture>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-link">Главная</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-link">Компания</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-link">Услуги</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-link">Контакты</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-link">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__button">
+                    <img src="/pin-code/assets/img/telephone_blue.jpg" alt="" class="header__button-phone">
+                    <span class="header__button-text">Заказать звонок</span>
+                </button>                
+            </div>
+        </div>    
+    </header>
+</div>    
 </body>
+
 </html>
