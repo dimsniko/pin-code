@@ -27,7 +27,12 @@ ul {
     padding-inline-start: 0px;
 }
 
+li {
+    display: block;
+}
+
 a {
+    display: block;
     text-decoration: none;
     color: inherit;
 }

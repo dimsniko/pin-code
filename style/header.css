@@ -5,12 +5,12 @@
     padding-bottom: 10px;
 }
 
-.line {    
+.line {
     border-top: 1px solid lightgray;
 }
 
 .header__contacts-list {
-    display: flex;    
+    display: flex;
     font-size: 12px;
 }
 
@@ -37,19 +37,19 @@
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    font-size: 14px;             
+    font-size: 14px;
 }
 
 .header__logo {
-    display: block;        
+    display: block;
 }
 
-.logo__img {    
+.logo__img {
     height: 70px;
 }
 
 .navbar {
-    padding-top: 19px;       
+    padding-top: 19px;
 }
 
 .navbar__list {
@@ -57,37 +57,95 @@
     gap: 60px;
 }
 
+.navbar__list-item:hover {
+    color: #27A2DB;
+    cursor: pointer;
+}
+
+.navbar__list-item:hover .navbar__list-dropbtn {
+    transform: rotate(180deg);
+}
+
+.navbar__list-item:hover .strelka {
+    border-color: #27A2DB;
+}
+
+.navbar__list-dropdawn {
+display: flex;
+gap: 5px;
+align-items: center;
+justify-content: space-between;
+}
+
+.strelka {
+    border: 0.5px solid rgb(0, 0, 0);
+    border-width: 0px 1.5px 1.5px 0;
+    display: block;
+    padding: 2px;
+    transform: rotate(45deg);
+}
+
 .header__button {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
     height: 50px;
-    width: 170px;    
+    width: 170px;
     cursor: pointer;
     border-radius: 15px;
     font-size: 12px;
     color: white;
-    border: none;
-    border-color: gray; 
+    border: none;    
     background-color: #00C300;
 }
 
 .header__button-phone {
     height: 25px;
-    animation: shokk 0.7s 2s 5 normal none; 
+    animation: shokk 0.7s 2s 5 normal none;
 }
 
 @keyframes shokk {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
 
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
