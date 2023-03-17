@@ -58,16 +58,25 @@
 }
 
 .navbar__list-item:hover {
+    transition: 0.3s;
     color: #27A2DB;
     cursor: pointer;
 }
 
 .navbar__list-item:hover .navbar__list-dropbtn {
+    transition: 0.3s;
     transform: rotate(180deg);
 }
 
 .navbar__list-item:hover .strelka {
+    transition: 0.3s;
     border-color: #27A2DB;
+}
+
+.navbar__list-item:hover .navbar__list-item__line {
+    transition: 0.3s;
+    border-top: 3px solid #27A2DB;
+    margin-top: 20px;
 }
 
 .navbar__list-dropdawn {
