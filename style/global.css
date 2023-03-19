@@ -23,6 +23,7 @@ body {
 }
 
 ul {
+    display: block;
     list-style: none;
     padding-inline-start: 0px;
 }
