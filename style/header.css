@@ -5,12 +5,12 @@
     padding-bottom: 10px;
 }
 
-.line {    
-    border-top: 1px solid lightgray;
+.line {
+    border-top: 0.5px solid lightgray;
 }
 
 .header__contacts-list {
-    display: flex;    
+    display: flex;
     font-size: 12px;
 }
 
@@ -37,57 +37,175 @@
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    font-size: 14px;             
+    font-size: 14px;
 }
 
 .header__logo {
-    display: block;        
+    display: block;
 }
 
-.logo__img {    
+.logo__img {
     height: 70px;
 }
 
 .navbar {
-    padding-top: 19px;       
+    padding-top: 19px;    
 }
 
 .navbar__list {
     display: flex;
-    gap: 60px;
+    height: 100%;
+    gap: 75px;
+}
+
+.navbar__list-item:hover {
+    transition: 0.3s;
+    color: #27A2DB;
+    cursor: pointer;
+}
+
+.navbar__list-item:hover .navbar__list-dropbtn {
+    transition: 0.3s;
+    transform: rotate(180deg);
+}
+
+.navbar__list-item:hover .strelka {
+    transition: 0.3s;
+    border-color: #27A2DB;
+}
+
+.navbar__list-item:hover .navbar__list-item__line {
+    transition: 0.3s;
+    border-top: 3px solid #27A2DB;
+    margin-top: 39px;
+}
+
+.navbar__list-item-company:hover {
+    position: relative;
+    cursor: pointer;
+    color: #27A2DB;
+}
+
+.navbar__list-item-company:hover .navbar__list-item__submenu {
+    opacity: 1;       
+    transition: 0.3s;
+}
+
+.navbar__list-item-services:hover {
+    position: relative;
+    cursor: pointer;
+    color: #27A2DB;
+}
+
+.navbar__list-item-services:hover .navbar__list-item__submenu {
+    opacity: 1;       
+    transition: 0.3s;
+}
+
+.navbar__list-dropdawn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__list-item__submenu {
+    position: absolute;
+    opacity: 0;
+    left: -32px;    
+    font-weight: 400;
+    font-size: 14px;
+    min-width: 10em;
+    color: black;
+}
+
+.navbar__list-item__submenu-menu {    
+    text-align: start;
+    padding: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.navbar__list-item__submenu-menu_width {
+    min-width: 19em;
+}
+
+.navbar__list-item__submenu-menu:hover {
+    background-color: #F5F5F5;
+    color: #27A2DB;
+    transition: 0.3s;
+}
+
+.strelka {
+    border: 0.5px solid rgb(0, 0, 0);
+    border-width: 0px 1.5px 1.5px 0;
+    display: block;
+    padding: 2px;
+    transform: rotate(45deg);
 }
 
 .header__button {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
     height: 50px;
-    width: 170px;    
+    width: 170px;
     cursor: pointer;
     border-radius: 15px;
     font-size: 12px;
     color: white;
     border: none;
-    border-color: gray; 
     background-color: #00C300;
 }
 
 .header__button-phone {
     height: 25px;
-    animation: shokk 0.7s 2s 5 normal none; 
+    animation: shokk 0.7s 2s 5 normal none;
 }
 
 @keyframes shokk {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
 
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
