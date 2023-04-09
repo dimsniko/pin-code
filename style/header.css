@@ -122,8 +122,13 @@
 .navbar__list-item__submenu-menu {    
     text-align: start;
     padding: 15px;
-    padding-right: 0px;
+    padding-right: 15px;
     padding-left: 15px;
+    line-height: 1.5;
+}
+
+.navbar__list-item__submenu-menu_width {
+    min-width: 19em;
 }
 
 .navbar__list-item__submenu-menu:hover {
