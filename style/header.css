@@ -32,6 +32,10 @@
 
 /* HEADER START */
 
+.wrapper__header {
+    padding-bottom: 10px;
+}
+
 .header__inner {
     padding-top: 15px;
     display: flex;
@@ -49,7 +53,7 @@
 }
 
 .navbar {
-    padding-top: 19px;    
+    padding-top: 19px;
 }
 
 .navbar__list {
@@ -69,19 +73,20 @@
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    left: -32px;     
+    left: -32px;
     font-weight: 400;
     font-size: 14px;
     min-width: 10em;
     color: black;
 }
 
-.navbar__list-item__submenu-menu {    
+.navbar__list-item__submenu-menu {
     text-align: start;
     padding: 15px;
     padding-right: 15px;
     padding-left: 15px;
-    line-height: 1.5;    
+    line-height: 1.5;
+    background-color: #e6e6e6;
 }
 
 .navbar__list-item__submenu-menu_width {
@@ -105,9 +110,11 @@
 }
 
 .navbar__list-item:hover .navbar__list-item__line {
-    transition: 0.3s;
+    position: relative;
+    transition: 0.2s;
     border-top: 3px solid #27A2DB;
-    margin-top: 29px;
+    top: 48px;
+    z-index: 1;
 }
 
 .navbar__list-item-company:hover {
@@ -118,8 +125,18 @@
 
 .navbar__list-item-company:hover .navbar__list-item__submenu {
     opacity: 1;
-    visibility: visible;       
-    transition: 0.3s;    
+    visibility: visible;
+    transition: 0.3s;
+    z-index: 2;
+    padding-top: 48px;
+}
+
+.navbar__list-item-company:hover .navbar__list-item__line {
+    position: relative;
+    transition: 0.3s;
+    border-top: 3px solid #27A2DB;
+    top: 0px;
+    z-index: 1;
 }
 
 .navbar__list-item-services:hover {
@@ -132,6 +149,16 @@
     opacity: 1;
     visibility: visible;
     transition: 0.3s;
+    z-index: 2;
+    padding-top: 48px;
+}
+
+.navbar__list-item-services:hover .navbar__list-item__line {
+    position: relative;
+    transition: 0.3s;
+    border-top: 3px solid #27A2DB;
+    top: 0px;
+    z-index: 1;
 }
 
 .navbar__list-item__submenu-menu:hover {

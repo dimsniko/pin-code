@@ -1,1 +1,13 @@
 /* SLIDER START */
+.welcome {
+    position: relative;
+    box-sizing: content-box;
+    z-index: 0;
+}
+
+.slider__one {
+    background-size: cover;
+    height: 65vh;
+    background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);
+          
+}   
