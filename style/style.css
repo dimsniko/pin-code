@@ -1,13 +1,38 @@
 /* SLIDER START */
+/* .main, .welcome, .wrapper__sliders {
+    position: relative;
+    z-index: 0;
+} */
+
 .welcome {
     position: relative;
-    box-sizing: content-box;
-    z-index: 0;
+    top: -15px;    
+    /* align-items: center; */
 }
 
 .slider__one {
-    background-size: cover;
-    height: 65vh;
-    background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);
-          
-}   
+    /* background-color: transparent; */
+    position: relative;
+    background-size:cover;
+    height: 35em;
+    background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);    
+}
+
+.btn {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    top: 264px;
+}
+
+.btn__left>img,
+.btn__right>img {
+    display: block;
+    position: relative;    
+    cursor: pointer;
+    height: 20px;
+}    
