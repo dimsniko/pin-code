@@ -81,4 +81,105 @@
     background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);    
 }
 
+/* SLIDER END */
 
+/* SERVICE START*/
+
+.service {
+    padding-top: 4em;
+    background-color: #F9F9F9;
+}
+
+.zagolovok  {
+    max-width: 70%;
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 34px;
+}
+
+.zagolovok-bold {
+    display: inline;
+    font-weight: 400;
+}
+
+.service__container {
+    padding-top: 4em;
+    display: flex;    
+    justify-content:space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.audit, .outsourcing, .lvs, .video, .repair, .crysis {    
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.outsourcing .service__btn {
+    margin-top: 20px;
+}
+
+.lvs .service__btn {
+    margin-top: 20px;
+}
+
+.crysis .service__btn {
+    margin-top: 23px;
+}
+
+.service__pic {
+    width: 80px;
+    height: 80px;
+    background-size:cover;
+}
+
+.audit__pic {
+    background-image: url(/pin-code/assets/img/audit.webp);        
+}
+
+.outsourcing__pic {
+    background-image: url(/pin-code/assets/img/outsorsing.webp);    
+}
+
+.lvs__pic {
+    background-image: url(/pin-code/assets/img/lvs.webp);    
+}
+
+.video__pic {
+    background-image: url(/pin-code/assets/img/video.webp);    
+}
+
+.repair__pic {
+    background-image: url(/pin-code/assets/img/rapair.webp);  
+}
+
+.crysis__pic {
+    background-image: url(/pin-code/assets/img/crysis.webp); 
+}
+
+.service__text {
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(123, 123, 123);
+    font-size: small;
+}
+
+.service__btn {
+  width: 158px;
+  height: 44px;
+  border: 2px solid #27A2DB;
+  border-radius: 10px;
+  margin: 0px 0px;
+  background-color: #27A2DB; 
+  transition: .3s;
+  font-family: 'Inter';
+  color: white;
+  font-size: 14px; 
+  text-align: center;
+  padding: 0.9em;
+}
