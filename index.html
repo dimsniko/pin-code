@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper__header">
         <header class="header">
             <div class="container">
                 <div class="header__contacts">
@@ -60,13 +60,13 @@
                                 <a href="#" class="navbar__list-link">Главная</a>
                                 <div class="navbar__list-item__line"></div>
                             </li>
-                            <li class="navbar__list-item navbar__list-item-company">
+                            <li class="navbar__list-item-company">
                                 <div class="navbar__list-dropdawn">
                                     <a href="#" class="navbar__list-link">Компания</a>
                                     <div class="navbar__list-dropbtn">
                                         <div class="strelka"></div>
-                                    </div>                                    
-                                </div>                                
+                                    </div>
+                                </div>
                                 <ul class="navbar__list-item__submenu">
                                     <div class="navbar__list-item__line"></div>
                                     <li class="navbar__list-item__submenu-menu">
@@ -90,7 +90,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="navbar__list-item navbar__list-item-services">
+                            <li class="navbar__list-item-services">
                                 <div class="navbar__list-dropdawn">
                                     <a href="#" class="navbar__list-link">Услуги</a>
                                     <div class="navbar__list-dropbtn ">
@@ -100,33 +100,33 @@
                                 <ul class="navbar__list-item__submenu">
                                     <div class="navbar__list-item__line"></div>
                                     <li class="navbar__list-item__submenu-menu navbar__list-item__submenu-menu_width">
-                                        <a href="#" class="navbar__list-link">Аудит IT инфраструктуры организации</a>
+                                        <a href="#" class="navbar__list-link">Аудит IT инфраструктуры</a>
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Комплексное обслуживание IT инфраструктуры организации</a>
+                                        <a href="#" class="navbar__list-link">Комплексное обслуживание IT
+                                            инфраструктуры</a>
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
                                         <a href="#" class="navbar__list-link">Проектирование и монтаж ЛВС</a>
                                     </li>
                                     <div class="line"></div>
+                                    
+                                    <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Сборка и монтаж серверных шкафов</a>
+                                        <a href="#" class="navbar__list-link">Проектирование и монтаж систем
+                                            видеонаблюдения</a>
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Проектирование и монтаж систем видеонаблюдения</a>
+                                        <a href="#" class="navbar__list-link">Ремонт компьютеров и оргтехники</a>
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Монтаж систем видеоконференцсвязи</a>
+                                        <a href="#" class="navbar__list-link">Кризисная ситуация</a>
                                     </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Ремонт компьютеров и ноутбуков</a>
-                                    </li>
-                                </ul>                                
+                                </ul>
                             </li>
                             <li class="navbar__list-item">
                                 <a href="#" class="navbar__list-link">Контакты</a>
@@ -148,9 +148,74 @@
     </div>
     <main class="main">
         <section class="welcome">
-            <div class="container">
-                <div class="welcome__container">
+            <div class="btn__container">
+                <div class="btn">
+                    <div class="btn-index btn__prev">
 
+                    </div>
+                    <div class="btn-index btn__next">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="wrapper__sliders">
+                <div class="slider__one">
+
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <h1 class="zagolovok">Мы отказались от всего лишнего
+                    и сконцентрировались на том,
+                    что приносит <div class="zagolovok-bold">результат для бизнеса</div>
+                </h1>
+                <div class="service__container">
+                    <div class="audit">
+                        <div class="service__pic audit__pic"></div>
+                        <h2 class="service__name">Аудит IT инфраструктуры</h2>
+                        <div class="service__text">Специалисты проводят обследование и анализ состояния компьютерной техники, серверного оборудования и используемого программного обеспечения. Составляются рекомендации по модернизации оборудования и устранению критических уязвимостей.</div>
+                        <a href="#" class="service__btn">Подробнее</a>
+                    </div>
+                    <div class="outsourcing">
+                        <div class="service__pic outsourcing__pic"></div>
+                        <h2 class="service__name">Комплексное обслуживание IT
+                            инфраструктуры</h2>
+                        <div class="service__text">Администрирование компьютеров, оргтехники и серверов вашей организации
+                            Удаленная поддержка пользователей
+                            Поддержка сети и сервисов интернет
+                            Информационная безопасность.</div>
+                        <a href="#" class="service__btn">Подробнее</a>
+                    </div>
+                    <div class="lvs">
+                        <div class="service__pic lvs__pic"></div>
+                        <h2 class="service__name">Проектирование и монтаж ЛВС</h2>
+                        <div class="service__text">Монтаж локальной сети в вашей организации
+                            Организация удаленного доступа (VPN каналы)
+                            Бесшовные WI-FI сети
+                            Администрирование сетевого оборудования.</div>
+                        <a href="#" class="service__btn">Подробнее</a>
+                    </div>
+                    <div class="video">
+                        <div class="service__pic video__pic"></div>
+                        <h2 class="service__name">Проектирование и монтаж систем видеонаблюдения</h2>
+                        <div class="service__text">Подбор и поставки оборудования. Создание плана территории с расположением на нём оборудования и камер видеонаблюдения.
+                            Обслуживание и модернизация систем видеонаблюдения.</div>
+                        <a href="#" class="service__btn">Подробнее</a>
+                    </div>
+                    <div class="repair">
+                        <div class="service__pic repair__pic"></div>
+                        <h2 class="service__name">Ремонт компьютеров и оргтехники</h2>
+                        <div class="service__text">Сюда входит блочный ремонт техники, настройка и обслуживание операционной системы (Windows или Linux). Установка и обслуживание необходимых программ для работы.</div>
+                        <a href="#" class="service__btn">Подробнее</a>
+                    </div>
+                    <div class="crysis">
+                        <div class="service__pic crysis__pic"></div>
+                        <h2 class="service__name">Кризисная ситуация</h2>
+                        <div class="service__text">Уникальная услуга. Выход из строя оборудования. Вся работа в компании встала. Что-то случилось и не знаете что делать и кому звонить. Тот случай, когда нужно сделать вчера.</div>
+                        <a href="#" class="service__btn">Подробнее</a>
+                    </div>
                 </div>
             </div>
         </section>
