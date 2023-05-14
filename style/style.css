@@ -11,12 +11,7 @@
     align-items: normal;
     top: 5px;
 }
-.welcome {
-    /* position: relative; */
-    /* top: -15px;     */
-    /* align-items: center; */
-    
-}
+
 .btn__container {
     position: relative;
     max-width: 1200px;
@@ -182,4 +177,23 @@
   font-size: 14px; 
   text-align: center;
   padding: 0.9em;
+}
+
+/* SERVICES END */
+
+/* WORKING START */
+
+.working {
+    padding: 50px 0px;
+    background-color: #F9F9F9;
+}
+
+.working__zagolovok {
+    font-size: 30px;
+    font-weight: 200;
+    padding-bottom: 50px;
+}
+
+.working__zagolovok-bold {
+    font-weight: 400;
 }

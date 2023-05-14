@@ -1,0 +1,9 @@
+.swiper-wrapper {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 80px;
+}
+
+.swiper-slide img {
+    object-fit:scale-down;
+}
