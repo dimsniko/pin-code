@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/formmailer.css">
     <link rel="stylesheet" href="style/font-awesome.min.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/global.css">
@@ -243,12 +244,36 @@
                         <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/4.webp" alt=""></div>
                         <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/5.webp" alt=""></div>
                         <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/6.webp" alt=""></div>                        
+                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/7.webp" alt=""></div>                        
+
                     </div>
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>                   
                 </div>
             </div>
+        </section>
+        <section class="form__mailer">
+            <div class="container">
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
+                        <h2 class="form__title">Написать нам</h2>
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="form__input">   
+                        </div>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input">   
+                        </div>
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Сообщение:</label>
+                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </form>        
+                </div>
+            </div>   
         </section>
     </main>
     <footer class="footer"></footer>

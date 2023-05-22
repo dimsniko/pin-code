@@ -1,9 +1,15 @@
+.swipper {
+    
+}
+
 .swiper-wrapper {
-    width: 100%;
-    padding-left: 100px;
+    /* width: 100%; */
+    padding-left: 110px;
     padding-right: 80px;
+    /* justify-content:space-between; */
 }
 
 .swiper-slide img {
     object-fit:scale-down;
+    max-width: 100%;
 }
