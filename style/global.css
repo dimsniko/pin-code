@@ -8,9 +8,7 @@ body {
     font-weight: 400;    
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
