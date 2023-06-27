@@ -1,0 +1,29 @@
+.about__us {
+    background-image: url(/pin-code/assets/img/bi__about__us.jpg);
+    /* margin-top: 5px;/ */
+    padding-top: 20px;
+    padding-bottom: 41px;
+}
+
+.wrapper__about__us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__us__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    row-gap: 20px;
+    line-height: 25px;
+}
+
+.about__us__text-underline {
+    border-bottom: solid 2px;
+}
+
+.about__us__img {
+    height: 100%;
+    background-size: cover;
+    align-self: center;
+}
