@@ -50,12 +50,24 @@
     background-color: #778f91;     
 }
 
-.slider__one {   
+.slider__item {   
     background-size: cover;
     height: 100%;
     animation-name: fade;
     animation-duration: 1.5s;
-    background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);       
+           
+}
+
+.slider__one {
+    background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);
+}
+
+.slider__two {
+    background-image: url(/pin-code/assets/img/3img__slider.webp);
+}
+
+.slider__three {
+    background-image: url(/pin-code/assets/img/80788-multimedijnye_sredstva-tehnologia-promyshlennost-informaciya-perifericheskoj-2560x1440.webp);
 }
 
 .slider__text-container {

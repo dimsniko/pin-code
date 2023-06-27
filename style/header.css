@@ -33,7 +33,11 @@
 /* HEADER START */
 
 .wrapper__header {
-    /* padding-bottom: 10px; */
+    background-color: #fff;
+    position: fixed;  
+    top: 0;  
+    z-index: 100;  
+    width: 100%;  
 }
 
 .header__inner {
