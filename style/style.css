@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: normal;    
-    margin-top: 128.594px;    
+    margin-top: 123.594px;
+    flex: 1;
 }
 
 /* SERVICE START*/
@@ -153,7 +154,8 @@
     padding-top: 30px;
     padding-bottom: 20px;
     color: rgb(194, 194, 194);
-    font-size: 14px;    
+    font-size: 14px;
+  
 }
 
 .wrapper__footer {
