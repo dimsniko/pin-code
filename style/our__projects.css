@@ -6,14 +6,15 @@
 
 .wrapper__our__projects {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 20px 20px;
+    grid-auto-flow: row;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    max-width: 430px;
+    /* max-width: 370px; */
     background-color: white;
     border-radius: 15px;
     padding: 20px;
@@ -42,3 +43,28 @@
 .item.show-more .text__work .more {
     display: block;
 }
+
+/* SWIPER-SLIDER START */
+.swiper {
+    max-width: 100%;
+    
+}
+
+.swiper-wrapper {
+    /* width: 100%; */
+    padding-left: 0px;
+    padding-right: 0px;
+    /* justify-content:space-between; */
+}
+
+/* .swiper-slide img {
+    object-fit: scale-down;
+    max-width: 100%;
+} */
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 30px;
+}
+
+
+/* SWIPER-SLIDER END */
