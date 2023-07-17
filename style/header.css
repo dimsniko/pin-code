@@ -117,7 +117,7 @@
     position: relative;
     transition: 0.2s;
     border-top: 3px solid #27A2DB;
-    top: 43px;
+    top: 38px;
     z-index: 1;
 }
 
@@ -132,7 +132,7 @@
     visibility: visible;
     transition: 0.3s;
     z-index: 1;
-    padding-top: 43px;
+    padding-top: 38px;
 }
 
 .navbar__list-item-company:hover .navbar__list-item__line {
@@ -153,7 +153,7 @@
     visibility: visible;
     transition: 0.3s;
     z-index: 2;
-    padding-top: 43px;
+    padding-top: 38px;
 }
 
 .navbar__list-item-services:hover .navbar__list-item__line {
