@@ -46,7 +46,7 @@
     row-gap: 20px;
 }
 
-.outsourcing .service__btn {
+/* .outsourcing .service__btn {
     margin-top: 20px;
 }
 
@@ -56,7 +56,7 @@
 
 .crysis .service__btn {
     margin-top: 23px;
-}
+} */
 
 .service__pic {
     width: 80px;
@@ -108,6 +108,7 @@
   font-size: 14px; 
   text-align: center;
   padding: 0.9em;
+  margin-top: auto;
 }
 
 /* SERVICES END */
