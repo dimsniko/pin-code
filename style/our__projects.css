@@ -20,14 +20,17 @@
     padding: 20px;
     row-gap: 20px;
     line-height: 1.4;
+    max-height: 1000px;
+    overflow: hidden;      
 }
 
-.moreBtn {
+.moreBtn {    
     height: 3em;
     border: 0;
     background-color: #27A2DB;
     border-radius: 10px;
     color: #fff;
+    margin-top: auto;       
 }
 
 .moreBtn:hover {
@@ -36,18 +39,27 @@
     background-color: #58beee;
 }
 
+.text__work {
+    font-size: 14px;
+}
+
 .text__work .more {
-    display: none;
+    display: none;   
 }
 
 .item.show-more .text__work .more {
     display: block;
 }
 
+
+
+  
+
 /* SWIPER-SLIDER START */
+
 .swiper {
     max-width: 100%;
-    
+    max-height: 252.75px;
 }
 
 .swiper-wrapper {
@@ -57,14 +69,13 @@
     /* justify-content:space-between; */
 }
 
-/* .swiper-slide img {
-    object-fit: scale-down;
-    max-width: 100%;
-} */
+.swiper-slide img {
+    object-fit: fill;
+    max-width: 100%;    
+}
 
 .swiper-button-prev::after, .swiper-button-next::after {
     font-size: 30px;
 }
-
 
 /* SWIPER-SLIDER END */
