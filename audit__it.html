@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pin-code</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -13,16 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="style/swiper-bundle.min.css">
-    <!-- <link rel="stylesheet" href="style/slider.css"> -->
-    <link rel="stylesheet" href="style/formmailer.css">
+    <link rel="stylesheet" href="style/slider.css">
     <link rel="stylesheet" href="style/font-awesome.min.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/our__clients.css">
+    <link rel="stylesheet" href="style/audit__it.css">
 
 </head>
 
@@ -54,7 +53,7 @@
                 </div>
                 <div class="line"></div>
                 <div class="header__inner">
-                    <a href="index.html" class="header__logo">
+                    <a href="#" class="header__logo">
                         <picture>
                             <img class="logo__img " src="/pin-code/assets/img/PinCode black.png" alt="logo">
                         </picture>
@@ -91,7 +90,7 @@
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="/pin-code/sertifikats.html" class="navbar__list-link">Сертификаты</a>
+                                        <a href="#" class="navbar__list-link">Сертификаты</a>
                                     </li>
                                 </ul>
                             </li>
@@ -117,7 +116,7 @@
                                         <a href="#" class="navbar__list-link">Проектирование и монтаж ЛВС</a>
                                     </li>
                                     <div class="line"></div>
-    
+
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
                                         <a href="#" class="navbar__list-link">Проектирование и монтаж систем
@@ -152,38 +151,115 @@
         </header>
     </div>
     <main class="main">
-        <section class="our__clients">
+        <section class="audit__this">
             <div class="container">
-                <h1 class="our__clients__zagolovok">Наши любимые клиенты</h1>
-                <h4 class="our__clients__text">С этими компаниями сотрудничаем на постоянной основе. Ремонтируем, обслуживаем, модернизируем.</h4>
-                <div class="wrapper__our__clients">
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="150px" src="/pin-code/assets/img/logo__clients/1.webp" alt="clients">                        
+                <div class="wrapper__audit__it">
+                    <div class="about__audit">
+                        <h1 class="about__audit__hello">Аудит IT инфраструктуры</h1>
+                        <div class="audit__hello">ИТ-аудит (аудит Информационных Технологий) — это комплекс мероприятий
+                            по оценке состояния ИТ-инфраструктуры, Информационных систем, бизнес-процессов работающих в
+                            организации.</div>
+                        <div class="about__audit__text">
+                            Специалисты проводят обследование и анализ состояния компьютерной техники, серверного
+                            оборудования и используемого программного обеспечения.
+                        </div>
+                        <div class="form">
+                            <form action="#" id="form" class="form__body">
+                                <h2 id="toggle" class="form__title">Оставить заявку</h2>
+                                <div class="collapse">
+                                    <div class="collapse__body">
+                                        <div class="form__item">
+                                            <label for="formName" class="form__label">Имя*:</label>
+                                            <input id="formName" type="text" name="name" class="form__input">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formEmail" class="form__label">E-mail*:</label>
+                                            <input id="formEmail" type="text" name="email" class="form__input">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formMessage" class="form__label">Сообщение:</label>
+                                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                        </div>
+                                        <button type="submit" class="form__button">Отправить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="100px" src="/pin-code/assets/img/logo__clients/2.webp" alt="clients">                        
+                    <img src="/pin-code/assets/gif/audit.gif" alt="audit img" class="audit__it__img">
+                </div>
+            </div>
+        </section>
+        <section class="audit__goals">
+            <div class="container">
+                <h2 class="audit__golas-h2">Цели IT аудита:
+                </h2>
+                <div class="wrapper__audit__goals">                    
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Безопасность информации:</h3>
+                            <ul class="goals-list">
+                                <li>Оценка уровня защищенности данных и информационных систем от угроз и атак.</li>
+                                <li>Проверка соответствия правилам и нормативам в области информационной безопасности.</li>
+                                <li>Идентификация уязвимостей и рисков безопасности.</li>                                
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="150px" src="/pin-code/assets/img/logo__clients/3.webp" alt="clients">                        
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Эффективность и производительность:</h3>
+                            <ul class="goals-list">
+                                <li>Оценка работоспособности и эффективности информационных систем и процессов.</li>
+                                <li>Идентификация узких мест и проблем, мешающих нормальной работе.</li>
+                                <li>Предложение рекомендаций по оптимизации и улучшению производительности.</li>                                
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="150px" src="/pin-code/assets/img/logo__clients/4.webp" alt="clients">                        
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Поддержка бизнес-роста:</h3>
+                            <ul class="goals-list">
+                                <li>Идентификация возможностей для использования IT в целях расширения бизнеса и привлечения клиентов.</li>
+                                <li>Предложение стратегий для внедрения новых технологий и инноваций.</li>                                                               
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="150px" src="/pin-code/assets/img/logo__clients/5.webp" alt="clients">                        
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Управление рисками:</h3>
+                            <ul class="goals-list">
+                                <li>Оценка рисков, связанных с информационными системами и процессами.</li>
+                                <li>Разработка стратегий и планов по управлению рисками и их снижению.</li>                                                              
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="50px" src="/pin-code/assets/img/logo__clients/6.webp" alt="clients">                        
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Оптимизация затрат:</h3>
+                            <ul class="goals-list">
+                                <li>Анализ бюджета и расходов на IT и выявление возможных сэкономить средства.</li>
+                                <li>Идентификация неэффективных затрат и предложение мер по их сокращению.</li>                                                                
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="150px" src="/pin-code/assets/img/logo__clients/7.webp" alt="clients">                        
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Поддержка стратегических целей бизнеса:</h3>
+                            <ul class="goals-list">
+                                <li>Убедиться, что информационные системы и IT-инфраструктура поддерживают стратегические цели и потребности бизнеса.</li>
+                                <li>Предложение рекомендаций для интеграции IT-стратегии с общей стратегией компании.</li>                                                                
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="90px" src="/pin-code/assets/img/logo__clients/8.webp" alt="clients">                        
+                    <div class="audit__goals__block">
+                        <div class="audit__goal">
+                            <h3 class="audit__goal-h3">Улучшение управления и управляемости:</h3>
+                            <ul class="goals-list">
+                                <li>Проверка эффективности управления информационными ресурсами и процессами.</li>
+                                <li>Разработка рекомендаций для улучшения управления и контроля.</li>                                                                
+                            </ul>
+                        </div>
                     </div>
-                    <div class="clients">
-                        <img class="clients__logo" width="150px" height="90px" src="/pin-code/assets/img/logo__clients/9.webp" alt="clients">                        
-                    </div>                                        
                 </div>
             </div>
         </section>
@@ -233,4 +309,6 @@
             <div class="copyright">2023 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
         </div>
     </footer>
+
+    <script src="/pin-code/js/formmailer.js"></script>
 </body>
