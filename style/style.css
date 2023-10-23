@@ -4,8 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: normal;
-    margin-top: 123.594px;
+    
     flex: 1;
+}
+
+.welcome {
+    margin-top: 123.594px;
 }
 
 /* SERVICE START*/

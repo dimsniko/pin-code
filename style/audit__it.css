@@ -110,8 +110,8 @@ textarea.form__input {
 .audit__this {
     background-color: #F9F9F9;
     /* margin-top: 5px;/ */
-    padding-top: 20px;
-    padding-bottom: 11px;
+    padding-top: 130px;
+    padding-bottom: 50px;
 }
 
 .wrapper__audit__it {
@@ -130,15 +130,19 @@ textarea.form__input {
 }
 
 .audit__it__img {
-    max-width: 450px;
+    max-width: 550px;
     overflow: hidden;
     background-size: contain;
-    height: 450px;
+    height: 350px;
 }
 
 /* SECTION AUDIT__THIS END */
 
 /* SECTION AUDIT__GOALS START */
+
+.audit__goals {
+    padding-bottom: 60px;
+}
 
 .audit__golas-h2 {
     text-align: center;
@@ -205,6 +209,7 @@ textarea.form__input {
     font-weight: 400;
     text-align: center;
     padding: 40px 0px;
+    line-height: 1.5;
 }
 
 /* SECTION AUDIT__GOALS END */
@@ -213,10 +218,6 @@ textarea.form__input {
 
 .audit__types {
     background-color: #F9F9F9;
-}
-
-.wrapper__audit__types {
-    
 }
 
 hr,    
@@ -255,8 +256,6 @@ hr {
     }
 }
 
-
-
 .audit__types-h2 {
     text-align: center;
     font-size: clamp(20px, 3vw, 30px);
@@ -269,8 +268,7 @@ hr {
     min-height: 30vh;
     gap: 30px;
     row-gap: 20px;
-    flex-wrap: wrap;
-    padding-bottom: 60px;
+    flex-wrap: wrap;    
 }
 
 .audit__block {
@@ -280,30 +278,14 @@ hr {
     hyphens: auto;
     line-height: 145%;
     position: relative;
-    width: clamp(300px, 30%, 100%);
+    max-width: clamp(300px, 30%, 100%);
     min-height: clamp(350px, 40%, 100%);
     padding: 20px 20px;
     box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;    
 }
 
-.audit__block:before,
-.audit__block:after {
-    content:"";
-    position:absolute;
-    z-index:-1;
-    bottom:15px;
-    left:10px;
-    width:50%;
-    height:20%;
-    max-width:300px;
-    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-    transform:rotate(-3deg);
-}
-
-.audit__block:after {
-    right:10px;
-    left:auto;
-    transform:rotate(3deg);
+.audit__block:hover {
+    transform: translateY(-20px);
 }
 
 .audit__block__img {

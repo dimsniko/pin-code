@@ -1,0 +1,364 @@
+/* FORM MAILER START */
+.form__mailer {
+    background-color: #F9F9F9;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.form {
+    margin-top: 20px;
+    max-width: 400px;
+    /* margin: 10px auto; */
+    /* padding: 0px 55px 0px 55px; */
+    background-color: #27A2DB;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.form * {
+    outline: none;
+}
+
+.collapse__body {
+    padding: 30px 55px 30px 55px;
+}
+
+.collapse:not(.collapse_show) {
+    display: none;
+}
+
+.form__title {
+
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+}
+
+.form__title:hover {
+    background-color: #58beee;
+}
+
+.form__item {
+    margin: 0px 0px 20px 0px;
+}
+
+.form__label {
+    font-size: 18px;
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+.form__input {
+    height: 50px;
+    padding: 0px 20px;
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+}
+
+.form__input:focus {
+    box-shadow: 0 0 15px #e0e0e0;
+}
+
+textarea.form__input {
+    padding-top: 5px;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #8bc56c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 0 #405b31;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0px;
+}
+
+.form:hover {
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #78ab5d;
+}
+
+.form__button:active {
+    top: 10px;
+    box-shadow: 0 5px 0 #27A2DB;
+}
+
+/* FORM MAILER END */
+
+/* IT OUTSORSING THIS START */
+
+.it__outsoursing__this {
+    background-color: #F9F9F9;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.wrapper__it__outsoursing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__it__outsoursing {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    row-gap: 20px;
+    line-height: 25px;
+    hyphens: auto;
+}
+
+.about__it__outsoursing__hello {}
+
+.it__outsoursing__hello {}
+
+.about__it__outsoursing__text {}
+
+.it__outsoursing__img {
+    max-width: 520px;
+    overflow: hidden;
+    background-size: contain;
+    max-height: 320px;
+    padding-top: 45px
+}
+
+hr,
+hr:before,
+hr:after {
+    content: "";
+    background: #BFE2FF;
+    display: block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: absolute;
+    animation: anim-hr 6s linear infinite;
+    border: 0;
+    overflow: visible;
+}
+
+hr:before {
+    left: -32px;
+}
+
+hr:after {
+    left: 32px;
+}
+
+hr {
+    position: relative;
+    margin: -7px auto;
+}
+
+@keyframes anim-hr {
+    0% {
+        background: #BFE2FF;
+    }
+
+    50% {
+        background: #337AB7;
+    }
+
+    100% {
+        background: #BFE2FF;
+    }
+}
+
+/* IT OUTSORSING THIS END */
+
+/* IT OUTSORSING GOLAS START */
+
+.it__outsoursing__goals {
+    padding-bottom: 50px;
+}
+
+.it__outsoursing__goals-h2 {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 30px);
+    margin: 40px auto;
+}
+
+.wrapper__it__outsorsing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    gap: 40px 40px;
+}
+
+.it__outsoursing__block {
+    /* padding: 20px 0px; */
+    border: 5px solid transparent;
+    /* border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%); */
+    /* border-image-slice: 1; */
+    line-height: 20px;
+}
+
+.it__outsorsing-h3 {
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.wrapper__it__outsorsing-h3 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.it__outsorsing__text {
+    padding-left: 50px;
+    line-height: 25px;
+}
+
+/* IT OUTSORSING GOLAS END */
+
+/* it__outsorsing__benefit start */
+
+.it__outsorsing__benefit {
+    background-color: #F9F9F9;    
+}
+
+.it__outsorsing__benefit-h2 {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 30px);
+    margin: 40px auto;
+}
+
+.wrapper__it__outsorsing__benefit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 3em;
+}
+
+.it__outsorsing__benefit__block-1 {
+    background: url(/pin-code/assets/svg/sales-performance-svgrepo-com.svg) no-repeat top left/40px;
+}
+
+.it__outsorsing__benefit__block-2 {
+    background: url(/pin-code/assets/svg/businessman-svgrepo-com.svg) no-repeat top left/40px;
+}
+
+.it__outsorsing__benefit__block-3 {
+    background: url(/pin-code/assets/svg/binoculars-svgrepo-com.svg) no-repeat top left/40px;
+}
+
+.it__outsorsing__benefit__block-4 {
+    background: url(/pin-code/assets/svg/bullish-svgrepo-com.svg) no-repeat top left/40px;
+}
+
+.it__outsorsing__title-h3 {
+    font-weight: 500;
+}
+
+.it__outsorsing__benefit__text {
+    line-height: 23px;
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+.benefit__block-svg {
+    padding-left: 55px;
+    font-size: 15px;
+    /* margin-bottom: 28px; */
+    max-width: 650px;
+}
+
+.it__outsorsing__title-h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.it__outsorsing__diagramma__img {
+    align-self: center;
+    max-width: 450px;
+    max-height: 650px;
+    justify-content: center;
+}
+
+/* it__outsorsing__benefit endt */
+
+.it__outsorsing__title-h2 {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 30px);
+    margin: 40px auto;
+}
+
+.wrapper__it__outsorsing__plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em 3em;
+}
+
+.card {       
+    transition: transform 0.5s;
+}
+
+.card-front,
+.card-back {
+    width: clamp(15em, 20em, 25em);
+    min-height: 40em;
+    display: block;
+    flex-direction: column;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;     
+}
+
+.card-back {
+    display: none;
+    transform: rotateY(180deg); 
+}
+
+.flipped {
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flip-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.flip-button:hover {
+    background-color: #45a049;
+}
+
+.plan__img {}
+
+.plan__title {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.line__plan {
+    border-bottom: 1px solid gray;
+    align-self: normal;
+    margin: 1em 0em;
+}
+
+.plan__property {}
