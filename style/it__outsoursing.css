@@ -295,7 +295,13 @@ hr {
     justify-content: center;
 }
 
-/* it__outsorsing__benefit endt */
+/* it__outsorsing__benefit end */
+
+/* it__outsorsing__plans start */
+
+.it__outsorsing__plans {
+    padding-bottom: 3em;
+}
 
 .it__outsorsing__title-h2 {
     text-align: center;
@@ -316,13 +322,14 @@ hr {
 
 .card-front,
 .card-back {
+    position: relative;
     width: clamp(15em, 20em, 25em);
-    min-height: 40em;
+    height: 600px;
     display: block;
-    flex-direction: column;
-    border: 2px solid black;
+    flex-direction: column;   
     text-align: center;
-    padding: 10px;     
+    padding: 10px; 
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;    
 }
 
 .card-back {
@@ -331,34 +338,137 @@ hr {
 }
 
 .flipped {
-    text-align: center;
-    transform: rotateY(180deg);
+    /* text-align: center; */
+    transform: rotateY(180deg);    
 }
 
 .flip-button {
-    margin-top: 20px;
+    margin: 2em 0em;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);    
 }
 
 .flip-button:hover {
     background-color: #45a049;
 }
 
-.plan__img {}
+.plan__img {
+    padding-top: 1em;
+}
 
 .plan__title {
+    letter-spacing: 0.1em;
+    color: #237ca5;
+    font-weight: 500;    
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+.plan__title-back {
+    padding-bottom: 0em;
+
+}
+
+.plan__title-abon::after {
+    letter-spacing: normal;
+    color: rgb(97, 97, 97);
+    display: block;
+    content: 'Комплексное обслуживание';
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.plan__title-time::after {
+    letter-spacing: normal;
+    color: rgb(97, 97, 97);
+    display: block;
+    content: 'Почасовая оплата';
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.plan__title-task::after {
+    letter-spacing: normal;
+    color: rgb(97, 97, 97);
+    display: block;
+    content: 'Оплата за результат';
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 5px;
 }
 
 .line__plan {
-    border-bottom: 1px solid gray;
+    border-bottom: 0.5px solid gray;
     align-self: normal;
     margin: 1em 0em;
 }
 
-.plan__property {}
+.line__plan-back {
+    margin: 0.5em 0em;
+}
+
+.line__plan-back + p {
+    padding: 0.5em 0em;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.plan__property {       
+    font-weight: 300;
+}
+
+.plan__property__more {
+    font-size: 12px;
+}
+
+.plan__property::before {
+    padding-right: 5px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.plan__property:hover::before {
+    color: #337AB7;
+    content: "\2714";
+}
+
+.plan-ol {
+    list-style: "\1F44D";
+    display: inline;    
+    font-size: 14px; 
+    list-style-position: inside;
+    text-align: start;
+    
+}
+
+.plan-li {
+    display:list-item;
+    margin: 0 auto;
+    padding: 0.4em 0.3em;
+    color: rgb(98, 98, 99); 
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+    hyphens: auto;  
+}
+
+.it__outsorsing__plans__end {
+    font-size: clamp(16px, 3vw, 25px);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 1.5;
+}
+
+/* it__outsorsing__plans end */
