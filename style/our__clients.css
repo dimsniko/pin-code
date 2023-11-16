@@ -1,0 +1,21 @@
+
+
+.our__clients {
+    background-image: url(/pin-code/assets/img/bi__about__us.jpg);
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 40px;
+}
+
+.wrapper__our__clients {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px 30px;
+    justify-items: center;
+}
+
+.clients {    
+    align-self: center;
+}
