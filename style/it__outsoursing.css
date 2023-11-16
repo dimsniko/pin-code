@@ -234,7 +234,7 @@ hr {
 /* it__outsorsing__benefit start */
 
 .it__outsorsing__benefit {
-    background-color: #F9F9F9;    
+    background-color: #F9F9F9;
 }
 
 .it__outsorsing__benefit-h2 {
@@ -316,7 +316,7 @@ hr {
     gap: 3em 3em;
 }
 
-.card {       
+.card {
     transition: transform 0.5s;
 }
 
@@ -326,20 +326,20 @@ hr {
     width: clamp(15em, 20em, 25em);
     height: 600px;
     display: block;
-    flex-direction: column;   
+    flex-direction: column;
     text-align: center;
-    padding: 10px; 
-    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;    
+    padding: 10px;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
 }
 
 .card-back {
     display: none;
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg);
 }
 
 .flipped {
     /* text-align: center; */
-    transform: rotateY(180deg);    
+    transform: rotateY(180deg);
 }
 
 .flip-button {
@@ -353,7 +353,7 @@ hr {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);
 }
 
 .flip-button:hover {
@@ -367,7 +367,7 @@ hr {
 .plan__title {
     letter-spacing: 0.1em;
     color: #237ca5;
-    font-weight: 500;    
+    font-weight: 500;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -417,13 +417,13 @@ hr {
     margin: 0.5em 0em;
 }
 
-.line__plan-back + p {
+.line__plan-back+p {
     padding: 0.5em 0em;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 
-.plan__property {       
+.plan__property {
     font-weight: 300;
 }
 
@@ -446,21 +446,21 @@ hr {
 
 .plan-ol {
     list-style: "\1F44D";
-    display: inline;    
-    font-size: 14px; 
+    display: inline;
+    font-size: 14px;
     list-style-position: inside;
     text-align: start;
-    
+
 }
 
 .plan-li {
-    display:list-item;
+    display: list-item;
     margin: 0 auto;
     padding: 0.4em 0.3em;
-    color: rgb(98, 98, 99); 
+    color: rgb(98, 98, 99);
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     line-height: 1.25;
-    hyphens: auto;  
+    hyphens: auto;
 }
 
 .it__outsorsing__plans__end {
@@ -472,3 +472,74 @@ hr {
 }
 
 /* it__outsorsing__plans end */
+
+/* it__outsorsing__faq start */
+
+.it__outsorsing__faq {
+    background-color: #F9F9F9;
+}
+
+.wrapper__accordion {
+    width: 100%;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion__header {
+    display: flex;
+    background-color: #ffffff;
+    padding: 25px 35px;
+    border-bottom: 1px solid rgb(155, 155, 155);    
+    cursor: pointer;
+}
+
+.accordion__header:hover {
+    background-color: #dedede;
+}
+
+.accordion__header::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' fill='%23000000' /%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    content: "";
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-out;
+}
+
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: white;
+}
+
+.accordion__content p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 25px 35px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    line-height: 1.5;
+}
+
+.accordion__item.active .accordion__content p {
+    opacity: 1;
+}
+
+.accordion__item.active .accordion__content {
+    max-height: 200px;
+}
+
+.accordion__item.active .accordion__header {
+    background-color: #dedede;
+}
+
+.accordion__item.active .accordion__header::after {
+    transform: rotate(0deg);
+}
