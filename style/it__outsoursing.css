@@ -128,7 +128,7 @@ textarea.form__input {
     gap: 20px 0px;
     line-height: 25px;
     /* text-wrap: balance; */
-    hyphens: auto;   
+    hyphens: auto;
 }
 
 .it__outsoursing__img {
@@ -185,7 +185,7 @@ hr {
 
 /* IT OUTSORSING GOLAS START */
 
-.it__outsoursing__goals {    
+.it__outsoursing__goals {
     padding-bottom: calc(3vw + 20px);
 }
 
@@ -243,7 +243,7 @@ hr {
 .wrapper__it__outsorsing__benefit {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;    
+    gap: 40px;
 }
 
 .it__outsorsing__benefit__block-1 {
@@ -302,7 +302,7 @@ hr {
 .it__outsorsing__title-h2 {
     text-align: center;
     font-size: clamp(20px, 3vw, 30px);
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     margin-top: calc(2.5vw + 20px);
     margin-bottom: 2.5vw;
@@ -559,10 +559,10 @@ hr {
 }
 
 .wrapper__begin {
-    width: 100%;   
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;    
+    padding-top: 20px;
     position: relative;
     justify-content: space-around;
 }
@@ -652,7 +652,7 @@ hr {
     justify-content: space-around;
     gap: 0px 10px;
     width: 100%;
-    max-width: 90px;    
+    max-width: 90px;
 }
 
 .dot {
@@ -670,15 +670,15 @@ hr {
     background-color: #F9F9F9;
 }
 
+
 .wrapper__principles {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(2.5vw + 20px);    
+    margin-top: calc(2.5vw + 20px);
 }
 
 .title__principles {
@@ -700,11 +700,10 @@ hr {
     font-size: 12px;
 }
 
-.text__principles{
+.text__principles {
     flex: 1 1 400px;
     max-width: calc(50% - 20px);
     margin: 10px;
-
 }
 
 table {
@@ -712,9 +711,11 @@ table {
 }
 
 td {
-   width: 50%;
-   padding: 10px;
-   padding-bottom: 50px;
+    vertical-align: top;
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 50px;
+    
 }
 
 .title-td {
@@ -725,6 +726,6 @@ td {
     font-weight: 300;
 }
 
-tr {    
+tr {
     border-top: 1px solid rgb(97, 97, 97);
 }
