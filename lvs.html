@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pin-code</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -12,11 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">       
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style/normalize.css">    
-    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/header.css">    
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/requisites.css">
+    <link rel="stylesheet" href="style/lvs.css">
 </head>
 
 <body>
@@ -137,61 +139,48 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="our__requisites">
-            <div class="container">
-                <h1 class="our__requisites__zagolovok">Реквизиты</h1>
-                <table class="table__requisites">
-                    <tbody>
-                        <tr>
-                            <td><b>Полное наименование</b></td>
-                            <td>Индивидуальный предприниматель
-                                Никонов Дмитрий Алексеевич</td>
-                        </tr>
-                        <tr>
-                            <td><b>Сокращенное наименование</b></td>
-                            <td>ИП Никонов Д.А.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Почтовый адрес</b></td>
-                            <td>Самарская область, г. Самара, ул. Гагарина 53, кв.31</td>
-                        </tr>
-                        <tr>
-                            <td><b>ИНН</b></td>
-                            <td>631815253145</td>
-                        </tr>
-                        <tr>
-                            <td><b>ОГРНИП</b></td>
-                            <td>319631300172016</td>
-                        </tr>
-                        <tr>
-                            <td><b>Расчетный счет</b></td>
-                            <td>40802810254400039513</td>
-                        </tr>
-                        <tr>
-                            <td><b>БИК</b></td>
-                            <td>43601607</td>
-                        </tr>
-                        <tr>
-                            <td><b>Корреспондентский счет</b></td>
-                            <td>30101810200000000607</td>
-                        </tr>
-                        <tr>
-                            <td><b>Банк</b></td>
-                            <td>ПОВОЛЖСКИЙ БАНК ПАО СБЕРБАНК</td>
-                        </tr>
-                        <tr>
-                            <td><b>E-mail</b></td>
-                            <td>info@pin-code.pro</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="assets/requisites.pdf" download="Карта партнера ИП Никонов Д.А..pdf" class="btn__download">Скачать реквизиты
-                    <img src="assets/svg/download-minimalistic-svgrepo-com.svg" alt="download button" width="25px" height="25px" class="download__icon">                 
-                </a>
+<main class="main">
+    <section class="section">
+        <div class="container">
+            <div class="wrapper__section">
+                <div class="about__section">
+                    <h1 class="title__section">Проектирование и монтаж локальных сетей</h1>
+                    <p class="hello">Любая структурированная кабельная система (СКС) как конечный элемент инженерной инфраструктуры реализуется в несколько этапов:</p>
+                    <ul class="list">
+                        <li>проектирование</li>
+                        <li>собственно, монтаж кабельной инфраструктуры</li>
+                        <li>монтаж точек доступа</li>
+                        <li>монтаж точек коммутации</li>
+                        <li>пусконаладочные работы</li>
+                    </ul>
+                    <div class="form">
+                        <form action="#" id="form" class="form__body">
+                            <h2 id="toggle" class="form__title">Оставить заявку</h2>
+                            <div class="collapse">
+                                <div class="collapse__body">
+                                    <div class="form__item">
+                                        <label for="formName" class="form__label">Имя*:</label>
+                                        <input id="formName" type="text" name="name" class="form__input">
+                                    </div>
+                                    <div class="form__item">
+                                        <label for="formEmail" class="form__label">E-mail*:</label>
+                                        <input id="formEmail" type="text" name="email" class="form__input">
+                                    </div>
+                                    <div class="form__item">
+                                        <label for="formMessage" class="form__label">Сообщение:</label>
+                                        <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                    </div>
+                                    <button type="submit" class="form__button">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <img src="assets/gif/router-gif.gif" alt="" class="about__section__img">
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
     <footer class="footer">
         <div class="container">
             <div class="wrapper__footer">
@@ -237,4 +226,5 @@
             <div class="copyright">2023 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
         </div>
     </footer>
+    
 </body>

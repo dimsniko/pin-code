@@ -16,17 +16,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/slider.css">
-    <link rel="stylesheet" href="style/formmailer.css">
-    <link rel="stylesheet" href="style/font-awesome.min.css">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/formmailer.css">    
+    <link rel="stylesheet" href="style/normalize.css">    
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <div class="wrapper__header">
-        <header class="header">
+    <header class="wrapper__header">
+        <div class="header">
             <div class="container">
                 <div class="header__contacts">
                     <ul class="header__contacts-list">
@@ -64,16 +62,11 @@
                                 <div class="navbar__list-item__line"></div>
                             </li>
                             <li class="navbar__list-item-company">
-                                <div class="navbar__list-dropdawn">
-                                    <a href="#" class="navbar__list-link">Компания</a>
-                                    <div class="navbar__list-dropbtn">
-                                        <div class="strelka"></div>
-                                    </div>
-                                </div>
+                                <a href="#" class="navbar__list-link drop__strelka">Компания</a>
                                 <ul class="navbar__list-item__submenu">
                                     <div class="navbar__list-item__line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="/about__us.html" class="navbar__list-link">О компании</a>
+                                        <a href="/pin-code/about__us.html" class="navbar__list-link">О компании</a>
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
@@ -94,25 +87,23 @@
                                 </ul>
                             </li>
                             <li class="navbar__list-item-services">
-                                <div class="navbar__list-dropdawn">
-                                    <a href="#" class="navbar__list-link">Услуги</a>
-                                    <div class="navbar__list-dropbtn ">
-                                        <div class="strelka"></div>
-                                    </div>
-                                </div>
+                                <a href="#" class="navbar__list-link drop__strelka">Услуги</a>
                                 <ul class="navbar__list-item__submenu">
                                     <div class="navbar__list-item__line"></div>
                                     <li class="navbar__list-item__submenu-menu navbar__list-item__submenu-menu_width">
-                                        <a href="/pin-code/audit__it.html" class="navbar__list-link">Аудит IT инфраструктуры</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="/pin-code/it__outsoursing.html" class="navbar__list-link">Комплексное обслуживание IT
+                                        <a href="/pin-code/audit__it.html" class="navbar__list-link">Аудит IT
                                             инфраструктуры</a>
                                     </li>
                                     <div class="line"></div>
                                     <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Проектирование и монтаж ЛВС</a>
+                                        <a href="/pin-code/it__outsoursing.html" class="navbar__list-link">Комплексное
+                                            обслуживание IT
+                                            инфраструктуры</a>
+                                    </li>
+                                    <div class="line"></div>
+                                    <li class="navbar__list-item__submenu-menu">
+                                        <a href="/pin-code/lvs.html" class="navbar__list-link">Проектирование и монтаж
+                                            ЛВС</a>
                                     </li>
                                     <div class="line"></div>
 
@@ -147,8 +138,8 @@
                     </button>
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <main class="main">
         <section class="welcome">
             <div class="btn__container">
@@ -249,18 +240,25 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/1.webp" alt="logo__clienst"></div>
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/2.webp" alt="logo__clienst"></div>
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/3.webp" alt="logo__clienst"></div>
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/4.webp" alt="logo__clienst"></div>
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/5.webp" alt="logo__clienst"></div>
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/6.webp" alt="logo__clienst"></div>                        
-                        <div class="swiper-slide"><img width="150" height="150" src="/pin-code/assets/img/logo__clients/7.webp" alt="logo__clienst"></div>                        
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/1.webp" alt="logo__clienst"></div>
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/2.webp" alt="logo__clienst"></div>
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/3.webp" alt="logo__clienst"></div>
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/4.webp" alt="logo__clienst"></div>
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/5.webp" alt="logo__clienst"></div>
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/6.webp" alt="logo__clienst"></div>
+                        <div class="swiper-slide"><img width="150" height="150"
+                                src="/pin-code/assets/img/logo__clients/7.webp" alt="logo__clienst"></div>
 
                     </div>
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>                   
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -273,11 +271,11 @@
                             <div class="collapse__body">
                                 <div class="form__item">
                                     <label for="formName" class="form__label">Имя*:</label>
-                                    <input id="formName" type="text" name="name" class="form__input">   
+                                    <input id="formName" type="text" name="name" class="form__input">
                                 </div>
                                 <div class="form__item">
                                     <label for="formEmail" class="form__label">E-mail*:</label>
-                                    <input id="formEmail" type="text" name="email" class="form__input">   
+                                    <input id="formEmail" type="text" name="email" class="form__input">
                                 </div>
                                 <div class="form__item">
                                     <label for="formMessage" class="form__label">Сообщение:</label>
@@ -286,9 +284,9 @@
                                 <button type="submit" class="form__button">Отправить</button>
                             </div>
                         </div>
-                    </form>        
+                    </form>
                 </div>
-            </div>   
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -316,7 +314,7 @@
                         <img src="/pin-code/assets/img/header__contacts/telegram.svg" alt="">
                         <a href="https://t.me/PinCodeProSamara">PinCodeProSamara</a>
                     </div>
-                     
+
                 </div>
                 <div class="services__footer">
                     <p class="service__title">Услуги</p>
@@ -324,14 +322,14 @@
                     <a class="service__name" href="#video-link">Проектирование и монтаж систем видеонаблюдения</a>
                     <a class="service__name" href="#lvs-link">Проектирование и монтаж ЛВС</a>
                     <a class="service__name" href="#repair-link">Ремонт компьютеров и оргтехники</a>
-                    
+
                 </div>
                 <div class="about__footer">
                     <a class="about__name" href="#">О компании</a>
                     <a class="about__name" href="#">Наши работы</a>
                     <a class="about__name" href="#">Реквизиты</a>
                     <a class="about__name" href="#">Акции</a>
-                </div>                
+                </div>
             </div>
             <div class="copyright">2023 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
         </div>

@@ -1,3 +1,4 @@
+/* FORM MAILER START */
 .form__mailer {
     background-color: #F9F9F9;
     padding-top: 50px;
@@ -5,8 +6,9 @@
 }
 
 .form {
-    max-width: 550px;
-    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 400px;
+    /* margin: 10px auto; */
     /* padding: 0px 55px 0px 55px; */
     background-color: #27A2DB;
     border-radius: 10px;
@@ -14,7 +16,7 @@
 }
 
 .form * {
-    outline: none;    
+    outline: none;
 }
 
 .collapse__body {
@@ -26,12 +28,13 @@
 }
 
 .form__title {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 25px 55px;       
+
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
     text-align: center;
     border-radius: 10px;
-    transition: all 0.5s ease 0s;   
+    transition: all 0.5s ease 0s;
 }
 
 .form__title:hover {
@@ -89,7 +92,7 @@ textarea.form__input {
 }
 
 .form:hover {
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .form__button:hover {
@@ -100,3 +103,39 @@ textarea.form__input {
     top: 10px;
     box-shadow: 0 5px 0 #27A2DB;
 }
+
+/* FORM MAILER END */
+
+/* 1 Section START */
+
+.section {
+    background-color: #F9F9F9;
+    padding-top: 25px;
+    padding-bottom: calc(2.5vw + 20px);
+}
+
+.wrapper__section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.about__section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+    gap: 20px 0px;
+    line-height: 25px;
+    /* text-wrap: balance; */
+    hyphens: auto;
+}
+
+.about__section__img {
+    max-width: 520px;
+    overflow: hidden;
+    background-size: contain;
+    max-height: 320px;
+    padding-top: 45px
+}
+
