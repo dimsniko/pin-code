@@ -106,11 +106,11 @@ textarea.form__input {
 
 /* FORM MAILER END */
 
-/* 1 Section START */
+/* Section fisrt START */
 
-.section {
+.section__first {
     background-color: #F9F9F9;
-    padding-top: 25px;
+    padding-top: 140px;
     padding-bottom: calc(2.5vw + 20px);
 }
 
@@ -127,8 +127,7 @@ textarea.form__input {
     max-width: 550px;
     gap: 20px 0px;
     line-height: 25px;
-    /* text-wrap: balance; */
-    hyphens: auto;
+    text-wrap: balance;
 }
 
 .about__section__img {
@@ -139,3 +138,56 @@ textarea.form__input {
     padding-top: 45px
 }
 
+.title__section {
+    line-height: 1.5;
+    hyphens: none;
+    margin: 0.27em 0;
+}
+
+.list {
+    list-style-position: inside;
+}
+
+/* Section fisrt END */
+
+/* Section we__make START */
+
+.we__make {
+    padding-bottom: calc(3vw + 20px);
+}
+
+.wrapper__block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    gap: 40px 40px;
+}
+
+.we__make__block {
+    padding-left: 55px;
+    /* font-size: 15px; */
+    margin-bottom: 28px;
+    line-height: 25px;
+}
+
+.svg-1 {
+    background: url(/pin-code/assets/svg/new__lan.svg) no-repeat top left/57px;
+}
+
+.svg-2 {
+    background: url(/pin-code/assets/svg/transported__office.svg) no-repeat top left/48px;
+}
+
+.svg-3 {
+    background: url(/pin-code/assets/svg/two__office.svg) no-repeat top left/52px;
+}
+
+.svg-4 {
+    background: url(/pin-code/assets/svg/upgrade__network.svg) no-repeat top left/48px;
+
+}
+
+.we__make-h3 {
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 18px;
+}

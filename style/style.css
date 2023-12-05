@@ -54,6 +54,57 @@ h4 {
     margin-top: 123.594px;
 }
 
+hr,
+hr:before,
+hr:after {
+    content: "";
+    background: #BFE2FF;
+    display: block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: absolute;
+    animation: anim-hr 6s linear infinite;
+    border: 0;
+    overflow: visible;
+}
+
+hr:before {
+    left: -32px;
+}
+
+hr:after {
+    left: 32px;
+}
+
+hr {
+    position: relative;
+    margin: -7px auto;
+}
+
+@keyframes anim-hr {
+    0% {
+        background: #BFE2FF;
+    }
+
+    50% {
+        background: #337AB7;
+    }
+
+    100% {
+        background: #BFE2FF;
+    }
+}
+
+.title-h2 {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 30px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(2.5vw + 20px);
+    margin-bottom: 2.5vw;
+}
+
 /* GLOBAL END*/
 
 /* SERVICE START*/

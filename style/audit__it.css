@@ -109,9 +109,8 @@ textarea.form__input {
 /* SECTION AUDIT__THIS START */
 .audit__this {
     background-color: #F9F9F9;
-    /* margin-top: 5px;/ */
-    padding-top: 130px;
-    padding-bottom: 50px;
+    padding-top: 140px;
+    padding-bottom: calc(2.5vw + 20px);
 }
 
 .wrapper__audit__it {
@@ -141,7 +140,7 @@ textarea.form__input {
 /* SECTION AUDIT__GOALS START */
 
 .audit__goals {
-    padding-bottom: 60px;
+    padding-bottom: calc(3vw + 20px);
 }
 
 .audit__golas-h2 {
@@ -218,42 +217,6 @@ textarea.form__input {
 
 .audit__types {
     background-color: #F9F9F9;
-}
-
-hr,    
-hr:before,
-hr:after {
-    content: "";
-    background: #BFE2FF;
-    display: block;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    position: absolute;
-    animation: anim-hr 6s linear infinite;
-    border: 0;
-    overflow: visible;
-}
-hr:before {
-    left: -32px;
-}
-hr:after {
-    left: 32px;
-}
-hr {
-    position: relative;
-    margin: -7px auto;
-}
-@keyframes anim-hr {
-    0% {
-        background: #BFE2FF;
-    }
-    50% {
-        background: #337AB7;
-    }  
-    100% {
-        background: #BFE2FF;
-    }
 }
 
 .audit__types-h2 {

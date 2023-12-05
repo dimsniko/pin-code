@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style/normalize.css">    
-    <link rel="stylesheet" href="style/header.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/lvs.css">
 </head>
@@ -139,48 +139,91 @@
             </div>
         </div>
     </header>
-<main class="main">
-    <section class="section">
-        <div class="container">
-            <div class="wrapper__section">
-                <div class="about__section">
-                    <h1 class="title__section">Проектирование и монтаж локальных сетей</h1>
-                    <p class="hello">Любая структурированная кабельная система (СКС) как конечный элемент инженерной инфраструктуры реализуется в несколько этапов:</p>
-                    <ul class="list">
-                        <li>проектирование</li>
-                        <li>собственно, монтаж кабельной инфраструктуры</li>
-                        <li>монтаж точек доступа</li>
-                        <li>монтаж точек коммутации</li>
-                        <li>пусконаладочные работы</li>
-                    </ul>
-                    <div class="form">
-                        <form action="#" id="form" class="form__body">
-                            <h2 id="toggle" class="form__title">Оставить заявку</h2>
-                            <div class="collapse">
-                                <div class="collapse__body">
-                                    <div class="form__item">
-                                        <label for="formName" class="form__label">Имя*:</label>
-                                        <input id="formName" type="text" name="name" class="form__input">
+    <main class="main">
+        <section class="section__first">
+            <div class="container">
+                <div class="wrapper__section">
+                    <div class="about__section">
+                        <h1 class="title__section">Проектирование и монтаж локальных сетей</h1>
+                        <p class="hello">Любая структурированная кабельная система (СКС) как конечный элемент инженерной
+                            инфраструктуры реализуется в несколько этапов:</p>
+                        <ul class="list">
+                            <li>проектирование</li>
+                            <li>собственно, монтаж кабельной инфраструктуры</li>
+                            <li>монтаж точек доступа</li>
+                            <li>монтаж точек коммутации</li>
+                            <li>пусконаладочные работы</li>
+                        </ul>
+                        <div class="form">
+                            <form action="#" id="form" class="form__body">
+                                <h2 id="toggle" class="form__title">Оставить заявку</h2>
+                                <div class="collapse">
+                                    <div class="collapse__body">
+                                        <div class="form__item">
+                                            <label for="formName" class="form__label">Имя*:</label>
+                                            <input id="formName" type="text" name="name" class="form__input">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formEmail" class="form__label">E-mail*:</label>
+                                            <input id="formEmail" type="text" name="email" class="form__input">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formMessage" class="form__label">Сообщение:</label>
+                                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                        </div>
+                                        <button type="submit" class="form__button">Отправить</button>
                                     </div>
-                                    <div class="form__item">
-                                        <label for="formEmail" class="form__label">E-mail*:</label>
-                                        <input id="formEmail" type="text" name="email" class="form__input">
-                                    </div>
-                                    <div class="form__item">
-                                        <label for="formMessage" class="form__label">Сообщение:</label>
-                                        <textarea name="message" id="formMessage" class="form__input"></textarea>
-                                    </div>
-                                    <button type="submit" class="form__button">Отправить</button>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="assets/gif/router-gif.gif" alt="" class="about__section__img">
+                </div>
+            </div>
+        </section>
+        <section class="we__make">
+            <hr>
+            <div class="container">
+                <h2 class="title-h2">Мы делаем:</h2>
+                <div class="wrapper__block">
+                    <div class="we__make__block svg-1">
+                        <h3 class="we__make-h3">Локальную сеть в новый офис</h3>
+                        <p class="we__make-text">В любой новый офис, где будет использоваться хотя бы два компьютера,
+                            необходима локальная сеть. Мы подберем необходимое оборудование исходя из вашего бюджета и
+                            смонтируем всё в кратчайшие сроки. Подключим принтера, серверы и компьютеры сотрудников.
+                            Слова клиента: "Нужно ещё вчера сделать" - для нас обыденность.</p>
+                    </div>
+                    <div class="we__make__block svg-2">
+                        <h3 class="we__make-h3">Переезд офиса</h3>
+                        <p class="we__make-text">В случае переезда компании из одного здания в другое, это занимает
+                            длительное время. Ваше оборудование, техника будут аккуратно отключены и сложены. Из
+                            существующей сети мы возьмем по максимуму (провода, свичи, патчкорды, розетки и т.п.) чтобы
+                            не покупать это же для нового офиса. По окончанию переезда, проведем пуско-наладку всей
+                            техники и убедимся что всё работает как и должно.</p>
+                    </div>
+                    <div class="we__make__block svg-3">
+                        <h3 class="we__make-h3">Объединение двух офисов</h3>
+                        <p class="we__make-text">Если здания территориально далеко друг от друга, используем VPN канал
+                            для объединения офисов. Таким образом получится что все компьютеры, принтера, сервера будут
+                            находится в одной сети и пользователи не заметят разницы. Если же здания находятся рядом -
+                            используем либо кабель (витая пара), либо wi-fi канал, когда кабели провести технически
+                            невозможно.</p>
+                    </div>
+                    <div class="we__make__block svg-4">
+                        <h3 class="we__make-h3">Масштабирование/ремонт сети</h3>
+                        <p class="we__make-text">Бывают ситуации когда необходимо увеличить кол-во рабочих мест,
+                            подключить новые мфу или wi-fi точки. В таком случае часто даже не надо докупать сетевое
+                            оборудование, а просто провести кабельную трассу, установить розетки и точки доступа. Часто
+                            встречаются ситуации, когда штат сотрудников растет, появляется новое программное
+                            обеспечение,новые компьютеры и сервера. Пропускной способности сети не хватает и работа
+                            замедляется, долго открываются сетевые папки, возникают сбои при работе в приложениях. В
+                            таком случае, наш инженер проводит <b>бесплатный</b> аудит сети, мы даем свои рекомендации по
+                            устранению недостатков сети и приступаем к работе.</p>
                     </div>
                 </div>
-                <img src="assets/gif/router-gif.gif" alt="" class="about__section__img">
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="wrapper__footer">
@@ -226,5 +269,5 @@
             <div class="copyright">2023 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
         </div>
     </footer>
-    
+
 </body>
