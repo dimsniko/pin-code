@@ -198,27 +198,32 @@ textarea.form__input {
 /* Section stages__lan START */
 
 .stages__lan {
-background-color: #F9F9F9;
-padding-bottom: calc(3vw + 20px);
+    background-color: #F9F9F9;
+    padding-bottom: calc(3vw + 20px);
 }
 
-.stages__list > li {
+.wrapper__stages {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.stages__list>li {
     list-style-position: inside;
     margin-bottom: 1.5vw;
     padding: 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
     line-height: 25px;
     transition-duration: 0.5s;
-background-color: white;
+    background-color: white;
 
 }
 
-.stages__list > li::marker {
+.stages__list>li::marker {
     font-weight: bold;
 }
 
-.stages__list > li:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2), 0 8px 12px rgba(0,0,0,0.2);
+.stages__list>li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.2);
     transform: translateY(-10px);
 }
 
@@ -241,12 +246,12 @@ background-color: white;
     display: flex;
     width: 100%;
     /* max-width: 300px; */
-    flex-direction: column;    
+    flex-direction: column;
     background-color: #F9F9F9;
     border-radius: 15px;
     padding: 20px;
     row-gap: 20px;
-    line-height: 1.4;    
+    line-height: 1.4;
     hyphens: auto;
     transition: 0.5s;
 }
@@ -255,15 +260,14 @@ background-color: white;
     width: 100%;
     max-width: 525px;
     min-height: 250px;
-    background-blend-mode:hard-light;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     aspect-ratio: 16/9;
     margin: 0 auto;
-    filter: grayscale(50%);
+    opacity: 80%;
     transition: 0.5s;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
 
 .item:hover {
@@ -271,7 +275,7 @@ background-color: white;
 }
 
 .item:hover .img__bg {
-    filter: grayscale(0%);
+    opacity: 100%;
     filter: drop-shadow(16px 16px 20px #8e8e8e);
 }
 
@@ -305,4 +309,109 @@ background-color: white;
 
 .item__text {
     font-size: 15px;
+}
+
+/* Section lan__properties END */
+
+/* Section lan__price START */
+
+.lan__price {
+    background-color: #F9F9F9;
+    padding-bottom: calc(3vw + 10px);
+}
+
+.wrapper__table__price {
+    overflow-x: auto;
+}
+
+.table__price {
+    width: 80%;
+    min-width: 634px;
+    border: 1px solid #eeeeee;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table__price thead {
+    background-color: #bebebe;
+}
+
+.table__price th {
+    font-weight: 600;
+}
+
+.table__price th,
+td {
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    line-height: 1.45;
+}
+
+.table__price td:not(:first-child) {
+    text-align: center;
+}
+
+.table__btn {
+    display: block;
+    margin: 30px auto 30px;
+    width: 270px;
+    padding: 15px 40px 15px 10px;
+    border: medium none;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background: #FF871A url(/pin-code/assets/svg/down-arrow-svgrepo-com.svg)no-repeat 96%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.table__btn:hover {
+    background-color: #fc9535;
+}
+
+.wrapper__table__pm .table__price td:nth-child(2) {
+    text-align: start;
+}
+
+.wrapper__table__pm .table__price td:nth-child(1) {
+    text-align: center;
+}
+
+.wrapper__table__pm {
+    /* position: relative; */
+    opacity: 0;
+    transform: translateY(-15%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    visibility: hidden;
+    overflow-x: auto;
+    height: 0;
+    font-size: small;
+}
+
+.wrapper__table__pm.show-more {
+    /* position: relative; */
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    height: fit-content;   
+}
+
+.title-h2-end {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 30px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;    
+    line-height: 1.5;
+}
+
+.relize__project {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: calc(2vw + 10px);
+    text-decoration: underline;
+    color: #0069c2;
+    font-size: 16px;
 }
