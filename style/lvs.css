@@ -303,8 +303,13 @@ textarea.form__input {
     background-image: url(/pin-code/assets/img/lvs/lvs__control.webp);
 }
 
-.title-h3 {
+.item__tittle {
     text-align: center;
+    font-size: clamp(15px, 1vw, 20px);
+    margin-left: auto;
+    margin-right: auto;   
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .item__text {
