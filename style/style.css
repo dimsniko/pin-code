@@ -143,6 +143,15 @@ hr {
     word-break: break-word;
 }
 
+.relize__project {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: calc(2vw + 10px);
+    text-decoration: underline;
+    color: #0069c2;
+    font-size: 16px;
+}
+
 /* GLOBAL END*/
 
 /* SERVICE START*/

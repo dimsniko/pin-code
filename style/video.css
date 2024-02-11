@@ -187,8 +187,8 @@ textarea.form__input {
 
 .wrapper__order__work {
     display: flex;
-    flex: 1 0;
-    max-width: 600px;
+    /* flex: 1 0; */
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -196,11 +196,13 @@ textarea.form__input {
 .number__stage {
     flex: 1;
     text-align: right;
-    max-width: 120px;
+    max-width: 100px;
+    flex-basis: auto;
 }
 
 .text__stage {
-    flex: 2;    
+    flex: 2;
+    padding-right: 2rem;    
 }
 
 .text__stage p {
@@ -257,6 +259,15 @@ textarea.form__input {
 
 .cd-2 {
     top: 260px; /* Расстояние между кругами + высота круга */
+}
+
+.ns_img {
+    flex: 2;
+    background-image: url(/pin-code/assets/img/video/stages.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    /* max-width: 450px; */
 }
 
 /* Section order__work end */
@@ -317,7 +328,6 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
 .info {
     display: flex;
     align-items: center;
-    padding-top: 40px;
 }
 
 .info > .title-h3 {
@@ -332,4 +342,90 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
     height: 80px;
     flex: 0.2;
     background-repeat: no-repeat;
+}
+
+.btn__download {
+    display: flex;
+    height: 4em;
+    border: 0;
+    background-color: #ee5c5c;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    /* margin-top: 2em; */
+    text-align: center;
+    align-items: center;  
+    width: fit-content;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px #a86666;  
+    margin: 2em auto; 
+    align-self: center;
+}
+
+.download__icon {
+    padding-left: 5px;
+}
+
+.btn__download:hover {
+    background-color: #eb4444;
+    transition: all 0.5s ease 0s;    
+}
+
+/* Section guarantee start */
+
+.guarantee {
+    padding-bottom: calc(3vw);
+}
+
+.wrapper__guarantee__block {  
+    display: flex;
+    justify-content: center;
+    /* min-height: 30vh; */
+    gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.guarantee__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;   
+    /* line-height: 145%; */
+    position: relative;
+    max-width: clamp(200px, 30%, 100%);
+    min-height: clamp(250px, 40%, 100%);
+    padding: 20px 20px;
+    /* justify-content: center; */
+    align-items: center;
+    /* box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset; */
+    border: 2px solid #AEAEAE;   
+    border-radius: 20px;    
+}
+
+.guarantee__block p {
+    font-size: clamp(15px, 1vw, 16px);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.qb__img {    
+    height: clamp(50px, 4vw, 200px);
+    width: clamp(50px, 4vw, 200px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: #97fc60; */
+    border-radius: 10px;
+    
+}
+
+.qb__img-1 {
+    background-image: url(/pin-code/assets/svg/data-protection-svgrepo-com.svg);
+}
+
+.qb__img-2 {
+    background-image: url(/pin-code/assets/svg/support-svgrepo-com.svg);
+}
+
+.qb__img-3 {
+    background-image: url(/pin-code/assets/svg/assistant-svgrepo-com.svg);
 }
