@@ -1,30 +1,118 @@
+.main-one {
+    flex: 1;
+}
+
 .about__us {
-    background-image: url(/pin-code/assets/img/bi__about__us.jpg);
-    /* margin-top: 5px;/ */
-    padding-top: 130px;
-    padding-bottom: 41px;
+    background-color: #F9F9F9;        
+    padding-top: 140px;
+    padding-bottom: calc(2.5vw + 20px);
 }
 
 .wrapper__about__us {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 .about__us__block {
     display: flex;
     flex-direction: column;
-    max-width: 650px;
-    row-gap: 20px;
+    max-width: 650px;    
     line-height: 25px;
+    flex-grow: 2;
 }
 
-.about__us__text-underline {
-    border-bottom: solid 2px;
+.about__us__text {
+    text-wrap: balance;
+    padding-bottom: 1vw;
+}
+
+.about__us__text>ul {
+    list-style-position: inside;
+    font-weight: 500;
+    
+}
+
+.about__us__text>ul>li {
+    padding-top: 10px;
+}
+
+.about__us__text3 {
+    padding-top: 2vw;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .about__us__img {
-    height: 100%;
+    /* height: 100%; */
     background-size: cover;
     align-self: center;
+    max-width: 40%;
+}
+
+/* it__principles__start */
+
+.it__outsorsing__principles {
+    background-color: #ffffff;
+}
+
+
+.wrapper__principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(2.5vw + 20px);
+}
+
+.title__principles {
+    flex: 0 1 400px;
+    max-width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.title__principles h2 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: clamp(18px, 3vw, 30px);
+    font-weight: 600;
+}
+
+.title__principles p {
+    padding-top: 20px;
+    color: rgb(97, 97, 97);
+    font-size: 12px;
+}
+
+.text__principles {
+    flex: 1 1 400px;
+    max-width: calc(50% - 20px);
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 50px;
+    
+}
+
+.title-td {
+    font-weight: 600;
+}
+
+.text-td {
+    font-weight: 300;
+}
+
+tr {
+    border-top: 1px solid rgb(97, 97, 97);
 }

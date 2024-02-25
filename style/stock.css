@@ -1,0 +1,86 @@
+.main-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    flex: 1;
+}
+
+.stock {
+    background-color: #F9F9F9;
+    padding-top: 140px;
+    flex: 1; 
+}
+
+.title__section {
+    margin: 0.39em 0 0.7em;
+}
+
+
+.wrapper__section {
+
+}
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.post-item {
+    padding: 10px;
+}
+
+
+
+.post-item-wrap {
+    background: #e7e7e1;
+    position: relative;    
+    overflow: hidden;
+    border-radius: 8px; /* добавленный стиль для скругления углов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавленный стиль для легкой тени */
+    transition: box-shadow 0.5s; /* добавленный стиль для времени анимации */
+}
+
+.post-item-wrap:hover {
+    box-shadow: 10px 10px 0 #C9F2C7; /* измененные значения для смещения */
+}
+
+.post-link {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    cursor: default;
+}
+
+.post-title {
+    color: #34271d;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+}
+
+.post-item-wrap:hover .post-title {
+    color: #ea490f;
+}
+
+.post-content {
+    color: #766d62;
+    font-size: 14px;
+    hyphens: auto;
+    line-height: 1.35;
+}
+
+@media (min-width: 768px) {
+    .post-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .post-item {
+        flex-basis: 33.333333333%;
+    }
+}

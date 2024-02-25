@@ -107,14 +107,15 @@
     cursor: pointer;
 }
 
-li.navbar__list-item-services > ul > li:nth-child(11) > a {
+li.navbar__list-item-services > ul > li:nth-child(13) > a {
     color: rgb(252, 68, 68);
 }
 
-li.navbar__list-item-services > ul > li:nth-child(11) > a:hover {
+li.navbar__list-item-services > ul > li:nth-child(13) > a:hover {
     transition: 0.3s;
     color: red;
 }
+
 
 .drop__strelka {
     display: flex;
