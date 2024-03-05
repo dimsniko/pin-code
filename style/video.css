@@ -171,7 +171,7 @@ textarea.form__input {
     padding-bottom: calc(3vw + 20px);
 }
 
-.container > .title-h3 {
+.container>.title-h3 {
     border: 2px solid gray;
     padding: 15px;
     border-radius: 5px;
@@ -202,12 +202,12 @@ textarea.form__input {
 
 .text__stage {
     flex: 2;
-    padding-right: 2rem;    
+    padding-right: 2rem;
 }
 
 .text__stage p {
     font-weight: 300;
-    font-size: clamp(14px, 1.8vw, 16px);    
+    font-size: clamp(14px, 1.8vw, 16px);
     text-wrap: balance;
     line-height: 1.4;
     padding-bottom: 55px;
@@ -254,11 +254,13 @@ textarea.form__input {
 }
 
 .cd-1 {
-    top: 80px; /* Расстояние между кругами + высота круга */
+    top: 80px;
+    /* Расстояние между кругами + высота круга */
 }
 
 .cd-2 {
-    top: 260px; /* Расстояние между кругами + высота круга */
+    top: 260px;
+    /* Расстояние между кругами + высота круга */
 }
 
 .ns_img {
@@ -309,7 +311,7 @@ td {
     /* width: fit-content; */
 }
 
-div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
+div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     min-width: 100px;
 }
 
@@ -330,10 +332,10 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
     align-items: center;
 }
 
-.info > .title-h3 {
+.info>.title-h3 {
     flex: 2;
     margin-top: 0;
-    margin-bottom: 0;    
+    margin-bottom: 0;
 }
 
 .info-img {
@@ -354,11 +356,11 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
     padding: 10px 20px;
     /* margin-top: 2em; */
     text-align: center;
-    align-items: center;  
+    align-items: center;
     width: fit-content;
     font-size: 14px;
-    box-shadow: 5px 5px 5px #a86666;  
-    margin: 2em auto; 
+    box-shadow: 5px 5px 5px #a86666;
+    margin: 2em auto;
     align-self: center;
 }
 
@@ -368,16 +370,98 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
 
 .btn__download:hover {
     background-color: #eb4444;
-    transition: all 0.5s ease 0s;    
+    transition: all 0.5s ease 0s;
 }
+
+
+/* Section our__suppliers start */
+
+.our__suppliers {
+    padding-bottom: calc(2.5vw + 20px);
+}
+
+.suppliers__grid__block {
+    margin: 15px 0 0;
+    padding: 45px 0 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 100px 40px;
+    justify-items: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    
+}
+
+section.our__suppliers>div>p {
+    font-size: clamp(16px, 1vw, 19px);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.item__grid__block {
+    width: 200px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.igb-1 {
+    background-image: url(/pin-code/assets/img/video/logo-satv.png);
+}
+
+.igb-2 {
+    background-image: url(/pin-code/assets/img/video/logo-rvi.png);
+}
+
+.igb-3 {
+    background-image: url(/pin-code/assets/img/video/dahua.png);
+
+}
+
+.igb-4 {
+    background-image: url(/pin-code/assets/img/video/hikvision_logo.png);
+}
+
+.igb-5 {
+    background-image: url(/pin-code/assets/img/video/hilogo.svg);
+}
+
+.igb-6 {
+    background-image: url(/pin-code/assets/img/video/logo-ezviz.svg);
+}
+
+.igb-7 {
+    background-image: url(/pin-code/assets/img/video/ez-ip.svg);
+}
+
+.igb-8 {
+    background-image: url(/pin-code/assets/img/video/trassir.svg);
+}
+
+.igb-9 {
+    background-image: url(/pin-code/assets/img/video/optimus.png);
+
+}
+
+/* Section our__suppliers end */
+
+
 
 /* Section guarantee start */
 
 .guarantee {
     padding-bottom: calc(3vw);
+    background-color: #F9F9F9;
+
 }
 
-.wrapper__guarantee__block {  
+.wrapper__guarantee__block {
     display: flex;
     justify-content: center;
     /* min-height: 30vh; */
@@ -389,7 +473,7 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
 .guarantee__block {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;   
+    row-gap: 15px;
     /* line-height: 145%; */
     position: relative;
     max-width: clamp(200px, 30%, 100%);
@@ -398,8 +482,9 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
     /* justify-content: center; */
     align-items: center;
     /* box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset; */
-    border: 2px solid #AEAEAE;   
-    border-radius: 20px;    
+    border: 2px solid #AEAEAE;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .guarantee__block p {
@@ -408,14 +493,14 @@ div.wrapper__table__pm > table > thead > tr > th:nth-child(3) {
     text-wrap: balance;
 }
 
-.qb__img {    
+.qb__img {
     height: clamp(50px, 4vw, 200px);
     width: clamp(50px, 4vw, 200px);
     background-repeat: no-repeat;
     background-size: contain;
     /* background-color: #97fc60; */
     border-radius: 10px;
-    
+
 }
 
 .qb__img-1 {
