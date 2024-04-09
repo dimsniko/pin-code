@@ -131,17 +131,11 @@ textarea.form__input {
 }
 
 .about__section__img {
-    max-width: 520px;
+    max-width: 420px;
     overflow: hidden;
     background-size: contain;
-    max-height: 320px;
+    max-height: 420px;
     padding-top: 45px
-}
-
-.title__section {
-    line-height: 1.5;
-    hyphens: none;
-    margin: 0.27em 0;
 }
 
 .list {

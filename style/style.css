@@ -119,6 +119,12 @@ hr {
     line-height: 1.5;
 }
 
+.title__section {
+    line-height: 1.5;
+    hyphens: none;
+    margin: 0.27em 0;
+}
+
 .wrapper__grid__block {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
@@ -197,18 +203,6 @@ hr {
     padding: 20px;
     row-gap: 20px;
 }
-
-/* .outsourcing .service__btn {
-    margin-top: 20px;
-}
-
-.lvs .service__btn {
-    margin-top: 20px;
-}
-
-.crysis .service__btn {
-    margin-top: 23px;
-} */
 
 .service__pic {
     width: 80px;
@@ -373,3 +367,5 @@ hr {
     padding-top: 30px;
     text-align: center;
 }
+
+/* FOOTER END*/

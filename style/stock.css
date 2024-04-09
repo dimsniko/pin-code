@@ -13,10 +13,6 @@
     flex: 1; 
 }
 
-.title__section {
-    margin: 0.39em 0 0.7em;
-}
-
 .post-wrap {
     max-width: 1120px;
     margin: 0 auto;

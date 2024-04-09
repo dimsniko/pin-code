@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
   autoplay: {
     delay: 3000,
   },
-  
+
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -73,8 +73,46 @@ class ItcCollapse {
 
 const collapse = new ItcCollapse(document.querySelector('.collapse'));
 
-    document.querySelector('#toggle').onclick = () => {
-      collapse.toggle();
-    }
+document.querySelector('#toggle').onclick = () => {
+  collapse.toggle();
+}
 
-    
+// BURGER
+
+const navbarMore = document.querySelectorAll('.navbar__list-item-more');
+
+navbarMore.forEach(function (el) {
+  el.addEventListener('click', function (ev) {
+    ev.stopPropagation()
+    navbarMore.forEach(el => { if (el != this) { el.classList.remove('open') } })
+    this.classList.toggle('open')
+  });
+});
+
+document.addEventListener('click', () => {
+  navbarMore.forEach(el => el.classList.remove('open'))
+});
+
+const burger = document.querySelector('.menu__burger')
+const navbar = document.querySelector('.navbar')
+const body = document.querySelector('body')
+
+function menuBurgeropen() {
+  burger.classList.toggle('active')
+  navbar.classList.toggle('active')
+  body.classList.toggle('lock')
+}
+
+burger.addEventListener('click', menuBurgeropen)
+
+// Центрирование стрелок слайдера по центру
+
+function updateMarginTop() {  
+  const btnWidth = document.querySelector('.btn')
+  const realWidth = btnWidth.offsetWidth;
+  const marginTopValue = `${realWidth / 4.5}px`
+  document.documentElement.style.setProperty('--btn-margin-top', marginTopValue);
+}
+
+window.addEventListener('load', updateMarginTop);
+window.addEventListener('resize', updateMarginTop)

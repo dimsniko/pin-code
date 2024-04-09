@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="style/normalize.css">    
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/adaptive.css">
 </head>
 
 <body>
-    <header class="wrapper__header">
-        <div class="header">
+    <header class="wrapper__header">        
             <div class="container">
                 <div class="header__contacts">
                     <ul class="header__contacts-list">
@@ -48,20 +48,23 @@
                         </li>
                     </ul>
                 </div>
-                <div class="line"></div>
+                <div class="header__contacts-line"></div>
                 <div class="header__inner">
                     <a href="#" class="header__logo">
-                        <picture>
+                        <picture>                            
                             <img class="logo__img " src="/pin-code/assets/img/PinCode black.png" alt="logo">
                         </picture>
                     </a>
+                    <div class="menu__burger">
+                        <span></span>
+                    </div>
                     <nav class="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__list-item">
                                 <a href="#" class="navbar__list-link">Главная</a>
                                 <div class="navbar__list-item__line"></div>
                             </li>
-                            <li class="navbar__list-item-company">
+                            <li class="navbar__list-item-company navbar__list-item-more">
                                 <a href="#" class="navbar__list-link drop__strelka">Компания</a>
                                 <ul class="navbar__list-item__submenu">
                                     <div class="navbar__list-item__line"></div>
@@ -86,7 +89,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="navbar__list-item-services">
+                            <li class="navbar__list-item-services navbar__list-item-more">
                                 <a href="#" class="navbar__list-link drop__strelka">Услуги</a>
                                 <ul class="navbar__list-item__submenu">
                                     <div class="navbar__list-item__line"></div>
@@ -137,18 +140,15 @@
                         <span class="header__button-text">Заказать звонок</span>
                     </button>
                 </div>
-            </div>
-        </div>
+            </div>        
     </header>
     <main class="main">
         <section class="welcome">
             <div class="btn__container">
                 <div class="btn">
                     <div class="btn-index btn__prev">
-
                     </div>
                     <div class="btn-index btn__next">
-
                     </div>
                 </div>
             </div>

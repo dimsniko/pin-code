@@ -1,7 +1,3 @@
-.main-one {
-    flex: 1;
-}
-
 .about__us {
     background-color: #F9F9F9;        
     padding-top: 140px;
@@ -12,7 +8,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .about__us__block {
@@ -45,10 +40,12 @@
 }
 
 .about__us__img {
-    /* height: 100%; */
+    background-image: url(/pin-code/assets/gif/about.gif);    
     background-size: cover;
     align-self: center;
-    max-width: 40%;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
 }
 
 /* it__principles__start */

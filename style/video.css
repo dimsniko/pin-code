@@ -143,12 +143,6 @@ textarea.form__input {
     opacity: 90%;
 }
 
-.title__section {
-    line-height: 1.5;
-    hyphens: none;
-    margin: 0.27em 0;
-}
-
 .list {
     list-style-position: inside;
 }

@@ -133,12 +133,6 @@ textarea.form__input {
     overflow: hidden;
 }
 
-.title__section {
-    line-height: 1.5;
-    hyphens: none;
-    margin: 0.27em 0;
-}
-
 .repair__conditions {
     padding-bottom: calc(3vw + 20px);
 }

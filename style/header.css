@@ -5,6 +5,10 @@
     padding-bottom: 10px;
 }
 
+.header__contacts-line {
+    border-top: 0.5px solid lightgray;
+}
+
 .line {
     border-top: 0.5px solid lightgray;
 }
@@ -36,7 +40,7 @@
     background-color: #fff;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 5;
     width: 100%;
 }
 
@@ -56,6 +60,10 @@
     height: 70px;
 }
 
+.menu__burger {
+    display: none;
+}
+
 .navbar {
     padding-top: 19px;
 }
@@ -67,6 +75,11 @@
     /* max-width: calc(33.33% - 10px); */
     padding: 0px 10px;
     list-style-type: none;
+}
+
+.navbar__list-link {
+    display: flex;
+    align-items: center;
 }
 
 .navbar__list-dropdawn {
@@ -89,9 +102,7 @@
 
 .navbar__list-item__submenu-menu {
     text-align: start;
-    padding: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px;    
     line-height: 1.5;
     background-color: #f5f5f5;
     list-style-type: none;
@@ -107,19 +118,13 @@
     cursor: pointer;
 }
 
-li.navbar__list-item-services > ul > li:nth-child(13) > a {
+li.navbar__list-item-services>ul>li:nth-child(13)>a {
     color: rgb(252, 68, 68);
 }
 
-li.navbar__list-item-services > ul > li:nth-child(13) > a:hover {
+li.navbar__list-item-services>ul>li:nth-child(13)>a:hover {
     transition: 0.3s;
     color: red;
-}
-
-
-.drop__strelka {
-    display: flex;
-    align-items: center;
 }
 
 .drop__strelka::after {
@@ -135,12 +140,12 @@ li.navbar__list-item-services > ul > li:nth-child(13) > a:hover {
     transition: transform 0.3s ease-out;
 }
 
-.navbar__list-item-company:hover .drop__strelka::after,
-.navbar__list-item-services:hover .drop__strelka::after {
+
+.navbar__list-item-more:hover .drop__strelka::after {
     transform: rotate(0deg);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' fill='%2327A2DB' /%3e%3c/svg%3e");
-
 }
+
 
 .navbar__list-item:hover .navbar__list-item__line {
     position: relative;
@@ -150,13 +155,13 @@ li.navbar__list-item-services > ul > li:nth-child(13) > a:hover {
     z-index: 1;
 }
 
-.navbar__list-item-company:hover {
+.navbar__list-item-more:hover {
     position: relative;
     cursor: pointer;
     color: #27A2DB;
 }
 
-.navbar__list-item-company:hover .navbar__list-item__submenu {
+.navbar__list-item-more:hover .navbar__list-item__submenu {
     opacity: 1;
     visibility: visible;
     transition: 0.3s;
@@ -164,33 +169,11 @@ li.navbar__list-item-services > ul > li:nth-child(13) > a:hover {
     padding-top: 38px;
 }
 
-.navbar__list-item-company:hover .navbar__list-item__line {
+.navbar__list-item-more:hover .navbar__list-item__line {
     position: relative;
     transition: 0.3s;
     border-top: 3px solid #27A2DB;
     top: 0px;
-}
-
-.navbar__list-item-services:hover {
-    position: relative;
-    cursor: pointer;
-    color: #27A2DB;
-}
-
-.navbar__list-item-services:hover .navbar__list-item__submenu {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.3s;
-    z-index: 2;
-    padding-top: 38px;
-}
-
-.navbar__list-item-services:hover .navbar__list-item__line {
-    position: relative;
-    transition: 0.3s;
-    border-top: 3px solid #27A2DB;
-    top: 0px;
-    /* z-index: 1; */
 }
 
 .navbar__list-item__submenu-menu:hover {
