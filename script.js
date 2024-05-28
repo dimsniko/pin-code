@@ -1,12 +1,26 @@
+// SWIPER SLIDER
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 3,
-
+    
   autoplay: {
     delay: 3000,
   },
+
+  breakpoints: {
+    340: {
+        slidesPerView: 1,
+    },
+    640: {
+        slidesPerView: 2,
+    },
+    768: {
+        slidesPerView: 3,
+    },
+},
 
   // Navigation arrows
   navigation: {
