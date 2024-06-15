@@ -75,11 +75,13 @@
     /* max-width: calc(33.33% - 10px); */
     padding: 0px 10px;
     list-style-type: none;
+    
+
 }
 
 .navbar__list-link {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .navbar__list-dropdawn {
