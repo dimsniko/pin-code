@@ -101,7 +101,7 @@
         overflow: auto;
     }
 
-    .navbar.active {
+        .navbar.active {
         left: 0;
         /* background-color: rgb(237, 237, 237); */
         background-image: url(/pin-code/assets/img/white-grey-flecks.png);
@@ -109,10 +109,11 @@
         /* background-repeat: no-repeat; */
         background-blend-mode: saturation;
 
-        /* background-size: 28px;   */
-        
+        /* background-size: 28px;   */        
 
     }
+
+    
 
     .navbar::before {
         content: "";

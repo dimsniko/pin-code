@@ -1,5 +1,9 @@
 .our__projects {
-    background-image: url(/pin-code/assets/img/bi__about__us.jpg);
+    background-image: url(/pin-code/assets/img/background-hexagones-on-corner.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    background-attachment: fixed;
     height: 100%;
     padding-top: 130px;
     padding-bottom: 40px;
@@ -76,3 +80,17 @@
 }
 
 /* SWIPER-SLIDER END */
+
+
+@media screen and (max-width: 940px) {
+    .our__projects {      
+        padding-top: 60px;        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper__our__projects {       
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        
+    }
+}

@@ -1,7 +1,12 @@
 
 
 .our__clients {
-    background-image: url(/pin-code/assets/img/bi__about__us.jpg);
+    background-image: url(/pin-code/assets/img/background-hexagones-on-corner.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
     height: 100%;
     padding-top: 130px;
     padding-bottom: 40px;
@@ -18,4 +23,18 @@
 
 .clients {    
     align-self: center;
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .our__clients {      
+        padding-top: 60px;        
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .our__clients__zagolovok, .our__clients__text {
+        text-align: center;
+    }
 }

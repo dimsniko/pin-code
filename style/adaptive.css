@@ -112,6 +112,18 @@
         /* background-size: 28px;   */
     }
 
+    .navbar__down__fone {
+        display: none;
+    }
+
+    .navbar.active .navbar__down__fone {
+        background-image: url(/pin-code/assets/img/water-stairs.png);
+        width: 100%;
+        height: 100px;
+        
+
+    }
+
     .navbar::before {
         content: "";
         position: fixed;
