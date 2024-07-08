@@ -1,7 +1,7 @@
 @media screen and (max-width: 940px) {
 
     /* HEADER */
-   
+
     .header__button {
         display: none;
     }
@@ -101,19 +101,16 @@
         overflow: auto;
     }
 
-        .navbar.active {
+    .navbar.active {
         left: 0;
-        /* background-color: rgb(237, 237, 237); */
-        background-image: url(/pin-code/assets/img/white-grey-flecks.png);
-        
-        /* background-repeat: no-repeat; */
-        background-blend-mode: saturation;
-
-        /* background-size: 28px;   */        
-
+        background-image: url(/pin-code/assets/img/white-grey-flecks.png), url(/pin-code/assets/img/background-hexagones-on-cornernavbar__active.png);
+        background-size: auto, cover;
+        background-repeat: repeat, no-repeat;
+        background-blend-mode: multiply, normal;
+        background-position-y: center, 150px;
     }
 
-    
+
 
     .navbar::before {
         content: "";
@@ -172,7 +169,7 @@
 
     .navbar.active::before {
         border-bottom: 1px solid rgb(135, 135, 135);
-        
+
     }
 
     .navbar__list-item__submenu-menu {
@@ -188,41 +185,41 @@
 
     /* FOOTER */
 
-@media screen and (max-width: 768px) {
-    .wrapper__footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        .wrapper__footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .service__title {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .services__footer {
+            display: none;
+        }
+
+        .contacts__footer,
+        .about__footer {
+            row-gap: 8px;
+            text-align: center;
+        }
+
+        .footer__logo {
+            padding-bottom: 10px;
+        }
+
+        .about__footer {
+            padding-top: 20px;
+
+        }
+
+        .navbar__list-item__submenu-menu_width {
+            min-width: 0em;
+        }
+
     }
-
-    .service__title {
-        text-align: center;
-        padding-bottom: 15px;
-    }
-
-    .services__footer {
-        display: none;
-    }
-
-    .contacts__footer,
-    .about__footer {
-        row-gap: 8px;
-        text-align: center;
-    }
-
-    .footer__logo {
-        padding-bottom: 10px;
-    }
-
-    .about__footer {
-        padding-top: 20px;
-
-    }
-
-    .navbar__list-item__submenu-menu_width {
-        min-width: 0em;
-    }
-
-}
 }

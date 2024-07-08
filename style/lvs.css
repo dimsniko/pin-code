@@ -316,11 +316,11 @@ textarea.form__input {
 
 .lan__price {
     background-color: #F9F9F9;
-    padding-bottom: calc(3vw + 10px);
+    padding-bottom: calc(3vw + 10px);    
 }
 
 .wrapper__table__price {
-    overflow-x: auto;
+    overflow-x: auto;    
 }
 
 .table__price {
@@ -406,3 +406,53 @@ td {
     line-height: 1.5;
 }
 
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .section__first {
+        padding-top: 60px;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .about__section__img {
+        display: none;
+    }    
+
+    .about__section {
+        margin: 0 auto;
+    }
+
+    .title__section {
+        align-self: center;
+        text-align: center;
+    }
+
+    .hello {
+        text-wrap: wrap;
+    }
+
+    .title-h2 {
+        margin-bottom: calc(2.5vw + 10px);
+    }
+
+    .form {
+        width: 70%;
+        align-self: center;
+    }
+
+    .wrapper__block-grid-360 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 40px 0;
+        
+    }
+
+    .wrapper__block-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 40px 0;
+        
+    }
+}

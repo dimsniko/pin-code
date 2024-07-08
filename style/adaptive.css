@@ -103,13 +103,11 @@
 
     .navbar.active {
         left: 0;
-        /* background-color: rgb(237, 237, 237); */
-        background-image: url(/pin-code/assets/img/white-grey-flecks.png);
-        
-        /* background-repeat: no-repeat; */
-        background-blend-mode: saturation;
-
-        /* background-size: 28px;   */
+        background-image: url(/pin-code/assets/img/white-grey-flecks.png), url(/pin-code/assets/img/background-hexagones-on-cornernavbar__active.png);
+        background-size: auto, cover;
+        background-repeat: repeat, no-repeat;
+        background-blend-mode: multiply, normal;
+        background-position-y: center, 150px;
     }
 
     .navbar__down__fone {

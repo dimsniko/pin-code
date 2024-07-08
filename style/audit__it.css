@@ -115,13 +115,14 @@ textarea.form__input {
 
 .wrapper__audit__it {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .about__audit {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 550px;
     row-gap: 20px;
     line-height: 25px;
@@ -157,8 +158,8 @@ textarea.form__input {
 
 .audit__goals__block {
     padding: 20px 0px;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent 0%, #c9c9c9 100%);
     border-image-slice: 1;
     line-height: 20px;
 }
@@ -231,7 +232,7 @@ textarea.form__input {
     min-height: 30vh;
     gap: 30px;
     row-gap: 20px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
 .audit__block {
@@ -244,7 +245,7 @@ textarea.form__input {
     max-width: clamp(300px, 30%, 100%);
     min-height: clamp(350px, 40%, 100%);
     padding: 20px 20px;
-    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;    
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
 }
 
 .audit__block:hover {
@@ -267,4 +268,43 @@ textarea.form__input {
 .audit__block-h4 {
     font-weight: 500;
     text-align: center;
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 940px) {
+    .audit__this {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .audit__it__img {
+        display: none;
+    }
+
+    .about__audit {
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 70%;
+        align-self: center;
+    }
+
+    .title__section {
+        align-self: center;
+        text-align: center;
+    }
+
+    .title-h2 {
+        margin-bottom: calc(2.5vw + 10px);
+    }
+
+    .wrapper__audit__goals {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        row-gap: 20px;
+    }
 }

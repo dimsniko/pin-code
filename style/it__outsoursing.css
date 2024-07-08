@@ -236,9 +236,9 @@ textarea.form__input {
 
 .it__outsorsing__diagramma__img {
     align-self: center;
+    width: 100%;
     max-width: 450px;
     max-height: 650px;
-    justify-content: center;
 }
 
 /* it__outsorsing__benefit end */
@@ -502,12 +502,12 @@ textarea.form__input {
 }
 
 .wrapper__begin {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .it__outsorsing__begin-h2 {
@@ -562,12 +562,8 @@ textarea.form__input {
     bottom: -30px;
     left: -30px;
     border: 1px dashed #29A6DF;
-    transition: transform 12s ease-in-out;
 }
 
-.begin__block-svg:hover::after {
-    animation: spin 12s linear infinite;
-}
 
 @keyframes spin {
     100% {
@@ -606,3 +602,63 @@ textarea.form__input {
 }
 
 /* it__outsorsing__begin end */
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 1200px) {
+    .wrapper__begin>* {
+        flex: 1 1 45%
+    }
+
+    .wrapper__it__outsorsing__benefit {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .it__outsoursing__this {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper__begin>* {
+        flex: 1 1 90%;
+    }
+
+    .dot {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .it__outsoursing__img {
+        display: none;
+    }
+
+    .it__outsorsing__text {
+        padding-left: 0;
+    }
+
+    .about__it__outsoursing {
+        margin: 0 auto;
+    }
+
+    .title__section {
+        align-self: center;
+    }
+
+    .title-h2 {
+        margin-bottom: calc(2.5vw + 10px);
+    }
+
+    .form {
+        width: 70%;
+        align-self: center;
+    }
+
+    .wrapper__it__outsorsing {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        row-gap: 20px;
+    }
+}

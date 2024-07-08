@@ -142,12 +142,12 @@ hr {
     padding-left: 10px;
 }
 
-.grid__block__text {
+/* .grid__block__text {
     padding-left: 50px;
     line-height: 25px;
     hyphens: auto;
     word-break: break-word;
-}
+} */
 
 .relize__project {
     margin: 0 auto;
