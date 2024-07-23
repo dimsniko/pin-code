@@ -28,7 +28,6 @@
 }
 
 .form__title {
-
     font-size: 20px;
     font-weight: 500;
     padding: 20px;
@@ -114,7 +113,7 @@ textarea.form__input {
 
 .wrapper__section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -129,8 +128,11 @@ textarea.form__input {
 }
 
 .about__section__img {
-    max-width: 500px;
+    max-width: 550px;
     overflow: hidden;
+    background-size: contain;
+    max-height: 400px;
+    padding-top: 45px
 }
 
 .repair__conditions {
@@ -247,4 +249,37 @@ textarea.form__input {
 
 .list1a li:hover:after {
     width: 100%;
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .section__first {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 846px) {
+    .about__section__img {
+        display: none;
+    }
+
+    .wrapper__section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    }
+
+    .title__section {
+        text-align: center;
+    }
+
+    .form {        
+        align-self: center;
+        width: 70%;
+    }
+
+    .rc__img {
+        display: none;
+    }
 }

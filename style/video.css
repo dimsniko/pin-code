@@ -574,18 +574,6 @@ section.our__suppliers>div>p {
 }
 
 @media (max-width: 670px) {
-    .it__outsoursing__img {
-        display: none;
-    }
-
-    .it__outsorsing__text {
-        padding-left: 0;
-    }
-
-    .about__it__outsoursing {
-        margin: 0 auto;
-    }
-
     .title-h2 {
         margin-bottom: calc(2.5vw + 10px);
     }
