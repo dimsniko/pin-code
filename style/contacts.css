@@ -8,6 +8,7 @@
 .form {
     
     max-width: 400px;
+    width: 100%;
     /* margin: 10px auto; */
     /* padding: 0px 55px 0px 55px; */
     background-color: #27A2DB;
@@ -125,7 +126,7 @@ textarea.form__input {
 
 .wrapper__contacts {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .title-section {
@@ -133,6 +134,8 @@ textarea.form__input {
 }
 
 .contacts__block {
+    display: flex;
+    flex-direction: column;
     flex-grow: 2;
 }
 
@@ -142,6 +145,8 @@ textarea.form__input {
 
 .maps__map iframe {
     margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
 }
 
 .maps__block h2 {
@@ -176,4 +181,27 @@ textarea.form__input {
 
 .contacts__time p:nth-child(3) {
     padding-bottom: 25px;
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .contacts__maps {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .wrapper__contacts {        
+        flex-wrap: wrap;
+    }
+
+    .title__section {
+        align-self: center;
+    }
+
+    .form {
+        width: 70%;
+        align-self: center;
+    }
 }

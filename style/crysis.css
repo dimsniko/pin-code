@@ -211,3 +211,26 @@ textarea.form__input {
     -moz-transform: translateX(-50%) translateY(-50%) scale(1);
     transform: translateX(-50%) translateY(-50%) scale(1);
 }    
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .section__first {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__section__img {
+        display: none;
+    }
+
+    .form {
+        width: 70%;
+        align-self: center;
+    }
+
+    .title__section {
+        text-align: center;
+    }
+}

@@ -19,16 +19,15 @@
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
+    padding-bottom: 15px;
 }
 
 .post-item {
     padding: 10px;
 }
 
-
-
 .post-item-wrap {
-    background: #e7e7e1;
+    background: #e9f3e9;
     position: relative;    
     overflow: hidden;
     border-radius: 8px; /* добавленный стиль для скругления углов */
@@ -58,7 +57,7 @@
 }
 
 .post-content {
-    color: #766d62;
+    color: #5a534b;
     font-size: 14px;
     hyphens: auto;
     line-height: 1.35;
@@ -74,5 +73,13 @@
 @media (min-width: 960px) {
     .post-item {
         flex-basis: 33.333333333%;
+    }
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .stock {
+        padding-top: 60px;
     }
 }
