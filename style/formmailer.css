@@ -5,9 +5,8 @@
 }
 
 .form {
-    max-width: 550px;
-    margin: 0 auto;
-    /* padding: 0px 55px 0px 55px; */
+    margin-top: 20px;
+    max-width: 400px;    
     background-color: #27A2DB;
     border-radius: 10px;
     color: #fff;
@@ -18,7 +17,7 @@
 }
 
 .collapse__body {
-    padding: 30px 55px 30px 55px;
+    padding: 30px 25px 30px 25px;
 }
 
 .collapse:not(.collapse_show) {
@@ -26,12 +25,12 @@
 }
 
 .form__title {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 25px 55px;       
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
     text-align: center;
     border-radius: 10px;
-    transition: all 0.5s ease 0s;   
+    transition: all 0.5s ease 0s; 
 }
 
 .form__title:hover {
@@ -50,7 +49,7 @@
 
 .form__input {
     height: 50px;
-    padding: 0px 20px;
+    padding: 0px 10px;
     border: 0px;
     border-radius: 5px;
     width: 100%;

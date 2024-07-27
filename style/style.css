@@ -162,6 +162,10 @@ hr {
 
 /* SERVICE START*/
 
+.form {
+    margin: 0 auto;
+}
+
 .service {
     padding-top: 4em;
     background-color: #F9F9F9;
