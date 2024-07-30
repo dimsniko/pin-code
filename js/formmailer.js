@@ -56,3 +56,5 @@ class ItcCollapse {
       document.querySelector('#toggle').onclick = () => {
         collapse.toggle();
       }
+
+      

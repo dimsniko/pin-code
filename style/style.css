@@ -278,10 +278,6 @@ hr {
 
 /* SWIPER-SLIDER START */
 
-.swiper-wrapper {
-
-}
-
 .swiper-slide img {
     object-fit: scale-down;    
 }
