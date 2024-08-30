@@ -29,7 +29,8 @@
     border-radius: 15px;
     padding: 20px;
     row-gap: 20px;
-    line-height: 1.4;
+    line-height: 1.4;    
+    overflow: hidden;
     height: fit-content;
 }
 
@@ -39,13 +40,17 @@
     background-color: #05386b;
     border-radius: 10px;
     color: #fff;
-    margin-top: auto;        
+    /* margin-top: auto;          */
 }
 
 .moreBtn:hover {
     transition: all 0.5s ease 0s;
     cursor: pointer;
     background-color: #0b78e5;
+}
+
+.name__work {
+    text-wrap: wrap;
 }
 
 .text__work {

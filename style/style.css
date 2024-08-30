@@ -255,6 +255,10 @@ hr {
     margin-top: auto;
 }
 
+.service__btn:hover {
+    background-color: #58beee;
+}
+
 /* SERVICES END */
 
 /* WORKING START */
