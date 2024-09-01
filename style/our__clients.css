@@ -1,0 +1,38 @@
+.our__clients {
+    background-image: url(/assets/img/background-hexagones-on-corner.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 40px;
+}
+
+.wrapper__our__clients {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px 30px;
+    justify-items: center;
+}
+
+.clients {    
+    align-self: center;
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 940px) {
+    .our__clients {      
+        padding-top: 60px;        
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .our__clients__zagolovok, .our__clients__text {
+        text-align: center;
+    }
+}

@@ -1,0 +1,225 @@
+@media screen and (max-width: 940px) {
+
+    /* HEADER */
+
+    .header__button {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .header__inner {
+        padding: 10px 0 0 0;
+        align-items: start;
+    }
+
+    .header__logo {
+        z-index: 5;
+        order: 1;
+    }
+
+    .header__contacts-line {
+        display: none;
+    }
+
+    .logo__img {
+        height: 50px;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .menu__burger {
+        display: block;
+        position: relative;
+        top: 15px;
+        z-index: 5;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        order: 0;
+    }
+
+    .menu__burger span,
+    .menu__burger::after,
+    .menu__burger::before {
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        transition: all 0.3s ease 0s;
+        background-color: black;
+    }
+
+    .menu__burger::after,
+    .menu__burger::before {
+        content: "";
+    }
+
+    .menu__burger::after {
+        bottom: 0;
+    }
+
+    .menu__burger::before {
+        top: 0;
+    }
+
+    .menu__burger span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .menu__burger.active span {
+        transform: scale(0) translate(0px, -50%)
+    }
+
+    .menu__burger.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .menu__burger.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .navbar__list-item__line {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 100px 5px 30px 5px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .navbar.active {
+        left: 0;
+        background-image: url(/assets/img/white-grey-flecks.png), url(/assets/img/background-hexagones-on-cornernavbar__active.png);
+        background-size: auto, cover;
+        background-repeat: repeat, no-repeat;
+        background-blend-mode: multiply, normal;
+        background-position-y: center, 150px;
+    }
+
+
+
+    .navbar::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 62.96px;
+        z-index: 2;
+        background-color: white;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .navbar__list-link {
+        justify-content: center;
+    }
+
+    .navbar__list-item__submenu-menu {
+        text-align: center;
+        padding: 15px;
+        line-height: 1.5;
+        background-color: #ffffff;
+        list-style-type: none;
+
+    }
+
+    .navbar__list-item-more,
+    .navbar__list-item>.navbar__list-link {
+        font-size: 20px;
+    }
+
+    .navbar__list-item__submenu-menu>.navbar__list-link {
+        font-size: 16px;
+    }
+
+    .navbar__list-item__submenu {
+        position: relative;
+        display: none;
+        left: 0;
+    }
+
+    .navbar__list-item-more.open>.navbar__list-item__submenu {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+        padding-top: 18px;
+        /* padding-right: 15px; */
+        display: block;
+        text-align: center;
+    }
+
+    .navbar.active::before {
+        border-bottom: 1px solid rgb(135, 135, 135);
+
+    }
+
+    .navbar__list-item__submenu-menu {
+        padding: 15px 30px;
+        border-radius: 5px;
+        border: solid 1px #29A6DF;
+        margin-bottom: 5px;
+    }
+
+    .navbar__list-item__submenu-menu:last-child {
+        margin-bottom: 0;
+    }
+
+    /* FOOTER */
+
+    @media screen and (max-width: 768px) {
+        .wrapper__footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .service__title {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .services__footer {
+            display: none;
+        }
+
+        .contacts__footer,
+        .about__footer {
+            row-gap: 8px;
+            text-align: center;
+        }
+
+        .footer__logo {
+            padding-bottom: 10px;
+        }
+
+        .about__footer {
+            padding-top: 20px;
+
+        }
+
+        .navbar__list-item__submenu-menu_width {
+            min-width: 0em;
+        }
+
+    }
+}

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pin-code</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="preload" as="script" href="/js/swiper-bundle.min.js">
+    <link rel="preload" as="script" href="/js/our__projects.js">
+    <link rel="preload" as="style" href="style/swiper-bundle.min.css"> -->
+
+    <!-- <link rel="preload" as="image" href="assets/img/our__projects/LvsSDI/1.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/LvsSDI/2.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/LvsSDI/3.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/LvsSDI/4.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/LvsSDI/5.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/videoroom/1.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/videoroom/2.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/videoroom/3.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/videoroom/4.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/videoroom/5.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/Megafon/1.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/Megafon/2.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/Megafon/3.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/Megafon/4.webp">
+    <link rel="preload" as="image" href="assets/img/our__projects/Megafon/5.webp"> -->
+
+    <link rel="stylesheet" href="/style/formmailer.css">
+    <link rel="stylesheet" href="/style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/our__projects.css">
+    <link rel="stylesheet" href="/style/adaptive__header__footer.css">
+</head>
+
+<body>
+    <header class="wrapper__header">
+        <div class="container">
+            <div class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="/Requisites.html">Реквизиты</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/time.svg" alt="time">
+                        <span class="header__contacts-link" href="">&#x2002Время работы с 9:00 до 18:00</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/phone.svg" alt="phone">
+                        <a class="header__contacts-link" href="">&#x2002+7 846 9 228 200</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/mail.svg" alt="mail">
+                        <a class="header__contacts-link" href="">&#x2002info@pin-code.pro</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="header__contacts-link">г.Самара</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__contacts-line"></div>
+            <div class="header__inner">
+                <a href="/index.html" class="header__logo">
+                    <picture>
+                        <img class="logo__img " src="/assets/img/PinCode black.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="menu__burger">
+                    <span></span>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="/index.html" class="navbar__list-link">Главная</a>
+                            <div class="navbar__list-item__line"></div>
+                        </li>
+                        <li class="navbar__list-item-company navbar__list-item-more">
+                            <a href="#" class="navbar__list-link drop__strelka">Компания</a>
+                            <ul class="navbar__list-item__submenu">
+                                <div class="navbar__list-item__line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/about__us.html" class="navbar__list-link">О компании</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/our__projects.html" class="navbar__list-link">Наши работы</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/our__clients.html" class="navbar__list-link">Нам доверяют</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/Requisites.html" class="navbar__list-link">Реквизиты</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/sertifikats.html" class="navbar__list-link">Сертификаты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__list-item-services navbar__list-item-more">
+                            <a href="#" class="navbar__list-link drop__strelka">Услуги</a>
+                            <ul class="navbar__list-item__submenu">
+                                <div class="navbar__list-item__line"></div>
+                                <li class="navbar__list-item__submenu-menu navbar__list-item__submenu-menu_width">
+                                    <a href="/audit__it.html" class="navbar__list-link">Аудит IT
+                                        инфраструктуры</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/it__outsoursing.html" class="navbar__list-link">Комплексное
+                                        обслуживание IT
+                                        инфраструктуры</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/lvs.html" class="navbar__list-link">Проектирование и монтаж
+                                        ЛВС</a>
+                                </li>
+                                <div class="line"></div>
+
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/video.html" class="navbar__list-link">Проектирование и монтаж систем
+                                        видеонаблюдения</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/repair.html" class="navbar__list-link">Ремонт компьютеров и оргтехники</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/crysis.html" class="navbar__list-link">Кризисная ситуация</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/contacts.html" class="navbar__list-link">Контакты</a>
+                            <div class="navbar__list-item__line"></div>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/stock.html" class="navbar__list-link">Акции</a>
+                            <div class="navbar__list-item__line"></div>
+                        </li>
+                    </ul>
+                    <div class="navbar__down__fone"></div>
+                </nav>
+                <button class="header__button">
+                    <img src="/assets/img/telephone_blue.jpg" alt="answer call" class="header__button-phone">
+                    <span class="header__button-text">Заказать звонок</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="our__projects">
+            <div class="container">
+                <h1 class="our__projects__zagolovok">Наши проекты</h1>
+                <h4 class="our__projects__text">За время существования компании, мы провели множество различных работ,
+                    некторые из них представлены здесь:</h4>
+                <div class="wrapper__our__projects">
+                    <div class="item item__one">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/1.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/2.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/3.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/4.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/5.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/6.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/videoroom/7.webp"
+                                        alt="our__projects"></div>
+
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <h3 class="name__work">Система видеоконференцсвязи для комнаты переговоров</h3>
+                        <p class="text__work">От компании "ТГК Топограф" поступил запрос на монтаж современной комнаты
+                            для видеоконференц связи. Задача также была уложиться в определенный бюджет. <span
+                                class="more">Мы
+                                проанализировали рынок в данной нише и подобрали оборудование, по принципу
+                                цена\качество. В
+                                роли экрана использовался 4к телевизор диагональю 65 дюймов. Для передачи изображения мы
+                                взяли специализированную камеру для конференций TrueConf 1003U2. Особенно порадовало
+                                возможность камеры одной кнопкой переключаться на выступающих спикеров. Устройством
+                                голосовой свзяи был выбран бюджетный беспроводной спикерфон Yealink CP700, который
+                                отлично
+                                справился со своей работой. В качестве компьютера был выбран миниПК ECS Liva Z3E Plus,
+                                который был смонтирован на заднюю часть экрана. В итоге мы скоммутировали всё таким
+                                образом,
+                                что никакие провода нигде не висят, всё выглядит аккуратно и эстетически красиво.</span>
+                        </p>
+                        <button class="moreBtn">Больше текста</button>
+                    </div>
+                    <div class="item item__two">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/7.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/6.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/5.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/4.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/3.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/2.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/LvsSDI/1.webp"
+                                        alt="our__projects"></div>
+
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <h3 class="name__work">Локально вычислительная сеть в офисном здании</h3>
+                        <p class="text__work">Мы успешно спроектировали и смонтировали локальную сеть на 100 рабочих
+                            мест в четырехэтажном здании. С последущим обслуживанием it структуры организации.<span
+                                class="more">Также установили серверный шкаф и подключили
+                                Wi-Fi точки доступа для обеспечения беспроводной связи. В зонах ожидания клиентов
+                                установили аудио колонки в потолке для фоновой музыки. Кроме того, мы взяли на себя
+                                обслуживание всей сети и техники организации, регулярно проводим диагностику и
+                                профилактику. Наша работа способствует эффективной коммуникации сотрудников и удобству
+                                пользователей. Мобильные устройства могут легко подключаться к сети в любой точке офиса.
+                                Атмосфера в офисе приятна благодаря фоновой музыке в зонах ожидания. Наша команда
+                                обладает профессиональными навыками и опытом, что гарантирует надежность и качество
+                                выполненной работы. </span>
+                        </p>
+                        <button class="moreBtn">Больше текста</button>
+                    </div>
+                    <div class="item item__three">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Megafon/1.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Megafon/2.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Megafon/3.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Megafon/4.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Megafon/5.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Megafon/6.webp"
+                                        alt="our__projects"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <h3 class="name__work">Видеонаблюдение и ЛВС для салона сотовой связи</h3>
+                        <p class="text__work">Мы реализовали проект в салоне сотовой связи, включающий установку
+                            системы видеонаблюдения и организацию локальной вычислительной сети. <span
+                                class="more">Локальная сеть создает эффективное взаимодействие между устройствами,
+                                обеспечивая бесперебойную работу бизнес-процессов. В здании были смонтированы камеры
+                                наблюдения, обеспечивающие всесторонний контроль за территорией. Помимо этого, мы
+                                организовали локально вычислительную сеть, обеспечивающую быстрый обмен данными между
+                                устройствами и сотрудниками. Наша команда профессионалов гарантирует надежность и
+                                качество во всех аспектах работы. Мы всегда готовы поддерживать и развивать
+                                инфраструктуру для оптимальной производительности. Теперь владельцы салона имеют
+                                доступ к надежной системе безопасности и современной сети для эффективного ведения
+                                бизнеса.</span>
+                        </p>
+                        <button class="moreBtn">Больше текста</button>
+                    </div>
+                    <div class="item item__four">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/5terochka/1.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/5terochka/2.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/5terochka/3.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/5terochka/4.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/5terochka/5.webp"
+                                        alt="our__projects"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <h3 class="name__work">Субподрядные работы по открытию магазина "Пятерочка"</h3>
+                        <p class="text__work">Нередко к нам обращаются для выполнения субподрядных работ по открытию
+                            различных объектов, например магазинов продуктов питания.<span class="more">Так произошло и
+                                в этот раз, работу
+                                требовалось
+                                выполнить в кратчайшие сроки, в течении двух суток. Перечень работ включал в себя -
+                                «заливку» прошивки на управляемые коммутаторы, монтаж динамиков и линии звукового
+                                оповещения «Голос Пятёрочки», монтаж 30 камер видеонаблюдения Trassir, настройка и
+                                подключение их к серверу видеонаблюдения, монтаж линий ЛВС до кассовой зоны, подключени
+                                кассового оборудования. Кроме того пришлось немного «поколдовать» над серверным шкафом,
+                                т. к. оказалось что до нас работа была выполнена не до конца. Все работы производились
+                                командой из 3-х человек, слаженно и быстро мы разобрались с данными задачами и очередной
+                                магазин Пятёрочка был открыт вовремя!</span>
+                        </p>
+                        <button class="moreBtn">Больше текста</button>
+                    </div>
+                    <div class="item item__five">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Mango/1.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Mango/2.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Mango/3.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Mango/4.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Mango/5.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/Mango/6.webp"
+                                        alt="our__projects"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <h3 class="name__work">Обслуживание системы видеонаблюдения в магазине</h3>
+                        <p class="text__work">Построив систему видеонабюдения нельзя забывать и о её своевременном и
+                            регулярном обслуживании. Ведь как и любое оборудование узлы системы периодически могут
+                            давать сбои<span
+                                class="more">Коннектор отвалится, объектив камеры запылится, а может даже камера выйдет
+                                из строя. Так же обязательно регулярно производить чистку внутреннего пространства
+                                видеорегистратора, т. к. скопившаяся там со временем пыль может стать причиной
+                                перегрева, короткого замыкания и как следствие выхода дорогостоящего оборудования из
+                                строя. Если пустить это всё на самотёк, то неровен час система, главной задачей которой
+                                является предотвращение инцидентов даст сбой и прекратит работу, нередко в самый
+                                неподходящий для этого момент! Наша компания оказывает услуги по обслуживанию систем
+                                видеонаблюдения любой сложности и конфигурации, просто позвоните и мы обязательно станем
+                                партнёрами!</span>
+                        </p>
+                        <button class="moreBtn">Больше текста</button>
+                    </div>
+                    <div class="item item__six">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/tatar/1.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/tatar/2.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/tatar/3.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/tatar/4.webp"
+                                        alt="our__projects"></div>
+                                <div class="swiper-slide"><img src="/assets/img/our__projects/tatar/5.webp"
+                                        alt="our__projects"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <h3 class="name__work">Локальная сеть для небольшого офиса / Колл - центра</h3>
+                        <p class="text__work">Открытие нового офиса одновременно будничный и стрессовый момент, ведь
+                            нужно предусмотреть всё, оборудование, материалы и монтаж, да ещё и в короткие сроки!<span
+                                class="more">Если всем этим заниматься самому, то на решение организаторских вопросов
+                                совсем не останется времени. Хорошо, что есть те, на кого можно переложить часть своих
+                                забот. Компания pin-code в очередной раз помогла открыться новому офису в нашем городе!
+                                Монтаж ЛВС на 15 рабочий мест, подключение сетевого МФУ, первоначальная настройка
+                                оборудования — и всё за один рабочий день! Предварительно было согласовано и закуплено
+                                необходимое оборудование для коммутирования локальной сети, а так же все необходимые
+                                материалы (кабель, кабель-каналы с уголками, настенные розетки ЛВС и т. д.). По итогу —
+                                счастливый клиент, да чего уж греха таить — и мы тоже, ведь качественно выполненная
+                                работа доставляет нам не меньше радости, чем и вам!</span>
+                        </p>
+                        <button class="moreBtn">Больше текста</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="form" style="margin-top: 20px;
+                max-width: 400px;    
+                background-color: #27A2DB;
+                border-radius: 10px;
+                color: #fff;
+                margin: 0 auto;">
+                    <form action="#" id="form" class="form__body">
+                        <h2 id="toggle" class="form__title">Написать нам</h2>
+                        <div class="collapse">
+                            <div class="collapse__body">
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Имя*:</label>
+                                    <input id="formName" type="text" name="name" class="form__input _req">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">E-mail*:</label>
+                                    <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formMessage" class="form__label">Сообщение:</label>
+                                    <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                </div>
+                                <button type="submit" class="form__button">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper__footer">
+                <div class="contacts__footer">
+                    <a class="footer__logo" href="#">
+                        <picture>
+                            <img class="logo__img" src="/assets/img/PinCode2 white.png" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="time__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/time.svg" alt="time">
+                        <p>с 9:00 до 18:00</p>
+                    </div>
+                    <div class="phone__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/phone.svg" alt="">
+                        <a href="tel:+7846 922-82-00">+7846 922-82-00</a>
+                    </div>
+                    <div class="mail__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/mail.svg" alt="">
+                        <a href="mailto:info@pin-code.pro">info@pin-code.pro</a>
+                    </div>
+                    <div class="telegramm__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/telegram.svg" alt="">
+                        <a href="https://t.me/PinCodeProSamara">PinCodeProSamara</a>
+                    </div>
+
+                </div>
+                <div class="services__footer">
+                    <p class="service__title">Услуги</p>
+                    <a class="service__name" href="#outsourcing-link">Комплексное обслуживание IT инфраструктуры</a>
+                    <a class="service__name" href="#video-link">Проектирование и монтаж систем видеонаблюдения</a>
+                    <a class="service__name" href="#lvs-link">Проектирование и монтаж ЛВС</a>
+                    <a class="service__name" href="#repair-link">Ремонт компьютеров и оргтехники</a>
+
+                </div>
+                <div class="about__footer">
+                    <a class="about__name" href="#">О компании</a>
+                    <a class="about__name" href="#">Наши работы</a>
+                    <a class="about__name" href="#">Реквизиты</a>
+                    <a class="about__name" href="#">Акции</a>
+                </div>
+            </div>
+            <div class="copyright">2023 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
+        </div>
+    </footer>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/our__projects.js"></script>
+    <script src="/js/burger.js"></script>
+    <script src="/js/EMAIL.js"></script>
+    <script src="/js/formmailer.js"></script>
+
+</body>
+
+</html>
