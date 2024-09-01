@@ -28,7 +28,7 @@
     background-size: cover;
     max-height: 350px;
     padding-top: 45px;
-    /* background-image: url(/assets/img/video/white-brick-wall-textures-background.webp); */
+    /* background-image: url(/pin-code/assets/img/video/white-brick-wall-textures-background.webp); */
     background-repeat: no-repeat;
     /* box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
@@ -151,7 +151,7 @@
 
 .ns_img {
     flex: 2;
-    background-image: url(/assets/img/video/stages.jpeg);
+    background-image: url(/pin-code/assets/img/video/stages.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -225,7 +225,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 }
 
 .info-img {
-    background-image: url(/assets/svg/info-svgrepo-com.svg);
+    background-image: url(/pin-code/assets/svg/info-svgrepo-com.svg);
     background-size: contain;
     width: 80px;
     height: 80px;
@@ -300,40 +300,40 @@ section.our__suppliers>div>p {
 }
 
 .igb-1 {
-    background-image: url(/assets/img/video/logo-satv.png);
+    background-image: url(/pin-code/assets/img/video/logo-satv.png);
 }
 
 .igb-2 {
-    background-image: url(/assets/img/video/logo-rvi.png);
+    background-image: url(/pin-code/assets/img/video/logo-rvi.png);
 }
 
 .igb-3 {
-    background-image: url(/assets/img/video/dahua.png);
+    background-image: url(/pin-code/assets/img/video/dahua.png);
 
 }
 
 .igb-4 {
-    background-image: url(/assets/img/video/hikvision_logo.png);
+    background-image: url(/pin-code/assets/img/video/hikvision_logo.png);
 }
 
 .igb-5 {
-    background-image: url(/assets/img/video/hilogo.svg);
+    background-image: url(/pin-code/assets/img/video/hilogo.svg);
 }
 
 .igb-6 {
-    background-image: url(/assets/img/video/logo-ezviz.svg);
+    background-image: url(/pin-code/assets/img/video/logo-ezviz.svg);
 }
 
 .igb-7 {
-    background-image: url(/assets/img/video/ez-ip.svg);
+    background-image: url(/pin-code/assets/img/video/ez-ip.svg);
 }
 
 .igb-8 {
-    background-image: url(/assets/img/video/trassir.svg);
+    background-image: url(/pin-code/assets/img/video/trassir.svg);
 }
 
 .igb-9 {
-    background-image: url(/assets/img/video/optimus.png);
+    background-image: url(/pin-code/assets/img/video/optimus.png);
 
 }
 
@@ -390,15 +390,15 @@ section.our__suppliers>div>p {
 }
 
 .qb__img-1 {
-    background-image: url(/assets/svg/data-protection-svgrepo-com.svg);
+    background-image: url(/pin-code/assets/svg/data-protection-svgrepo-com.svg);
 }
 
 .qb__img-2 {
-    background-image: url(/assets/svg/support-svgrepo-com.svg);
+    background-image: url(/pin-code/assets/svg/support-svgrepo-com.svg);
 }
 
 .qb__img-3 {
-    background-image: url(/assets/svg/assistant-svgrepo-com.svg);
+    background-image: url(/pin-code/assets/svg/assistant-svgrepo-com.svg);
 }
 
 /* ADAPTIVE */
