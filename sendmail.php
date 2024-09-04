@@ -13,7 +13,7 @@ $mail->IsHTML(true);
 // От кого письмо
 $mail->setFrom('site@pin-code.pro', 'С Сайта');
 // Кому отправить
-$mail->addAddress('support@pin-code.pro');
+$mail->addAddress('site@pin-code.pro');
 // Тема письма
 $mail->Subject = 'Форма обратной связи';
 
