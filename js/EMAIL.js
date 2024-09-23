@@ -1,15 +1,16 @@
 // PHPMAILER
 
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('form');    
+    const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
+    const collapse = document.querySelector('.collapse');
 
     async function formSend(e) {
         e.preventDefault()
         let error = formValidate(form);
         let formData = new FormData(form);
-        
-        
+
+
         if (error === 0) {
             form.classList.add('_sending');
             let response = await fetch('sendmail.php', {
@@ -18,15 +19,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
-                alert(result.message);                
+                alert(result.message);
                 form.reset();
                 form.classList.remove('_sending');
+                collapse.classList.remove('collapse_show');
             } else {
                 alert('Ошибка');
                 form.classList.remove('_sending');
             }
         } else {
-            alert ('Заполните обязательные поля');
+            alert('Заполните обязательные поля');
         }
 
     }
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Проверка текста email
     function emailTest(input) {
-        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);        
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 
 })

@@ -20,7 +20,7 @@
     position: relative;
 }
 
-/* .form__body::after {
+.form__body::after {
     content: "";
     position: absolute;
     top: 0;
@@ -36,7 +36,7 @@
 .form__body._sending::after {
     opacity: 1;
     visibility: visible;
-} */
+}
 
 
 .collapse__body {

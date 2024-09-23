@@ -15,8 +15,9 @@ $mail->Username   = 'site@pin-code.pro';       // ваше имя пользов
 $mail->Password   = 'Derparol1#';    // ваш пароль
 $mail->SMTPSecure = 'ssl';         // шифрование ssl
 $mail->Port   = 465;               // порт подключения
-$mail->SMTPDebug = 3;
+$mail->SMTPDebug = 0;
 $mail->CharSet = 'UTF-8';
+
 // Отключение проверки сертификата
 // $mail->SMTPOptions = array(
 //   'ssl' => array(
