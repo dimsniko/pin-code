@@ -5,6 +5,10 @@
     padding-bottom: 10px;
 }
 
+.header__contacts-line {
+    border-top: 0.5px solid lightgray;
+}
+
 .line {
     border-top: 0.5px solid lightgray;
 }
@@ -34,10 +38,10 @@
 
 .wrapper__header {
     background-color: #fff;
-    position: fixed;  
-    top: 0;  
-    z-index: 100;  
-    width: 100%;  
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
 }
 
 .header__inner {
@@ -56,14 +60,28 @@
     height: 70px;
 }
 
+.menu__burger {
+    display: none;
+}
+
 .navbar {
     padding-top: 19px;
 }
 
 .navbar__list {
     display: flex;
-    height: 50%;
-    gap: 75px;
+    /* height: 50%; */
+    gap: 0px 75px;
+    /* max-width: calc(33.33% - 10px); */
+    padding: 0px 10px;
+    list-style-type: none;
+    
+
+}
+
+.navbar__list-link {
+    display: flex;
+    align-items: center;    
 }
 
 .navbar__list-dropdawn {
@@ -86,11 +104,10 @@
 
 .navbar__list-item__submenu-menu {
     text-align: start;
-    padding: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px;    
     line-height: 1.5;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
+    list-style-type: none;
 }
 
 .navbar__list-item__submenu-menu_width {
@@ -103,15 +120,34 @@
     cursor: pointer;
 }
 
-.navbar__list-item:hover .navbar__list-dropbtn {
-    transition: 0.3s;
-    transform: rotate(180deg);
+li.navbar__list-item-services>ul>li:nth-child(13)>a {
+    color: rgb(252, 68, 68);
 }
 
-.navbar__list-item:hover .strelka {
+li.navbar__list-item-services>ul>li:nth-child(13)>a:hover {
     transition: 0.3s;
-    border-color: #27A2DB;
+    color: red;
 }
+
+.drop__strelka::after {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    margin-left: 3px;
+    margin-top: 2px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' fill='%23000000' /%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    content: "";
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;
+}
+
+
+.navbar__list-item-more:hover .drop__strelka::after {
+    transform: rotate(0deg);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' fill='%2327A2DB' /%3e%3c/svg%3e");
+}
+
 
 .navbar__list-item:hover .navbar__list-item__line {
     position: relative;
@@ -121,13 +157,13 @@
     z-index: 1;
 }
 
-.navbar__list-item-company:hover {
+.navbar__list-item-more:hover {
     position: relative;
     cursor: pointer;
     color: #27A2DB;
 }
 
-.navbar__list-item-company:hover .navbar__list-item__submenu {
+.navbar__list-item-more:hover .navbar__list-item__submenu {
     opacity: 1;
     visibility: visible;
     transition: 0.3s;
@@ -135,33 +171,11 @@
     padding-top: 38px;
 }
 
-.navbar__list-item-company:hover .navbar__list-item__line {
-    position: relative;
-    transition: 0.3s;
-    border-top: 3px solid #27A2DB;
-    top: 0px;    
-}
-
-.navbar__list-item-services:hover {
-    position: relative;
-    cursor: pointer;
-    color: #27A2DB;
-}
-
-.navbar__list-item-services:hover .navbar__list-item__submenu {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.3s;
-    z-index: 2;
-    padding-top: 38px;
-}
-
-.navbar__list-item-services:hover .navbar__list-item__line {
+.navbar__list-item-more:hover .navbar__list-item__line {
     position: relative;
     transition: 0.3s;
     border-top: 3px solid #27A2DB;
     top: 0px;
-    /* z-index: 1; */
 }
 
 .navbar__list-item__submenu-menu:hover {
@@ -175,7 +189,7 @@
     border-width: 0px 1.5px 1.5px 0;
     display: block;
     padding: 2px;
-    transform: rotate(45deg);
+    transform: rotate(-135deg);
 }
 
 .header__button {
@@ -190,6 +204,8 @@
     color: white;
     border: none;
     background-color: #00C300;
+    padding: 0 5px;
+    visibility: hidden;
 }
 
 .header__button-phone {

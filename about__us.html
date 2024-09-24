@@ -5,170 +5,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pin-code</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style/style__about__us.css">
-    <link rel="stylesheet" href="style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style/slider.css">
-    <link rel="stylesheet" href="style/formmailer.css">
-    <link rel="stylesheet" href="style/font-awesome.min.css">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/global.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style__about__us.css">
+    <link rel="stylesheet" href="/style/adaptive__header__footer.css">
 </head>
 
 <body>
-    <div class="wrapper__header">
-        <header class="header">
-            <div class="container">
-                <div class="header__contacts">
-                    <ul class="header__contacts-list">
-                        <li class="header__contacts-item">
-                            <a class="header__contacts-link" href="/pin-code/Requisites.html">Реквизиты</a>
+    <header class="wrapper__header">        
+        <div class="container">
+            <div class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="/Requisites.html">Реквизиты</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/time.svg" alt="time">
+                        <span class="header__contacts-link">&#x2002Время работы с 9:00 до 18:00</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/phone.svg" alt="phone">
+                        <a class="header__contacts-link" href="tel:+7846 922-82-00">&#x2002+7 846 9 228 200</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/mail.svg" alt="mail">
+                        <a class="header__contacts-link" href="mailto:info@pin-code.pro">&#x2002info@pin-code.pro</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="header__contacts-link">г.Самара</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__contacts-line"></div>
+            <div class="header__inner">
+                <a href="/index.html" class="header__logo">
+                    <picture>                            
+                        <img class="logo__img " src="/assets/img/PinCode black.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="menu__burger">
+                    <span></span>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="/index.html" class="navbar__list-link">Главная</a>
+                            <div class="navbar__list-item__line"></div>
                         </li>
-                        <li class="header__contacts-item">
-                            <img src="/pin-code/assets/img/header__contacts/time.svg" alt="time">
-                            <span class="header__contacts-link" href="">&#x2002Время работы с 9:00 до 18:00</span>
+                        <li class="navbar__list-item-company navbar__list-item-more">
+                            <a href="#" class="navbar__list-link drop__strelka">Компания</a>
+                            <ul class="navbar__list-item__submenu">
+                                <div class="navbar__list-item__line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/about__us.html" class="navbar__list-link">О компании</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/our__projects.html" class="navbar__list-link">Наши работы</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/our__clients.html" class="navbar__list-link">Нам доверяют</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/Requisites.html" class="navbar__list-link">Реквизиты</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/sertifikats.html" class="navbar__list-link">Сертификаты</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="header__contacts-item">
-                            <img src="/pin-code/assets/img/header__contacts/phone.svg" alt="phone">
-                            <a class="header__contacts-link" href="">&#x2002+7 846 9 228 200</a>
+                        <li class="navbar__list-item-services navbar__list-item-more">
+                            <a href="#" class="navbar__list-link drop__strelka">Услуги</a>
+                            <ul class="navbar__list-item__submenu">
+                                <div class="navbar__list-item__line"></div>
+                                <li class="navbar__list-item__submenu-menu navbar__list-item__submenu-menu_width">
+                                    <a href="/audit__it.html" class="navbar__list-link">Аудит IT
+                                        инфраструктуры</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/it__outsoursing.html" class="navbar__list-link">Комплексное
+                                        обслуживание IT
+                                        инфраструктуры</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/lvs.html" class="navbar__list-link">Проектирование и монтаж
+                                        ЛВС</a>
+                                </li>
+                                <div class="line"></div>
+
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/video.html" class="navbar__list-link">Проектирование и монтаж систем
+                                        видеонаблюдения</a>
+                                </li>  
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/repair.html" class="navbar__list-link">Ремонт компьютеров и оргтехники</a>
+                                </li>                                  
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/crysis.html" class="navbar__list-link">Кризисная ситуация</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="header__contacts-item">
-                            <img src="/pin-code/assets/img/header__contacts/mail.svg" alt="mail">
-                            <a class="header__contacts-link" href="">&#x2002info@pin-code.pro</a>
+                        <li class="navbar__list-item">
+                            <a href="/contacts.html" class="navbar__list-link">Контакты</a>
+                            <div class="navbar__list-item__line"></div>
                         </li>
-                        <li class="header__contacts-item">
-                            <span class="header__contacts-link" href="">г.Самара</span>
+                        <li class="navbar__list-item">
+                            <a href="/stock.html" class="navbar__list-link">Акции</a>
+                            <div class="navbar__list-item__line"></div>
                         </li>
                     </ul>
-                </div>
-                <div class="line"></div>
-                <div class="header__inner">
-                    <a href="index.html" class="header__logo">
-                        <picture>
-                            <img class="logo__img " src="/pin-code/assets/img/PinCode black.png" alt="logo">
-                        </picture>
-                    </a>
-                    <nav class="navbar">
-                        <ul class="navbar__list">
-                            <li class="navbar__list-item">
-                                <a href="/pin-code/index.html" class="navbar__list-link">Главная</a>
-                                <div class="navbar__list-item__line"></div>
-                            </li>
-                            <li class="navbar__list-item-company">
-                                <div class="navbar__list-dropdawn">
-                                    <a href="#" class="navbar__list-link">Компания</a>
-                                    <div class="navbar__list-dropbtn">
-                                        <div class="strelka"></div>
-                                    </div>
-                                </div>
-                                <ul class="navbar__list-item__submenu">
-                                    <div class="navbar__list-item__line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">О компании</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="/pin-code/our__projects.html" class="navbar__list-link">Наши работы</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="/pin-code/our__clients.html" class="navbar__list-link">Нам доверяют</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="/pin-code/Requisites.html" class="navbar__list-link">Реквизиты</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="/pin-code/sertifikats.html" class="navbar__list-link">Сертификаты</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar__list-item-services">
-                                <div class="navbar__list-dropdawn">
-                                    <a href="#" class="navbar__list-link">Услуги</a>
-                                    <div class="navbar__list-dropbtn ">
-                                        <div class="strelka"></div>
-                                    </div>
-                                </div>
-                                <ul class="navbar__list-item__submenu">
-                                    <div class="navbar__list-item__line"></div>
-                                    <li class="navbar__list-item__submenu-menu navbar__list-item__submenu-menu_width">
-                                        <a href="#" class="navbar__list-link">Аудит IT инфраструктуры</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Комплексное обслуживание IT
-                                            инфраструктуры</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Проектирование и монтаж ЛВС</a>
-                                    </li>
-                                    <div class="line"></div>
-
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Проектирование и монтаж систем
-                                            видеонаблюдения</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Ремонт компьютеров и оргтехники</a>
-                                    </li>
-                                    <div class="line"></div>
-                                    <li class="navbar__list-item__submenu-menu">
-                                        <a href="#" class="navbar__list-link">Кризисная ситуация</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar__list-item">
-                                <a href="#" class="navbar__list-link">Контакты</a>
-                                <div class="navbar__list-item__line"></div>
-                            </li>
-                            <li class="navbar__list-item">
-                                <a href="#" class="navbar__list-link">Акции</a>
-                                <div class="navbar__list-item__line"></div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="header__button">
-                        <img src="/pin-code/assets/img/telephone_blue.jpg" alt="" class="header__button-phone">
-                        <span class="header__button-text">Заказать звонок</span>
-                    </button>
-                </div>
+                    <div class="navbar__down__fone"></div>
+                </nav>
+                <button class="header__button">
+                    <img src="/assets/img/telephone_blue.jpg" alt="answer call" class="header__button-phone">
+                    <span class="header__button-text">Заказать звонок</span>
+                </button>
             </div>
-        </header>
-    </div>
+        </div>        
+</header>
     <main class="main">
         <section class="about__us">
             <div class="container">
                 <div class="wrapper__about__us">
                     <div class="about__us__block">
-                        <h1 class="about__us-hello">О нас</h1>
-                        <div class="about__us__text"><b>Pin-code</b> - Самарская молодая, развивающаяся компания. У нас более чем
-                            десятилетний опыт работы в разных направлениях IT услуг. Мы знаем проблемы и задачи наших
+                        <h1 class="title__section">О нас</h1>
+                        <div class="about__us__text"><b>Pin-code</b> - Самарская IT компания. У нас более чем
+                            двадцать лет опыта работы в разных направлениях IT услуг. Мы знаем проблемы и задачи наших
                             клиентов, так как набрались практического опыта за время нашей деятельности. Многолетнее
-                            сотрудничество с нашими клиентами дает представление о потребностях компании. <span class="about__us__text-underline">
-                                Так или иначе всё
-                                сводится к нескольким важнейшим пунктам: оперативность решения задач, стабильность работы IT
-                                систем и экономия денежных средств.
-                            </span> Человеческое, а не формально-договорное отношение между
-                            клиентом и исполнителем - это на наш взгляд главный принцип работы.</div>
-                        <h2 class="about__us__text2">Мы берем на себя обслуживание компьютерного парка организаций</h2>
-                        <div class="about__us__text3">Настройка, установка программного обеспечения, блочный ремонт техники,
-                            администрирование и монтаж серверов, проектирование и монтаж локальных сетей и многое другое</div>
-                    </div>                
-                    <img src="/pin-code/assets/gif/200w.webp" class="about__us__img"></img>
+                            сотрудничество с нашими клиентами дает представление о потребностях компании. Человеческое,
+                            а не формально-договорное отношение между клиентом и исполнителем - это на наш взгляд
+                            главный принцип работы.
+                            <br><br>
+                            <ul>Так или иначе всё сводится к нескольким важнейшим пунктам:
+                                <li>Оперативность решения задач </li>
+                                <li>Стабильность работы IT систем</li>
+                                <li>Экономия денежных средств</li>
+                            </ul>
+                        </div>
+                        <div class="about__us__text3">Настройка, установка программного обеспечения, блочный ремонт
+                            техники,
+                            администрирование и монтаж серверов, проектирование и монтаж локальных сетей и многое другое
+                        </div>
+                    </div>                    
+                    <div class="about__us__img"></div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="it__outsorsing__principles">
+            <div class="container">
+                <div class="wrapper__principles">
+                    <div class="title__principles">
+                        <H2>ПРИНЦИПЫ, КОТОРЫЕ НАПРАВЛЯЮТ НАШУ РАБОТУ И НАШ ОБРАЗ ЖИЗНИ</H2>
+                        <p>"Люди отличаются не по своим словам, а по своим поступкам, которые основаны на принципах,
+                            которым они следуют." <br><br>John C. Maxwell</p>
+                    </div>
+                    <div class="text__principles">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="title-td">01<br>
+                                        ЧЕСТНОСТЬ</td>
+                                    <td class="text-td">Наша работа с клиентами заключается в полной
+                                        передаче информации, открытых обсуждениях возможных рисков и честном
+                                        предоставлении услуг без скрытых намерений.</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-td">02<br>
+                                        ОТВЕТСТВЕННОСТЬ</td>
+                                    <td class="text-td">Основной принцип нашего взаимодействия с клиентами,
+                                        обеспечивающий исполнение обязательств, четкость и профессионализм в каждом
+                                        этапе работы.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title-td">03<br>
+                                        НАДЕЖНОСТЬ</td>
+                                    <td class="text-td">Наша работа с клиентами основана на надежности, как на
+                                        дружественном обещании: мы всегда на связи, всегда поддерживаем и всегда
+                                        приходим на помощь.</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-td">04<br>
+                                        ЭМПАТИЯ</td>
+                                    <td class="text-td">Наша работа строится на глубоком понимании клиентских
+                                        потребностей и чувств, где каждое взаимодействие начинается с внимания и
+                                        открытости к их уникальным требованиям, обеспечивая решения, соответствующие их
+                                        ожиданиям.</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-td">05<br>
+                                        УПОРСТВО</td>
+                                    <td class="text-td">Постоянное стремление к достижению результатов, даже в самых
+                                        сложных ситуациях. Мы убеждены, что настойчивость и неуклонное движение вперед
+                                        способны преодолеть любые трудности на пути к успеху</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,47 +228,49 @@
         <div class="container">
             <div class="wrapper__footer">
                 <div class="contacts__footer">
-                    <a class="footer__logo" href="#">
+                    <a class="footer__logo" href="/index.html">
                         <picture>
-                            <img class="logo__img" src="/pin-code/assets/img/PinCode2 white.png" alt="logo">
+                            <img class="logo__img" src="/assets/img/PinCode2 white.png" alt="logo">
                         </picture>
                     </a>
                     <div class="time__footer contacts__footer__items">
-                        <img src="/pin-code/assets/img/header__contacts/time.svg" alt="time">
+                        <img src="/assets/img/header__contacts/time.svg" alt="time">
                         <p>с 9:00 до 18:00</p>
                     </div>
                     <div class="phone__footer contacts__footer__items">
-                        <img src="/pin-code/assets/img/header__contacts/phone.svg" alt="">
+                        <img src="/assets/img/header__contacts/phone.svg" alt="phone">
                         <a href="tel:+7846 922-82-00">+7846 922-82-00</a>
                     </div>
                     <div class="mail__footer contacts__footer__items">
-                        <img src="/pin-code/assets/img/header__contacts/mail.svg" alt="">
+                        <img src="/assets/img/header__contacts/mail.svg" alt="mail">
                         <a href="mailto:info@pin-code.pro">info@pin-code.pro</a>
                     </div>
                     <div class="telegramm__footer contacts__footer__items">
-                        <img src="/pin-code/assets/img/header__contacts/telegram.svg" alt="">
+                        <img src="/assets/img/header__contacts/telegram.svg" alt="telegram">
                         <a href="https://t.me/PinCodeProSamara">PinCodeProSamara</a>
                     </div>
-                     
+
                 </div>
                 <div class="services__footer">
                     <p class="service__title">Услуги</p>
-                    <a class="service__name" href="#outsourcing-link">Комплексное обслуживание IT инфраструктуры</a>
-                    <a class="service__name" href="#video-link">Проектирование и монтаж систем видеонаблюдения</a>
-                    <a class="service__name" href="#lvs-link">Проектирование и монтаж ЛВС</a>
-                    <a class="service__name" href="#repair-link">Ремонт компьютеров и оргтехники</a>
-                    
+                    <a class="service__name" href="/it__outsoursing.html">Комплексное обслуживание IT инфраструктуры</a>
+                    <a class="service__name" href="/video.html">Проектирование и монтаж систем видеонаблюдения</a>
+                    <a class="service__name" href="/lvs.html">Проектирование и монтаж ЛВС</a>
+                    <a class="service__name" href="/repair.html">Ремонт компьютеров и оргтехники</a>
+
                 </div>
                 <div class="about__footer">
-                    <a class="about__name" href="#">О компании</a>
-                    <a class="about__name" href="#">Наши работы</a>
-                    <a class="about__name" href="#">Реквизиты</a>
-                    <a class="about__name" href="#">Акции</a>
-                </div>                
+                    <a class="about__name" href="/about__us.html">О компании</a>
+                    <a class="about__name" href="/our__projects.html">Наши работы</a>
+                    <a class="about__name" href="/Requisites.html">Реквизиты</a>
+                    <a class="about__name" href="/stock.html">Акции</a>
+                </div>
             </div>
-            <div class="copyright">2023 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
+            <div class="copyright">2024 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
         </div>
     </footer>
+    <script src="/js/burger.js"></script>
+
 </body>
 
 </html>

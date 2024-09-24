@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pin-code</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style//style.css">
+    <link rel="stylesheet" href="/style/formmailer.css">    
+    <link rel="stylesheet" href="/style/adaptive__header__footer.css">
+    <link rel="stylesheet" href="/style/lvs.css">
+</head>
+
+<body>
+    <header class="wrapper__header">
+        <div class="container">
+            <div class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="/Requisites.html">Реквизиты</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/time.svg" alt="time">
+                        <span class="header__contacts-link">&#x2002Время работы с 9:00 до 18:00</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/phone.svg" alt="phone">
+                        <a class="header__contacts-link" href="tel:+7846 922-82-00">&#x2002+7 846 9 228 200</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <img src="assets/img/header__contacts/mail.svg" alt="mail">
+                        <a class="header__contacts-link" href="mailto:info@pin-code.pro">&#x2002info@pin-code.pro</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="header__contacts-link">г.Самара</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__contacts-line"></div>
+            <div class="header__inner">
+                <a href="/index.html" class="header__logo">
+                    <picture>                            
+                        <img class="logo__img " src="/assets/img/PinCode black.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="menu__burger">
+                    <span></span>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="/index.html" class="navbar__list-link">Главная</a>
+                            <div class="navbar__list-item__line"></div>
+                        </li>
+                        <li class="navbar__list-item-company navbar__list-item-more">
+                            <a href="#" class="navbar__list-link drop__strelka">Компания</a>
+                            <ul class="navbar__list-item__submenu">
+                                <div class="navbar__list-item__line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/about__us.html" class="navbar__list-link">О компании</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/our__projects.html" class="navbar__list-link">Наши работы</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/our__clients.html" class="navbar__list-link">Нам доверяют</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/Requisites.html" class="navbar__list-link">Реквизиты</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/sertifikats.html" class="navbar__list-link">Сертификаты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__list-item-services navbar__list-item-more">
+                            <a href="#" class="navbar__list-link drop__strelka">Услуги</a>
+                            <ul class="navbar__list-item__submenu">
+                                <div class="navbar__list-item__line"></div>
+                                <li class="navbar__list-item__submenu-menu navbar__list-item__submenu-menu_width">
+                                    <a href="/audit__it.html" class="navbar__list-link">Аудит IT
+                                        инфраструктуры</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/it__outsoursing.html" class="navbar__list-link">Комплексное
+                                        обслуживание IT
+                                        инфраструктуры</a>
+                                </li>
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/lvs.html" class="navbar__list-link">Проектирование и монтаж
+                                        ЛВС</a>
+                                </li>
+                                <div class="line"></div>
+
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/video.html" class="navbar__list-link">Проектирование и монтаж систем
+                                        видеонаблюдения</a>
+                                </li>  
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/repair.html" class="navbar__list-link">Ремонт компьютеров и оргтехники</a>
+                                </li>                                  
+                                <div class="line"></div>
+                                <li class="navbar__list-item__submenu-menu">
+                                    <a href="/crysis.html" class="navbar__list-link">Кризисная ситуация</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/contacts.html" class="navbar__list-link">Контакты</a>
+                            <div class="navbar__list-item__line"></div>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/stock.html" class="navbar__list-link">Акции</a>
+                            <div class="navbar__list-item__line"></div>
+                        </li>
+                    </ul>
+                    <div class="navbar__down__fone"></div>
+                </nav>
+                <button class="header__button">
+                    <img src="/assets/img/telephone_blue.jpg" alt="answer call" class="header__button-phone">
+                    <span class="header__button-text">Заказать звонок</span>
+                </button>
+            </div>
+        </div>        
+</header>
+    <main class="main">
+        <section class="section__first">
+            <div class="container">
+                <div class="wrapper__section">
+                    <div class="about__section">
+                        <h1 class="title__section">Проектирование и монтаж локальных сетей</h1>
+                        <p class="hello">Любая структурированная кабельная система (СКС) как конечный элемент инженерной
+                            инфраструктуры реализуется в несколько этапов:</p>
+                        <ul class="list">
+                            <li>проектирование</li>
+                            <li>собственно, монтаж кабельной инфраструктуры</li>
+                            <li>монтаж точек доступа</li>
+                            <li>монтаж точек коммутации</li>
+                            <li>пусконаладочные работы</li>
+                        </ul>
+                        <div class="form">
+                            <form action="#" id="form" class="form__body">
+                                <h2 id="toggle" class="form__title">Написать нам</h2>
+                                <div class="collapse">
+                                    <div class="collapse__body">
+                                        <div class="form__item">
+                                            <label for="formName" class="form__label">Имя*:</label>
+                                            <input id="formName" type="text" name="name" class="form__input _req">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formEmail" class="form__label">E-mail*:</label>
+                                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="formMessage" class="form__label">Сообщение:</label>
+                                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                        </div>
+                                        <button type="submit" class="form__button">Отправить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="/assets/gif/about__us2.gif" class="about__section__img" alt="">                    
+                
+            </div>
+        </section>
+        <section class="we__make">
+            <hr>
+            <div class="container">
+                <h2 class="title-h2">Мы делаем:</h2>
+                <div class="wrapper__block-grid">
+                    <div class="we__make__block svg-1">
+                        <h3 class="we__make-h3 fs-clamp-h">Локальную сеть в новый офис</h3>
+                        <p class="we__make-text">В любой новый офис, где будет использоваться хотя бы два компьютера,
+                            необходима локальная сеть. Мы подберем необходимое оборудование исходя из вашего бюджета и
+                            смонтируем всё в кратчайшие сроки. Подключим принтера, серверы и компьютеры сотрудников.
+                            Слова клиента: "Нужно ещё вчера сделать" - для нас обыденность.</p>
+                    </div>
+                    <div class="we__make__block svg-2">
+                        <h3 class="we__make-h3 fs-clamp-h">Переезд офиса</h3>
+                        <p class="we__make-text">В случае переезда компании из одного здания в другое, это занимает
+                            длительное время. Ваше оборудование, техника будут аккуратно отключены и сложены. Из
+                            существующей сети мы возьмем по максимуму (провода, свичи, патчкорды, розетки и т.п.) чтобы
+                            не покупать это же для нового офиса. По окончанию переезда, проведем пуско-наладку всей
+                            техники и убедимся что всё работает как и должно.</p>
+                    </div>
+                    <div class="we__make__block svg-3">
+                        <h3 class="we__make-h3 fs-clamp-h">Объединение двух офисов</h3>
+                        <p class="we__make-text">Если здания территориально далеко друг от друга, используем VPN канал
+                            для объединения офисов. Таким образом получится что все компьютеры, принтера, сервера будут
+                            находится в одной сети и пользователи не заметят разницы. Если же здания находятся рядом -
+                            используем либо кабель (витая пара), либо wi-fi канал, когда кабели провести технически
+                            невозможно.</p>
+                    </div>
+                    <div class="we__make__block svg-4">
+                        <h3 class="we__make-h3 fs-clamp-h">Масштабирование/ремонт сети</h3>
+                        <p class="we__make-text">Бывают ситуации когда необходимо увеличить кол-во рабочих мест,
+                            подключить новые мфу или wi-fi точки. В таком случае часто даже не надо докупать сетевое
+                            оборудование, а просто провести кабельную трассу, установить розетки и точки доступа. Часто
+                            встречаются ситуации, когда штат сотрудников растет, появляется новое программное
+                            обеспечение,новые компьютеры и сервера. Пропускной способности сети не хватает и работа
+                            замедляется, долго открываются сетевые папки, возникают сбои при работе в приложениях. В
+                            таком случае, наш инженер проводит <b>бесплатный</b> аудит сети, мы даем свои рекомендации
+                            по
+                            устранению недостатков сети и приступаем к работе.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stages__lan">
+            <hr>
+            <div class="container">
+                <h2 class="title-h2">Основные этапы проектирования и монтажа ЛВС: <br><small>(локальная вычислительная сеть)</small></h2>
+                <div class="wrapper__stages">
+                    <ol class="stages__list">
+                        <li><b>Изучение</b> насущных и перспективных потребностей Заказчика всегда должно предшествовать
+                            внедрению ЛВС для того, чтобы выбор конкретной системы не оказался ошибочным, и локальная
+                            вычислительная сеть дала бы желаемый эффект.</li>
+                        <li><b>Проведение ревизии объекта</b>, на котором планируется построение сети: оценка уже
+                            существующей
+                            информационной системы, выявление ее сильных и слабых сторон, предварительное определение
+                            расположения кабельных каналов, а так же обсуждение с Заказчиком его пожеланий и
+                            рекомендаций.</li>
+                        <li><b>Проектирование прокладки сети</b>, выбор способа реализации ЛВС.
+                            <br>
+                            На данном этапе определяется топология локальной сети, среда и протоколы передачи данных,
+                            схема монтажа, отбирается необходимое оборудование. После уточнения последних деталей
+                            проекта с Заказчиком, на основании окончательного технического задания, составляется
+                            коммерческое предложение с перечнем и стоимостью необходимого оборудования, материалов и
+                            работ. После согласования окончательной сметы заключается Договор на монтаж локальной сети и
+                            определяется порядок расчетов.
+                        </li>
+                        <li><b>Поставка оборудования, монтажные работы.</b>
+                            <br>
+                            Данный этап включает в себя доставку необходимого оборудования непосредственно на объект
+                            Заказчика, а так же выполнение монтажных работ (установка кабельных каналов, спусков,
+                            укладка и маркировка кабеля, монтаж розеток, установка и подключение сетевого оборудования –
+                            серверы, маршрутизаторы, сетевые фильтры, источники питания и пр.)
+                        </li>
+                        <li><b>Настройка и тестирование локальной сети.</b>
+                            <br>
+                            Специалисты на данном завершающем этапе настраивают работу сетевого оборудования и
+                            программного обеспечения, подключают к сети рабочие станции и офисное оборудование,
+                            тестируют смонтированную локальную сеть.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="lan__properties">
+            <hr>
+            <div class="container">
+                <h2 class="title-h2">Мы обеспечим вашей сети:</h2>
+                <div class="wrapper__block-grid-360">
+                    <div class="item">
+                        <div class="img__bg img__bg-1"></div>
+                        <h3 class="item__tittle">Масштабируемость ЛВС</h3>
+                        <p class="item__text">Масшатабируемость является необходимым свойством, которое необходимо
+                            предусмотреть при проектировании ЛВС. На начальном этапе организации ЛВС должна отвечать
+                            необходимым целям и задачам. Но нужно учитывать возможность расширения ЛВС, чтобы в
+                            дальнейшем можно было подключать дополнительное оборудование.</p>
+                    </div>
+                    <div class="item">
+                        <div class="img__bg img__bg-2"></div>
+                        <h3 class="item__tittle">Гибкость</h3>
+                        <p class="item__text">Наличие гибкости необходимо для быстрого реагирования ЛВС на меняющиеся
+                            требования. ЛВС должна нормально адаптироваться для различных типов сетевых кабелей. В
+                            понятие гибкости также входит поддержка различных технологий от Ethernet, Fast Ethernet и до
+                            Gigabit Ethernet.</p>
+                    </div>
+                    <div class="item">
+                        <div class="img__bg img__bg-3"></div>
+                        <h3 class="item__tittle">Отказоустойчивость</h3>
+                        <p class="item__text">Отказоустойчивость – очень важное свойство, которое важно предусмотреть
+                            при проектировании. Вопрос отказоустойчивости решается с помощью резервных линий , которые
+                            будут задействованы в случае выходы из строя основных сетей. Существует вариант подключения
+                            сервера к концентраторам, снабженным запасными путями. При сбое одного концентратора всегда
+                            можно быстро перейти на другой в автоматическом режиме, не прерывая сеанса связи.</p>
+                    </div>
+                    <div class="item">
+                        <div class="img__bg img__bg-4"></div>
+                        <h3 class="item__tittle">Надежность ЛВС</h3>
+                        <p class="item__text">Необходимо искать оптимальные варианты долговременного использования
+                            локальной вычислительной сети. Вынужденные простои обходятся дорого, поэтому необходимо
+                            использовать специальные приборы и инструменты, повышающие надежность ЛВС.</p>
+                    </div>
+                    <div class="item">
+                        <div class="img__bg img__bg-5"></div>
+                        <h3 class="item__tittle">Защищенность ЛВС</h3>
+                        <p class="item__text">Гарантией надежной и эффективной работы фирмы и сохранности данных
+                            является защищенность локальных вычислительных сетей. Грамотно спроектированные локальные
+                            вычислительные сети должны обеспечивать защиту от несанкционированного доступа через
+                            телефонную линию или интернет.
+                            Простой пароль не обеспечивает надежной защиты, поэтому для обеспечения более эффективной
+                            защиты уровень концентратора, коммутатора, маршрутизатора и сервера удаленного доступа.
+                            Использование подобных методов для защиты ЛВС обеспечивает возможность полного контроля над
+                            текущими процессами и гарантирует сохранность важнейших данных организации.</p>
+                    </div>
+                    <div class="item">
+                        <div class="img__bg img__bg-6"></div>
+                        <h3 class="item__tittle">Управляемость ЛВС</h3>
+                        <p class="item__text">Возможности мощных средств мониторинга локальной вычислительной сети
+                            используются для оперативной диагностики и устранения помех и неисправностей, чтобы
+                            исключить возможные простои, упомянутые выше. Есть много продуктов, применяемых для сбора
+                            параметров о состоянии ЛВС и ее параметрах, например, средства RMON. Web-интерфейс
+                            обеспечивает возможность управления семью практически в любом месте с помощью удаленного
+                            доступа.
+                            Проектирование и построение локальных вычислительных сетей, обеспечение их управляемости и
+                            других свойств должно осуществляться только специалистами, у которых есть квалификации и
+                            опыт работы в области проектирования и монтажа ЛВС</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lan__price">
+            <hr>
+            <div class="container">
+                <h2 class="title-h2">Стоимость монтажа ЛВС:</h2>
+                <div class="wrapper__lan__price">
+                    <div class="wrapper__table__price">
+                        <table class="table__price">
+                            <thead>
+                                <tr>
+                                    <th>Работы</th>
+                                    <th>Небольшой офис<br>до 100м<sup><small>2</small></sup></th>
+                                    <th>Средний офис<br>до 500м<sup><small>2</small></sup></th>
+                                    <th>Большой офис<br>от 500м<sup><small>2</small></sup></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Монтаж ЛВС</td>
+                                    <td>От 10 000р</td>
+                                    <td>От 50 000р</td>
+                                    <td>От 200 000р</td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж WI-FI</td>
+                                    <td>От 5000р</td>
+                                    <td>от 15 000р</td>
+                                    <td>от 30 000р</td>
+                                </tr>
+                                <tr>
+                                    <td>Демонтаж ЛВС/СКС</td>
+                                    <td>От 5000р</td>
+                                    <td>От 20 000р</td>
+                                    <td>От 50 000р</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <button class="table__btn">Показать подробные цены</button>
+                    <div class="wrapper__table__pm">
+                        <table class="table__price">
+                            <thead>
+                                <th>№</th>
+                                <th>Кабельные работы</th>
+                                <th>Цена, руб</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Прокладка кабеля открытым способом, м</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Прокладка кабеля за разборным фальшпотолком, м</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Прокладка кабеля за плинтусом с кабель-каналом, м</td>
+                                    <td>55</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Прокладка кабеля в слаботочных лотках, м</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Прокладка кабеля в свободных закладных каналах, м</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Прокладка в слаботочных стояках по свободным трубам или шахтам, м</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Прокладка кабеля в гофротрубе, м</td>
+                                    <td>60</td>
+                                </tr>                                
+                                <tr>
+                                    <td>8</td>
+                                    <td>Монтаж пластикового короба (кабель-канала), м</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Монтаж слаботочного лотка, м</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Монтаж воздушной линии (перетяжки), шт</td>
+                                    <td>550</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Маркировка кабеля, шт</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <th>№</th>
+                                <th>Монтаж и подключение</th>
+                                <th>Цена, руб</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Компьютерной розетки врезной</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Компьютерной розетки накладной</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Изготовление патч корда, м</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Обжим кабеля UTP/FTP (RJ45 коннектор)</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Обжим коаксиального кабеля (BNC разъём)</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Маркировка розеток и портов, шт</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Нестандартные работы по монтажу (сварка, окрашивание и т.п.)</td>
+                                    <td>по согласованию</td>
+                                </tr>  
+                            </tbody>
+                            <thead>
+                                <th>№</th>
+                                <th>Серверные работы</th>
+                                <th>Цена, руб</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Сборка и монтаж напольного шкафа</td>
+                                    <td>3500</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Сборка и монтаж настенного шкафа</td>
+                                    <td>2500</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Монтаж патч-панели в шкаф (стойку)</td>
+                                    <td>380</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Монтаж и подключение сетевого оборудования в шкаф (стойку)</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Установка оборудования (ИБП, блок розеток, СХД и т.д.) </td>
+                                    <td>350</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Кроссировка патч-панели (обжим, коммутация кабеля), порт</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Обслуживание серверного шкафа (чистка от пыли, проверка коммутации и т.д.)</td>
+                                    <td>2500</td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <th>№</th>
+                                <th>Сверление, бурение отверстий</th>
+                                <th>Цена, руб</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Сверление отверстий в стене, потолке до 10 см, шт</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Пробивка перекрытий до 30 см, шт</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Пробивка перекрытий до 50 см, шт</td>
+                                    <td>350</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Пробивка перекрытий свыше 50 см, шт</td>
+                                    <td>600</td>
+                                </tr>                                                              
+                            </tbody>
+                            <thead>
+                                <th>№</th>
+                                <th>Другое</th>
+                                <th>Цена, руб</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Выезд инженера, обследование объекта, составление КП</td>
+                                    <td>бесплатно</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Подбор обрудования, расходных материалов</td>
+                                    <td>по согл.</td>
+                                </tr>   
+                                <tr>
+                                    <td>3</td>
+                                    <td>Разработка исполнительной документации</td>
+                                    <td>от 4000</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Аудит ЛВС, консультация</td>
+                                    <td>от 3000</td>
+                                </tr>                                                                                           
+                            </tbody>
+                        </table>
+                    </div>                                        
+                </div>
+                <h2 class="title-h2-end">Цены в прайсе носят ознакомительный характер. Точные расчеты формируются индивидуально для каждого клиента.</h2>
+                <a class="relize__project" href="/our__projects.html">Реализованные проекты</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper__footer">
+                <div class="contacts__footer">
+                    <a class="footer__logo" href="/index.html">
+                        <picture>
+                            <img class="logo__img" src="/assets/img/PinCode2 white.png" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="time__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/time.svg" alt="time">
+                        <p>с 9:00 до 18:00</p>
+                    </div>
+                    <div class="phone__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/phone.svg" alt="phone">
+                        <a href="tel:+7846 922-82-00">+7846 922-82-00</a>
+                    </div>
+                    <div class="mail__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/mail.svg" alt="mail">
+                        <a href="mailto:info@pin-code.pro">info@pin-code.pro</a>
+                    </div>
+                    <div class="telegramm__footer contacts__footer__items">
+                        <img src="/assets/img/header__contacts/telegram.svg" alt="telegram">
+                        <a href="https://t.me/PinCodeProSamara">PinCodeProSamara</a>
+                    </div>
+
+                </div>
+                <div class="services__footer">
+                    <p class="service__title">Услуги</p>
+                    <a class="service__name" href="/it__outsoursing.html">Комплексное обслуживание IT инфраструктуры</a>
+                    <a class="service__name" href="/video.html">Проектирование и монтаж систем видеонаблюдения</a>
+                    <a class="service__name" href="/lvs.html">Проектирование и монтаж ЛВС</a>
+                    <a class="service__name" href="/repair.html">Ремонт компьютеров и оргтехники</a>
+
+                </div>
+                <div class="about__footer">
+                    <a class="about__name" href="/about__us.html">О компании</a>
+                    <a class="about__name" href="/our__projects.html">Наши работы</a>
+                    <a class="about__name" href="/Requisites.html">Реквизиты</a>
+                    <a class="about__name" href="/stock.html">Акции</a>
+                </div>
+            </div>
+            <div class="copyright">2024 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
+        </div>
+    </footer>
+    <script src="/js/show__more.js"></script>
+    <script src="/js/burger.js"></script>
+    <script src="/js/formmailer.js"></script>
+    <script src="/js/EMAIL.js"></script>
+</body>
+
+</html>

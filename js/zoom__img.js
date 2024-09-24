@@ -27,7 +27,7 @@ oGallery.addEventListener('click', function(ev) {
     this.style.height = this.style.width = `0px`;
   oGallery.classList.toggle('show', false);
   });
-  oBig.classList.toggle('active');
+  oBig.classList.toggle('zoom__on');
   oBig.style.width = `${nWidth / 1.3}px`; oBig.style.height = `${nHeight / 1.3}px`;
   oBig.style.top = oBig.style.left = `50%`;
   oBig.style.transform = `translate(-50%, -50%)`;

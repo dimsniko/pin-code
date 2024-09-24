@@ -1,5 +1,13 @@
+.form {
+    margin: 0 auto;
+}
+
 .our__projects {
-    background-image: url(/pin-code/assets/img/bi__about__us.jpg);
+    background-image: url(/assets/img/background-hexagones-on-corner.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    background-attachment: fixed;
     height: 100%;
     padding-top: 130px;
     padding-bottom: 40px;
@@ -10,8 +18,7 @@
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     margin-top: 40px;
     margin-bottom: 40px;
-    gap: 20px 20px;
-    
+    gap: 20px 20px;    
     /* overflow: hidden; */
 }
 
@@ -22,23 +29,28 @@
     border-radius: 15px;
     padding: 20px;
     row-gap: 20px;
-    line-height: 1.4;
+    line-height: 1.4;    
+    overflow: hidden;
     height: fit-content;
 }
 
 .moreBtn {    
     height: 3em;
     border: 0;
-    background-color: #27A2DB;
+    background-color: #05386b;
     border-radius: 10px;
     color: #fff;
-    margin-top: auto;        
+    /* margin-top: auto;          */
 }
 
 .moreBtn:hover {
     transition: all 0.5s ease 0s;
     cursor: pointer;
-    background-color: #58beee;
+    background-color: #0b78e5;
+}
+
+.name__work {
+    text-wrap: wrap;
 }
 
 .text__work {
@@ -77,3 +89,17 @@
 }
 
 /* SWIPER-SLIDER END */
+
+
+@media screen and (max-width: 940px) {
+    .our__projects {      
+        padding-top: 60px;        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper__our__projects {       
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        
+    }
+}

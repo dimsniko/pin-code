@@ -1,15 +1,19 @@
+:root {
+    --btn-margin-top: 0;
+}
+
 
 .btn__container {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
-    /* padding: 0 15px; */
+    margin: 0 auto;    
 }
+
 .btn {   
     padding: 0 15px;
     position: absolute;
     top: 50%;
-    margin-top: 250px;
+    margin-top: calc(var(--btn-margin-top, 0px));
     width: 100%;
     height: 32px;    
     display: flex;
@@ -37,15 +41,15 @@
 }
 
 .btn__prev {    
-    background-image: url(/pin-code/assets/svg/slider-prev.svg);
+    background-image: url(/assets/svg/slider-prev.svg);
 }
 
 .btn__next {    
-    background-image: url(/pin-code/assets/svg/slider-next.svg);     
+    background-image: url(/assets/svg/slider-next.svg);     
 }
 
 .wrapper__sliders {
-    height: 560px;
+    height: clamp(150px, 50vw, 560px);
     color: white;
     background-color: #778f91;     
 }
@@ -55,30 +59,30 @@
     height: 100%;
     animation-name: fade;
     animation-duration: 1.5s;
-           
 }
 
 .slider__one {
-    background-image: url(/pin-code/assets/img/2022-01-06-Msi_B350m_Mortar.webp);
+    background-image: url(/assets/img/2022-01-06-Msi_B350m_Mortar.webp);
 }
 
 .slider__two {
-    background-image: url(/pin-code/assets/img/3img__slider.webp);
+    background-image: url(/assets/img/3img__slider.webp);
 }
 
 .slider__three {
-    background-image: url(/pin-code/assets/img/80788-multimedijnye_sredstva-tehnologia-promyshlennost-informaciya-perifericheskoj-2560x1440.webp);
+    background-image: url(/assets/img/80788-multimedijnye_sredstva-tehnologia-promyshlennost-informaciya-perifericheskoj-2560x1440.webp);
 }
 
 .slider__text-container {
     max-width: 1200px;
-    margin: 0 auto;          
+    margin: 0 auto;
+    padding: 0 15px;          
 }
 
 .slider__text {    
     position: relative;
-    top: 260px;
-    left: 100px;
+    top: calc(var(--btn-margin-top, 0px));    
+    transform: translateX(13%);
     font-size: 34px;
     font-weight: 600;
     width: 70%;
