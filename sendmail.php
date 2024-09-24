@@ -54,33 +54,4 @@ if ($mail->send()) {
   echo json_encode(['message' => 'Ошибка: ' . $mail->ErrorInfo]);
 }
 
-
-
-// $mail = new PHPMailer(true);
-// $mail->CharSet = 'UTF-8';
-// $mail->setLanguage('ru', 'phpmailer/language/');
-// $mail->IsHTML(true);
-
-// // От кого письмо
-// $mail->setFrom('site@pin-code.pro', 'С Сайта');
-// // Кому отправить
-// $mail->addAddress('site@pin-code.pro');
-// // Тема письма
-// $mail->Subject = 'Форма обратной связи';
-
-// 
-
-// // Отправляем
-// if (!$mail->send()) {
-//     $message = 'Ошибка';
-// } else {
-//     $message = 'Данные отправлены';
-// }
-
-// $response = ['message' => $message];
-
-// header('Content-type: application/json');
-// echo json_encode($response);
-
-
 ?>
