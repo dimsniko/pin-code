@@ -83,10 +83,6 @@
     box-shadow: 0 0 15px red;
 }
 
-/* .form__input:focus {
-    box-shadow: 0 0 15px #e0e0e0;
-} */
-
 textarea.form__input {
     padding-top: 5px;
     min-height: 120px;

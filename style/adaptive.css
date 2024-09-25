@@ -1,7 +1,7 @@
 @media screen and (max-width: 940px) {
 
     /* HEADER */
-   
+
     .header__button {
         display: none;
     }
@@ -118,7 +118,7 @@
         background-image: url(/assets/img/water-stairs.png);
         width: 100%;
         height: 100px;
-        
+
 
     }
 
@@ -149,7 +149,6 @@
         line-height: 1.5;
         background-color: #ffffff;
         list-style-type: none;
-
     }
 
     .navbar__list-item-more,
@@ -171,15 +170,14 @@
         opacity: 1;
         visibility: visible;
         transition: 0.3s;
-        padding-top: 18px;
-        /* padding-right: 15px; */
+        padding-top: 18px;       
         display: block;
         text-align: center;
     }
 
     .navbar.active::before {
         border-bottom: 1px solid rgb(135, 135, 135);
-        
+
     }
 
     .navbar__list-item__submenu-menu {
@@ -235,7 +233,6 @@
         flex-wrap: wrap;
         row-gap: 30px;
     }
-
 }
 
 /* FOOTER */
