@@ -24,10 +24,13 @@
     padding-bottom: 1vw;
 }
 
+.about__us__text>p {
+    font-weight: 500;
+}
+
 .about__us__text>ul {
     list-style-position: inside;
     font-weight: 500;
-
 }
 
 .about__us__text>ul>li {
