@@ -220,6 +220,10 @@
     margin: 0 auto;
 }
 
+.table__price-heading {
+    background-color: #bebebe;
+}
+
 .table__price thead {
     background-color: #bebebe;
 }
