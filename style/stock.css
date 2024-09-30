@@ -30,13 +30,13 @@
     background: #e9f3e9;
     position: relative;    
     overflow: hidden;
-    border-radius: 8px; /* добавленный стиль для скругления углов */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавленный стиль для легкой тени */
-    transition: box-shadow 0.5s; /* добавленный стиль для времени анимации */
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.5s;
 }
 
 .post-item-wrap:hover {
-    box-shadow: 10px 10px 0 #C9F2C7; /* измененные значения для смещения */
+    box-shadow: 10px 10px 0 #C9F2C7; 
 }
 
 .post-link {

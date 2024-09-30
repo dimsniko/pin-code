@@ -39,12 +39,6 @@
     padding-bottom: calc(3vw + 20px);
 }
 
-/* .it__outsoursing__goals-h2 {
-    text-align: center;
-    font-size: clamp(20px, 3vw, 30px);
-    margin: 6vw auto;
-} */
-
 .wrapper__it__outsorsing {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
@@ -75,12 +69,6 @@
     background-color: #F9F9F9;
     padding-bottom: calc(2.5vw + 20px);
 }
-
-/* .it__outsorsing__benefit-h2 {
-    text-align: center;
-    font-size: clamp(20px, 3vw, 30px);
-    margin: 40px auto;
-} */
 
 .wrapper__it__outsorsing__benefit {
     display: flex;
@@ -171,8 +159,7 @@
     transform: rotateY(180deg);
 }
 
-.flipped {
-    /* text-align: center; */
+.flipped {   
     transform: rotateY(180deg);
 }
 
@@ -208,7 +195,6 @@
 
 .plan__title-back {
     padding-bottom: 0em;
-
 }
 
 .plan__title-abon::after {

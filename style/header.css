@@ -10,7 +10,9 @@
 }
 
 .line {
+    height: 0;
     border-top: 0.5px solid lightgray;
+    list-style: none;
 }
 
 .header__contacts-list {
@@ -75,8 +77,6 @@
     /* max-width: calc(33.33% - 10px); */
     padding: 0px 10px;
     list-style-type: none;
-    
-
 }
 
 .navbar__list-link {
@@ -94,7 +94,7 @@
 .navbar__list-item__submenu {
     position: absolute;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden;    
     left: -32px;
     font-weight: 400;
     font-size: 14px;
@@ -153,7 +153,7 @@ li.navbar__list-item-services>ul>li:nth-child(13)>a:hover {
     position: relative;
     transition: 0.2s;
     border-top: 3px solid #27A2DB;
-    top: 38px;
+    top: 35px;
     z-index: 1;
 }
 
@@ -168,14 +168,16 @@ li.navbar__list-item-services>ul>li:nth-child(13)>a:hover {
     visibility: visible;
     transition: 0.3s;
     z-index: 1;
-    padding-top: 38px;
+    padding-top: 36px;
 }
+
 
 .navbar__list-item-more:hover .navbar__list-item__line {
     position: relative;
     transition: 0.3s;
     border-top: 3px solid #27A2DB;
-    top: 0px;
+    top: 2px;    
+    list-style: none;
 }
 
 .navbar__list-item__submenu-menu:hover {

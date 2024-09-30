@@ -18,8 +18,7 @@
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     margin-top: 40px;
     margin-bottom: 40px;
-    gap: 20px 20px;    
-    /* overflow: hidden; */
+    gap: 20px 20px;   
 }
 
 .item {
@@ -39,8 +38,7 @@
     border: 0;
     background-color: #05386b;
     border-radius: 10px;
-    color: #fff;
-    /* margin-top: auto;          */
+    color: #fff;   
 }
 
 .moreBtn:hover {
@@ -72,11 +70,9 @@
     max-height: 252.75px;
 }
 
-.swiper-wrapper {
-    /* width: 100%; */
+.swiper-wrapper {   
     padding-left: 0px;
-    padding-right: 0px;
-    /* justify-content:space-between; */
+    padding-right: 0px;  
 }
 
 .swiper-slide img {
