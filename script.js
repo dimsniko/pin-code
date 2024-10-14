@@ -31,7 +31,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-
 // BURGER
 
 const navbarMore = document.querySelectorAll('.navbar__list-item-more');
@@ -60,14 +59,3 @@ function menuBurgeropen() {
 
 burger.addEventListener('click', menuBurgeropen)
 
-// Центрирование стрелок слайдера по центру
-
-function updateMarginTop() {  
-  const btnWidth = document.querySelector('.btn')
-  const realWidth = btnWidth.offsetWidth;
-  const marginTopValue = `${realWidth / 4.5}px`
-  document.documentElement.style.setProperty('--btn-margin-top', marginTopValue);
-}
-
-window.addEventListener('load', updateMarginTop);
-window.addEventListener('resize', updateMarginTop)
