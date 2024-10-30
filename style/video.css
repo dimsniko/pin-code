@@ -256,6 +256,38 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     transition: all 0.5s ease 0s;
 }
 
+/* Section video__price end */
+
+/* Section calc start */
+
+.calc {
+    background-color: lightgreen;
+}
+
+.wrapper__calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-size: clamp(18px, 1vw, 19px);
+}
+
+.number__cameras {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;;
+}
+
+#cameraInput {
+    width: 60px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+#cameraRange {
+    width: 200px;
+}
+
 /* Section our__suppliers start */
 
 .our__suppliers {
