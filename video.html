@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проектирование и монтаж систем видеонаблюдения | Pin Code | город Самара</title>
-    <meta name="description" content="Обеспечьте безопасность вашего бизнеса с помощью наших услуг по проектированию и монтажу систем видеонаблюдения! 🎥 Получите профессиональное решение, адаптированное под ваши нужды. 📞 Свяжитесь с нами для консультации и подробной информации!">
+    <meta name="description"
+        content="Обеспечьте безопасность вашего бизнеса с помощью наших услуг по проектированию и монтажу систем видеонаблюдения! 🎥 Получите профессиональное решение, адаптированное под ваши нужды. 📞 Свяжитесь с нами для консультации и подробной информации!">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -480,14 +481,81 @@
         </section>
         <section class="calc">
             <hr>
+            <h2 class="title-h2">Калькулятор стоимости видеонаблюдения</h2>
             <div class="container">
-                <h2 class="title-h2">Калькулятор стоимости Видеонаблюдения</h2>
                 <div class="wrapper__calc">
-                    <div class="number__cameras">
-                        <label for=cameraRange">Количество видеокамер</label>
-                        <input type="number" id="cameraInput" min="1" max="100" value="1">
+                    <div class="wrapper__cameras__quality">
+                        <div class="wrapper__number__cameras wrapper__calc__block">
+                            <div class="number__cameras">
+                                <label class="calc__name" for="cameraRange">Количество видеокамер</label>
+                                <input type="number" id="cameraInput" min="1" max="100" value="1">
+                            </div>
+                            <input type="range" id="cameraRange" min="1" max="100" value="1">
+                            <div class="wrapper__calc__subtext">
+                                <div class="calc__subtext">Вариофокальный объектив</div>
+                                <div class="calc__check button__uncheck"></div>
+                                <div class="calc__help" data-help-id="1">
+                                    <div class="tooltip">
+                                        Вариофокальный объектив – это объектив камеры видеонаблюдения, у которого можно
+                                        изменять фокусное расстояние, регулируя угол обзора и приближение. В отличие от
+                                        фиксированных объективов, вариофокальные позволяют настраивать изображение в
+                                        зависимости от нужд, будь то широкое покрытие территории или детализация
+                                        конкретного
+                                        объекта.<br> <br>
+                                        Преимущество вариофокальных объективов в том, что они дают гибкость при
+                                        установке,
+                                        позволяя точно настроить камеру для достижения оптимального качества изображения
+                                        в
+                                        заданной области.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper__quality">
+                            <div class="quality">Качество изображения:
+                                <div class="calc__help" data-help-id="3">
+                                    <div class="tooltip">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo
+                                        quasi eveniet incidunt libero? Veritatis reprehenderit maxime amet! Ducimus
+                                        fugiat nobis maiores velit laboriosam! Quis in esse ipsam dolorem inventore,
+                                        aspernatur cupiditate quibusdam earum blanditiis delectus?
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="calc__check__qulity button__uncheck">Среднее (HD)</div>
+                        </div>
                     </div>
-                    <input type="range" id="cameraRange" min="1" max="100" value="1">
+
+                    <div class="calc__line"></div>
+                    <div class="wrapper__cable wrapper__calc__block">
+                        <div class="cable__sum">
+                            <label class="calc__name" for="cableMetr">Общее количество кабеля для прокладки в
+                                <b>помещении</b></label>
+                            <input type="number" id="cableInput" min="1" max="1000" value="0">
+                            <div class="calc__help" data-help-id="2">
+                                <div class="tooltip">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad?
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" id="cableMetr" min="1" max="1000" value="0">
+                    </div>
+                    <div class="calc__line"></div>
+                    <div class="wrapper__cable wrapper__cable__indoor wrapper__calc__block">
+                        <div class="cable__sum">
+                            <label class="calc__name" for="cableMetr">Общее количество кабеля для прокладки на
+                                <b>улице</b></label>
+                            <input type="number" id="cableInput" min="1" max="1000" value="0">
+                            <div class="calc__help" data-help-id="2">
+                                <div class="tooltip">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad?
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" id="cableMetr" min="1" max="1000" value="0">
+                    </div>
+                    <div class="calc__line"></div>
+
                 </div>
             </div>
         </section>
@@ -581,6 +649,7 @@
     <script src="/js/burger.js"></script>
     <script src="/js/formmailer.js"></script>
     <script src="/js/EMAIL.js"></script>
+    <script src="/js/calc.js"></script>
 </body>
 
 </html>

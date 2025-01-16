@@ -261,7 +261,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 /* Section calc start */
 
 .calc {
-    background-color: lightgreen;
+    background-color: rgb(255, 255, 255);
 }
 
 .wrapper__calc {
@@ -269,29 +269,200 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 25px;
-    font-size: clamp(18px, 1vw, 19px);
+    font-size: clamp(14px, 2vw, 16px);
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: solid 1px #c1d3d2;
+    margin: 25px 0;
+    padding: 15px 25px;
+}
+
+.wrapper__cameras__quality {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper__quality {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center; 
+    align-items: start;
+    padding-top: 5px;
+}
+
+.quality {
+    display: flex;
+    background-repeat: no-repeat;    
+    padding-left: 35px;    
+    width: 100%;
+    background-image: url(/assets/svg/monitor-svgrepo-quality.svg);
+    background-size: 10%;
+}
+
+.wrapper__calc__block {
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+    background-repeat: no-repeat;
+    background-position: 1% center;
+    padding-left: 100px;
+    align-items: start;
+    min-height: 65px;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.calc__name {
+    width: 100%;    
+    max-width: 250px;
+}
+
+.wrapper__number__cameras {
+    background-image: url(/assets/svg/security-system-video-camera-svgrepo-com.svg);    
 }
 
 .number__cameras {
     display: flex;
-    flex-direction: row;
-    justify-content: center;;
+    align-items: center;   
+    gap: 10px;
 }
 
 #cameraInput {
     width: 60px;
     padding-left: 5px;
-    margin-left: 5px;
+    margin-left: 5px;    
 }
 
 #cameraRange {
-    width: 200px;
+    width: 283px;          
 }
+
+.calc__subtext {
+    color: rgb(157, 151, 151);
+    font-size: 1rem;
+}
+
+.wrapper__calc__subtext {
+    display: flex;    
+}
+
+.calc__check {
+    height: 18px;
+    width: 18px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    color: #5a5a5a;
+    margin-left: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.calc__check__qulity {    
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    color: #5a5a5a;
+    padding-left: 25px;
+    cursor: pointer;
+    margin-top: 29px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+
+.button__uncheck {
+    background-image: url(/assets/svg/ico_unchecked.svg);
+}
+
+.button__check {
+    background-image: url(/assets/svg/ico_checked.svg);
+}
+
+.calc__help {
+    height: 18px;
+    width: 18px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;    
+    margin-left: 10px;
+    background-image: url(/assets/svg/help-question-question-mark-svgrepo-com.svg);
+    cursor: pointer;
+    position: relative;    
+    display: inline-block;   
+    vertical-align: middle;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 10;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    hyphens: auto;
+    top: 120%;      
+}
+
+.calc__help.active .tooltip {
+    display: block;
+}
+
+.tooltip__close {
+    background-image: url();
+}
+
+.calc__line {
+    height: 0;
+    border-top: 0.5px solid lightgray;
+    list-style: none;
+    margin: 25px 0;
+}
+
+.wrapper__cable {    
+    background-image: url(/assets/svg/ethernet-svgrepo-com.svg);    
+}
+
+.cable__sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper__cable__indoor__subtext {
+    display: flex;
+    align-items: center;
+    
+}
+
+#cableInput {
+    width: 60px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+#cableMetr {
+    width: 283px;
+}
+
+.wrapper__cable__indoor {    
+    background-image: url(/assets/svg/ethernet-svgrepo-com-black.svg);    
+}
+
 
 /* Section our__suppliers start */
 
 .our__suppliers {
     padding-bottom: calc(2.5vw + 20px);
+    background-color: #F9F9F9;
+
 }
 
 .suppliers__grid__block {
@@ -303,6 +474,8 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     justify-items: center;
     border: 2px solid gray;
     border-radius: 10px;
+    background-color: white;
+    
 }
 
 section.our__suppliers>div>p {
@@ -369,7 +542,7 @@ section.our__suppliers>div>p {
 
 .guarantee {
     padding-bottom: calc(3vw);
-    background-color: #F9F9F9;
+    background-color: white;
 }
 
 .wrapper__guarantee__block {
@@ -391,7 +564,7 @@ section.our__suppliers>div>p {
     align-items: center;    
     border: 2px solid #AEAEAE;
     border-radius: 20px;
-    background-color: white;
+    background-color: #F9F9F9;
 }
 
 .guarantee__block p {
