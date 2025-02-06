@@ -485,12 +485,12 @@
             <div class="container">
                 <div class="wrapper__calc">
                     <div class="wrapper__cameras__quality">
-                        <div class="wrapper__number__cameras wrapper__calc__block">
+                        <div class="wrapper__number__cameras">
                             <div class="number__cameras">
                                 <label class="calc__name" for="cameraRange">Количество видеокамер</label>
-                                <input type="number" id="cameraInput" min="1" max="100" value="1">
+                                <input type="number" id="cameraInput" min="1" max="20" value="1">
                             </div>
-                            <input type="range" id="cameraRange" min="1" max="100" value="1">
+                            <input type="range" id="cameraRange" min="1" max="20" value="1">
                             <div class="wrapper__calc__subtext">
                                 <div class="calc__subtext">Вариофокальный объектив</div>
                                 <div class="calc__check button__uncheck"></div>
@@ -520,44 +520,96 @@
                                         fugiat nobis maiores velit laboriosam! Quis in esse ipsam dolorem inventore,
                                         aspernatur cupiditate quibusdam earum blanditiis delectus?
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="calc__check__qulity button__uncheck">Среднее (HD)</div>
-                        </div>
-                    </div>
-
-                    <div class="calc__line"></div>
-                    <div class="wrapper__cable wrapper__calc__block">
-                        <div class="cable__sum">
-                            <label class="calc__name" for="cableMetr">Общее количество кабеля для прокладки в
-                                <b>помещении</b></label>
-                            <input type="number" id="cableInput" min="1" max="1000" value="0">
-                            <div class="calc__help" data-help-id="2">
-                                <div class="tooltip">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad?
                                 </div>
                             </div>
-                        </div>
-                        <input type="range" id="cableMetr" min="1" max="1000" value="0">
-                    </div>
-                    <div class="calc__line"></div>
-                    <div class="wrapper__cable wrapper__cable__indoor wrapper__calc__block">
-                        <div class="cable__sum">
-                            <label class="calc__name" for="cableMetr">Общее количество кабеля для прокладки на
-                                <b>улице</b></label>
-                            <input type="number" id="cableInput" min="1" max="1000" value="0">
-                            <div class="calc__help" data-help-id="2">
-                                <div class="tooltip">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad?
-                                </div>
+                            <div class="wrapper__calc_check" data-category="quality">
+                                <div class="calc__check__three button__uncheck">Среднее (FHD)</div>
+                                <div class="calc__check__three button__uncheck">Хорошее (2k)</div>
+                                <div class="calc__check__three button__uncheck">Отличное (4k)</div>
                             </div>
                         </div>
-                        <input type="range" id="cableMetr" min="1" max="1000" value="0">
                     </div>
                     <div class="calc__line"></div>
-
+                    <div class="wrapper__cable__hdd">
+                        <div class="wrapper__cable__outdoor wrapper__calc__block">
+                            <div class="cable__sum">
+                                <label class="calc__name" for="cableMetr">Общее количество кабеля для прокладки в
+                                    <b>помещении (м)</b></label>
+                                <input type="number" id="cableInputOut" min="1" max="1000" value="1">
+                                <div class="calc__help" data-help-id="2">
+                                    <div class="tooltip">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad?
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="range" id="cableMetrOut" min="1" max="1000" value="0">
+                        </div>
+                        <div class="wrapper__hdd">
+                            <div class="hdd__time">Время хранения видео:
+                                <div class="calc__help" data-help-id="4">
+                                    <div class="tooltip">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo
+                                        quasi eveniet incidunt libero? Veritatis reprehenderit maxime amet! Ducimus
+                                        fugiat nobis maiores velit laboriosam! Quis in esse ipsam dolorem inventore,
+                                        aspernatur cupiditate quibusdam earum blanditiis delectus?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper__calc_check" data-category="time">
+                                <div class="calc__check__three button__uncheck">7 дней</div>
+                                <div class="calc__check__three button__uncheck">14 дней</div>
+                                <div class="calc__check__three button__uncheck">месяц</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__line"></div>
+                    <div class="wrapper__cable__montage">
+                        <div class="wrapper__cable__indoor wrapper__calc__block">
+                            <div class="cable__sum">
+                                <label class="calc__name" for="cableMetr">Общее количество кабеля для прокладки на
+                                    <b>улице (м)</b></label>
+                                <input type="number" id="cableInputIn" min="1" max="1000" value="0">
+                                <div class="calc__help" data-help-id="2">
+                                    <div class="tooltip">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ad?
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="range" id="cableMetrIn" min="1" max="1000" value="0">
+                        </div>
+                        <div class="wrapper__montage">
+                            <div class="montage">Сложность монтажа:
+                                <div class="calc__help" data-help-id=5">
+                                    <div class="tooltip">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo
+                                        quasi eveniet incidunt libero? Veritatis reprehenderit maxime amet! Ducimus
+                                        fugiat nobis maiores velit laboriosam! Quis in esse ipsam dolorem inventore,
+                                        aspernatur cupiditate quibusdam earum blanditiis delectus?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper__calc_check" data-category="montage">
+                                <div class="calc__check__three button__uncheck">Простой</div>
+                                <div class="calc__check__three button__uncheck">Средний</div>
+                                <div class="calc__check__three button__uncheck">Сложный</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__line"></div>
+                    <div class="wrapper__sum__explanation">
+                        <div class="explanation">Рассчет стомости является приблизительным. Для точного рассчета,
+                            свяжитесь с нами. Мы приедем к вам (<strong>это беслатно</strong>) и обговорим всё на месте.
+                        </div>
+                        <div class="wrapper__sum">
+                            <div class="sum__text">ИТОГОВАЯ СТОИМОСТЬ
+                            </div>
+                            <div class="sum__line">от
+                                <span id="sum">43545</span>
+                                <span class="rub__sign">₽</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
         <section class="our__suppliers">
             <hr>

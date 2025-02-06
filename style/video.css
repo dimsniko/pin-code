@@ -266,41 +266,45 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 
 .wrapper__calc {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 25px;
+    flex-direction: column;        
     font-size: clamp(14px, 2vw, 16px);
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     border: solid 1px #c1d3d2;
-    margin: 25px 0;
-    padding: 15px 25px;
+    margin: 25px auto;
+    padding: 40px 25px;
+    max-width: 950px;    
+    box-sizing: content-box;    
 }
 
 .wrapper__cameras__quality {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;    
 }
 
 .wrapper__quality {
     display: flex;
     flex-direction: column;    
-    justify-content: center; 
     align-items: start;
-    padding-top: 5px;
+    padding-top: 5px;       
 }
 
 .quality {
-    display: flex;
     background-repeat: no-repeat;    
-    padding-left: 35px;    
-    width: 100%;
+    padding-left: 35px;   
     background-image: url(/assets/svg/monitor-svgrepo-quality.svg);
     background-size: 10%;
 }
 
+.wrapper__cable__hdd {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 1; */
+}
+
 .wrapper__calc__block {
     display: flex;
+    /* flex: 1 1 calc(33.333% - 20px);    */
     flex-direction: column;    
     gap: 5px;
     background-repeat: no-repeat;
@@ -310,7 +314,8 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     min-height: 65px;
     justify-content: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
+    line-height: 1.35;        
 }
 
 .calc__name {
@@ -319,7 +324,17 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 }
 
 .wrapper__number__cameras {
-    background-image: url(/assets/svg/security-system-video-camera-svgrepo-com.svg);    
+    background-image: url(/assets/svg/security-system-video-camera-svgrepo-com.svg);
+    display: flex;      
+    flex-direction: column;    
+    gap: 5px;
+    background-repeat: no-repeat;
+    background-position: 1% center;
+    padding-left: 100px;
+    align-items: start;   
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;     
 }
 
 .number__cameras {
@@ -335,7 +350,8 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 }
 
 #cameraRange {
-    width: 283px;          
+    max-width: 283px;
+    width: 100%;          
 }
 
 .calc__subtext {
@@ -358,13 +374,19 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     align-self: center;
 }
 
-.calc__check__qulity {    
+.wrapper__calc_check {
+    display: flex;
+    gap: 10px;
+    margin-top: 23px;
+
+}
+
+.calc__check__three {    
     background-size: 18px 18px;
     background-repeat: no-repeat;
     color: #5a5a5a;
     padding-left: 25px;
     cursor: pointer;
-    margin-top: 29px;
     font-style: italic;
     font-size: 14px;
     line-height: 1.5;
@@ -426,7 +448,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     margin: 25px 0;
 }
 
-.wrapper__cable {    
+.wrapper__cable__outdoor {    
     background-image: url(/assets/svg/ethernet-svgrepo-com.svg);    
 }
 
@@ -442,13 +464,23 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     
 }
 
-#cableInput {
+#cableInputOut {
     width: 60px;
     padding-left: 5px;
     margin-left: 5px;
 }
 
-#cableMetr {
+#cableMetrOut {
+    width: 283px;
+}
+
+#cableInputIn {
+    width: 60px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+#cableMetrIn {
     width: 283px;
 }
 
@@ -456,13 +488,95 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     background-image: url(/assets/svg/ethernet-svgrepo-com-black.svg);    
 }
 
+.wrapper__cable__montage {
+    display: flex;
+    flex-wrap: wrap;    
+}
 
+.wrapper__hdd {
+    display: flex;
+    flex-direction: column;
+    align-items: start;   
+}
+
+.hdd__time {
+    display: inline-flex;
+    background-repeat: no-repeat;    
+    padding-left: 30px;   
+    background-image: url(/assets/svg/time-svgrepo-com.svg);
+    background-size: 10%;
+    min-height: 25px;
+    align-items: center; 
+}
+
+.wrapper__montage {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.montage {
+    display: inline-flex;
+    background-repeat: no-repeat;    
+    padding-left: 30px;   
+    background-image: url(/assets/svg/repairing-wrench-svgrepo-com.svg);
+    background-size: 10%;
+    min-height: 25px;
+    align-items: center; 
+}
+
+.wrapper__sum__explanation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #27A2DB;
+}
+
+.explanation {
+    /* flex: 3 1; */    
+    width: 70%;
+    background-image: url(/assets/svg/info-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: left;    
+    padding-left: 45px;
+    align-items: center;
+    line-height: 1.25;
+    hyphens: auto;
+}
+
+.wrapper__sum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;    
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+
+.sum__text {
+    color: #262626;    
+    font-family: 'OpenSans-Bold';
+    font-size: 90%;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sum__line {
+    align-self: flex-end;
+    padding-top: 20px;
+    font-size: 180%;
+    color: #27a85c;
+}
+
+
+/* Section calc end */
 /* Section our__suppliers start */
 
 .our__suppliers {
     padding-bottom: calc(2.5vw + 20px);
     background-color: #F9F9F9;
-
 }
 
 .suppliers__grid__block {
@@ -474,8 +588,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     justify-items: center;
     border: 2px solid gray;
     border-radius: 10px;
-    background-color: white;
-    
+    background-color: white;    
 }
 
 section.our__suppliers>div>p {

@@ -1,7 +1,5 @@
 // Кнопка Help скртыие, открытие. Динамическое позиционирование
 
-
-
 function toggleTooltip(helpElement) {    
     const tooltip = helpElement.querySelector('.tooltip');
     helpElement.classList.toggle('active');
@@ -39,8 +37,6 @@ document.addEventListener('click', (event) => {
 
 });
 
-
-
 // Чекбокс галочка
 
 const calcCheck = document.querySelector('.calc__check');
@@ -48,3 +44,48 @@ const calcCheck = document.querySelector('.calc__check');
 calcCheck.addEventListener('click', () => {
     calcCheck.classList.toggle('button__check')
 })
+
+document.querySelectorAll('.wrapper__calc_check').forEach(wrapper => {
+    wrapper.addEventListener('click', (event) => {
+        if (event.target.classList.contains('calc__check__three')) {
+            wrapper.querySelectorAll('.calc__check__three').forEach(check => {
+                check.classList.remove('button__check');
+            });
+            
+            event.target.classList.add('button__check');
+        }
+    });
+});
+
+// Синхронизация ползунков и цифр в окошках ввода
+
+document.addEventListener("DOMContentLoaded", function () {
+    function syncInputWithRange(inputId, rangeId) {
+        const input = document.getElementById(inputId);
+        const range = document.getElementById(rangeId);
+
+        input.addEventListener("input", function () {
+            range.value = this.value;
+        });
+        
+        range.addEventListener("input", function () {
+            input.value = this.value;
+        });
+    }
+
+    syncInputWithRange("cameraInput", "cameraRange");
+    syncInputWithRange("cableInputOut", "cableMetrOut");
+    syncInputWithRange("cableInputIn", "cableMetrIn");
+}
+);
+
+// Сбор значений
+
+const inputs = document.querySelectorAll('input[type="number"], input[type="range"]');
+let inputValues = {};
+
+inputs.forEach(input => {
+    inputValues[input.id] = Number(input.value);
+});
+
+console.log(inputValues)
