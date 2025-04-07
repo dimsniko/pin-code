@@ -275,4 +275,9 @@
         min-width: 0em;
     }
 
+    .form {
+        width: 100%;
+        align-self: center;
+    }
+
 }

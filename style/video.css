@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Section first start */
 
 .section__first {
@@ -22,13 +26,61 @@
     /* text-wrap: balance; */
 }
 
+#calc__video {
+    scroll-margin-top: 140px;
+    scroll-behavior: smooth;
+}
+
+.calc__video__href {
+    width: 100%;
+    max-width: 180px;
+    scroll-behavior: smooth;
+}
+
+.calc__video__button {
+    display: inline-flex;
+    width: 100%;
+    max-width: 180px;
+    border: 2px solid #2c3e50;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2c3e50;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background-color: #2c3e50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calc__video__button:hover {
+    background-color: #465668;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calc__video__button p {
+    margin: 0;
+    color: inherit;
+    text-align: center;
+}
+
 .about__section__img {
     max-width: 520px;
     overflow: hidden;
     background-size: cover;
     max-height: 350px;
-    padding-top: 45px;    
-    background-repeat: no-repeat;    
+    padding-top: 45px;
+    background-repeat: no-repeat;
     border-radius: 10px;
     opacity: 90%;
 }
@@ -152,7 +204,7 @@
     background-image: url(/assets/img/video/stages.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
 
 /* Section order__work end */
@@ -161,7 +213,7 @@
 
 .video__price {
     background-color: #F9F9F9;
-    padding-bottom: calc(3vw);
+    padding-bottom: calc(3vw + 20px);
 }
 
 .wrapper__table__pm {
@@ -190,7 +242,7 @@
 td {
     border: 1px solid #eeeeee;
     padding: 10px;
-    line-height: 1.45;    
+    line-height: 1.45;
 }
 
 div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
@@ -237,7 +289,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     background-color: #ee5c5c;
     border-radius: 10px;
     color: #fff;
-    padding: 10px 20px;  
+    padding: 10px 20px;
     text-align: center;
     align-items: center;
     width: fit-content;
@@ -262,36 +314,38 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 
 .calc {
     background-color: rgb(255, 255, 255);
+    padding-bottom: 3vw;
 }
 
 .wrapper__calc {
     display: flex;
-    flex-direction: column;        
-    font-size: clamp(14px, 2vw, 16px);
+    flex-direction: column;
+    font-size: 16px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     border: solid 1px #c1d3d2;
     margin: 25px auto;
     padding: 40px 25px;
-    max-width: 950px;    
-    box-sizing: content-box;    
+    max-width: 920px;
+    box-sizing: content-box;
 }
 
 .wrapper__cameras__quality {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .wrapper__quality {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: start;
-    padding-top: 5px;       
+    padding-top: 5px;
 }
 
 .quality {
-    background-repeat: no-repeat;    
-    padding-left: 35px;   
+    background-repeat: no-repeat;
+    padding-left: 35px;
     background-image: url(/assets/svg/monitor-svgrepo-quality.svg);
     background-size: 10%;
 }
@@ -299,59 +353,56 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 .wrapper__cable__hdd {
     display: flex;
     flex-wrap: wrap;
-    /* flex: 1; */
+    justify-content: left;
 }
 
 .wrapper__calc__block {
     display: flex;
-    /* flex: 1 1 calc(33.333% - 20px);    */
-    flex-direction: column;    
+    flex-direction: column;
     gap: 5px;
     background-repeat: no-repeat;
     background-position: 1% center;
-    padding-left: 100px;
+    padding-left: 85px;
     align-items: start;
     min-height: 65px;
-    justify-content: center;
     width: 100%;
-    max-width: 450px;
-    line-height: 1.35;        
+    max-width: 435px;
+    line-height: 1.35;
 }
 
 .calc__name {
-    width: 100%;    
+    width: 100%;
     max-width: 250px;
 }
 
 .wrapper__number__cameras {
     background-image: url(/assets/svg/security-system-video-camera-svgrepo-com.svg);
-    display: flex;      
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column;
     gap: 5px;
     background-repeat: no-repeat;
     background-position: 1% center;
-    padding-left: 100px;
-    align-items: start;   
-    justify-content: center;
+    padding-left: 85px;
+    align-items: start;
     width: 100%;
-    max-width: 450px;     
+    max-width: 435px;
 }
 
 .number__cameras {
     display: flex;
-    align-items: center;   
+    align-items: center;
     gap: 10px;
 }
 
 #cameraInput {
     width: 60px;
     padding-left: 5px;
-    margin-left: 5px;    
+    margin-left: 5px;
 }
 
 #cameraRange {
     max-width: 283px;
-    width: 100%;          
+    width: 100%;
 }
 
 .calc__subtext {
@@ -360,7 +411,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 }
 
 .wrapper__calc__subtext {
-    display: flex;    
+    display: flex;
 }
 
 .calc__check {
@@ -374,14 +425,13 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     align-self: center;
 }
 
-.wrapper__calc_check {
+.wrapper__calc__check {
     display: flex;
     gap: 10px;
     margin-top: 23px;
-
 }
 
-.calc__check__three {    
+.calc__check__three {
     background-size: 18px 18px;
     background-repeat: no-repeat;
     color: #5a5a5a;
@@ -390,7 +440,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     font-style: italic;
     font-size: 14px;
     line-height: 1.5;
-    
+
 }
 
 .button__uncheck {
@@ -405,12 +455,13 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     height: 18px;
     width: 18px;
     background-size: 18px 18px;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     margin-left: 10px;
+    padding-right: 10px;
     background-image: url(/assets/svg/help-question-question-mark-svgrepo-com.svg);
     cursor: pointer;
-    position: relative;    
-    display: inline-block;   
+    position: relative;
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -430,7 +481,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     font-weight: 400;
     line-height: 1.4;
     hyphens: auto;
-    top: 120%;      
+    top: 120%;
 }
 
 .calc__help.active .tooltip {
@@ -448,8 +499,8 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     margin: 25px 0;
 }
 
-.wrapper__cable__outdoor {    
-    background-image: url(/assets/svg/ethernet-svgrepo-com.svg);    
+.wrapper__cable__outdoor {
+    background-image: url(/assets/svg/ethernet-svgrepo-com.svg);
 }
 
 .cable__sum {
@@ -461,7 +512,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 .wrapper__cable__indoor__subtext {
     display: flex;
     align-items: center;
-    
+
 }
 
 #cableInputOut {
@@ -484,29 +535,31 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     width: 283px;
 }
 
-.wrapper__cable__indoor {    
-    background-image: url(/assets/svg/ethernet-svgrepo-com-black.svg);    
+.wrapper__cable__indoor {
+    background-image: url(/assets/svg/ethernet-svgrepo-com-black.svg);
 }
 
 .wrapper__cable__montage {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: left;
+
 }
 
 .wrapper__hdd {
     display: flex;
     flex-direction: column;
-    align-items: start;   
+    align-items: start;
 }
 
 .hdd__time {
     display: inline-flex;
-    background-repeat: no-repeat;    
-    padding-left: 30px;   
+    background-repeat: no-repeat;
+    padding-left: 30px;
     background-image: url(/assets/svg/time-svgrepo-com.svg);
     background-size: 10%;
     min-height: 25px;
-    align-items: center; 
+    align-items: center;
 }
 
 .wrapper__montage {
@@ -517,12 +570,12 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 
 .montage {
     display: inline-flex;
-    background-repeat: no-repeat;    
-    padding-left: 30px;   
+    background-repeat: no-repeat;
+    padding-left: 30px;
     background-image: url(/assets/svg/repairing-wrench-svgrepo-com.svg);
     background-size: 10%;
     min-height: 25px;
-    align-items: center; 
+    align-items: center;
 }
 
 .wrapper__sum__explanation {
@@ -533,12 +586,12 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 }
 
 .explanation {
-    /* flex: 3 1; */    
+    /* flex: 3 1; */
     width: 70%;
     background-image: url(/assets/svg/info-svgrepo-com.svg);
     background-repeat: no-repeat;
     background-size: 35px 35px;
-    background-position: left;    
+    background-position: left;
     padding-left: 45px;
     align-items: center;
     line-height: 1.25;
@@ -548,14 +601,14 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
 .wrapper__sum {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;
     padding: 20px;
     border-radius: 5px;
     background-color: #f3f3f3;
 }
 
 .sum__text {
-    color: #262626;    
+    color: #262626;
     font-family: 'OpenSans-Bold';
     font-size: 90%;
     letter-spacing: 1px;
@@ -588,7 +641,7 @@ div.wrapper__table__pm>table>thead>tr>th:nth-child(3) {
     justify-items: center;
     border: 2px solid gray;
     border-radius: 10px;
-    background-color: white;    
+    background-color: white;
 }
 
 section.our__suppliers>div>p {
@@ -660,7 +713,7 @@ section.our__suppliers>div>p {
 
 .wrapper__guarantee__block {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     gap: 30px;
     row-gap: 20px;
     flex-wrap: wrap;
@@ -669,12 +722,12 @@ section.our__suppliers>div>p {
 .guarantee__block {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;    
+    row-gap: 15px;
     position: relative;
     max-width: clamp(200px, 30%, 100%);
     min-height: clamp(250px, 40%, 100%);
-    padding: 20px 20px;    
-    align-items: center;    
+    padding: 20px 20px;
+    align-items: center;
     border: 2px solid #AEAEAE;
     border-radius: 20px;
     background-color: #F9F9F9;
@@ -732,10 +785,98 @@ section.our__suppliers>div>p {
         padding-bottom: 80px;
     }
 
-    .text__stage {        
+    .text__stage {
         padding-right: 0;
     }
 }
+
+@media screen and (max-width: 986px) {
+
+    .wrapper__calc {
+        max-width: 460px;
+        margin: 25px auto;
+        padding: 40px 5px;
+        box-sizing: content-box;
+    }
+
+    .wrapper__cameras__quality {
+        justify-content: center;
+    }
+
+    .wrapper__number__cameras {
+        background-position: 5%;
+        background-size: 10%;
+        align-items: start;
+        border-bottom: 1px solid rgb(150, 150, 150);
+        padding-bottom: 1.5rem;
+
+    }
+
+    .wrapper__quality {
+        padding-top: 2rem;
+        align-items: center;
+    }
+
+    .wrapper__calc__block {
+        background-position: 5%;
+        background-size: 10%;
+        border-bottom: 1px solid rgb(150, 150, 150);
+
+        padding-bottom: 2rem;
+    }
+
+    .wrapper__cable__hdd {
+        justify-content: center;
+
+    }
+
+    .wrapper__hdd {
+        padding-top: 2rem;
+
+    }
+
+    .wrapper__cable__montage {
+        justify-content: center;
+    }
+
+    .wrapper__montage {
+        padding-top: 2rem;
+        align-items: center;
+    }
+
+    .wrapper__sum {
+        width: 90%;
+    }
+
+    .wrapper__sum__explanation {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .explanation {
+        width: 90%;
+        background-image: url(/assets/svg/info-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: left;
+        padding-left: 35px;
+        align-items: center;
+        line-height: 1.1;
+        hyphens: auto;
+    }
+
+    .calc__line {
+        height: 0;
+        border-top: 2px solid rgb(51, 51, 51);
+
+        list-style: none;
+        margin: 25px 0;
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 940px) {
     .section__first {
@@ -749,7 +890,7 @@ section.our__suppliers>div>p {
     }
 
     .form {
-        width: 70%;
+        width: 100%;
         align-self: center;
     }
 
