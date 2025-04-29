@@ -122,3 +122,33 @@ textarea.form__input {
     top: 10px;
     box-shadow: 0 5px 0 #27A2DB;
 }
+
+/* стили для чекбокса ошибки */
+
+.consent-label span {
+    font-size: 12px;
+}
+
+.consent-label._error a {
+    color: #ff9999;    
+}
+
+.consent-label input[type="checkbox"]._error {
+    outline: 2px solid #ff6b6b;
+}
+
+.consent-label span a {
+    color:#efe822;
+    display: inline;
+}
+
+.consent-label p {
+    font-size: small;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.consent-label._error {
+    color: #ff6b6b;
+    text-shadow: 0 0 2px rgba(255,0,0,0.3);
+}

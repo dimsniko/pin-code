@@ -7,7 +7,7 @@ function updateMarginTop() {
     document.documentElement.style.setProperty('--btn-margin-top', marginTopValue);
 }
 
-window.addEventListener('load', updateMarginTop);
+document.addEventListener('DOMContentLoaded', updateMarginTop);
 window.addEventListener('resize', updateMarginTop);
 
 

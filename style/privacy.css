@@ -1,0 +1,16 @@
+.privacy {
+    padding-top: 140px;
+    padding-bottom: calc(2.5vw + 20px);
+}
+
+
+
+
+
+
+/* ADAPTIVE */
+@media screen and (max-width: 940px) {
+    .privacy {
+        padding-top: 60px;
+    }
+}

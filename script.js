@@ -5,22 +5,22 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 3,
-    
+
   autoplay: {
     delay: 3000,
   },
 
   breakpoints: {
     340: {
-        slidesPerView: 1,
+      slidesPerView: 1,
     },
     640: {
-        slidesPerView: 2,
+      slidesPerView: 2,
     },
     768: {
-        slidesPerView: 3,
+      slidesPerView: 3,
     },
-},
+  },
 
   // Navigation arrows
   navigation: {
@@ -58,4 +58,6 @@ function menuBurgeropen() {
 }
 
 burger.addEventListener('click', menuBurgeropen)
+
+
 

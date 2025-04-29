@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style//style.css">
     <link rel="stylesheet" href="/style/adaptive__header__footer.css">
-    <link rel="stylesheet" href="/style/formmailer.css">    
     <link rel="stylesheet" href="/style/audit__it.css">
+    <link rel="stylesheet" href="/style/formmailer.css">    
+
 </head>
 
 <body>
@@ -157,13 +158,14 @@
                             оборудования и используемого программного обеспечения.
                         </div>
                         <div class="form">
-                            <form action="#" id="form" class="form__body">
-                                <h2 id="toggle" class="form__title">Написать нам</h2>
+                            <form action="#" id="form" class="form__body" itemscope itemtype="https://schema.org/Action">
+                                <h2 id="toggle" class="form__title" itemprop="name">Написать нам</h2>
                                 <div class="collapse">
                                     <div class="collapse__body">
                                         <div class="form__item">
                                             <label for="formName" class="form__label">Имя*:</label>
-                                            <input id="formName" type="text" name="name" class="form__input _req">
+                                            <input id="formName" type="text" name="name" class="form__input _req"
+                                                itemprop="agent">
                                         </div>
                                         <div class="form__item">
                                             <label for="formEmail" class="form__label">E-mail*:</label>
@@ -171,7 +173,19 @@
                                         </div>
                                         <div class="form__item">
                                             <label for="formMessage" class="form__label">Сообщение:</label>
-                                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                            <textarea name="message" id="formMessage" class="form__input"
+                                                itemprop="description"></textarea>
+                                        </div>
+                                        <div class="form__item consent-item">
+                                            <label class="consent-label">
+                                                <input type="checkbox" name="agreement" class="_req" required>
+                                                <span>
+                                                    Я согласен на обработку моих персональных данных в соответствии с 
+                                                    <a href="/privacy.html" target="_blank">Политикой конфиденциальности</a>
+                                                </span>
+                                                <p>Мы никогда НЕ рассылаем рекламу
+                                                    </p>
+                                            </label>
                                         </div>
                                         <button type="submit" class="form__button">Отправить</button>
                                     </div>
@@ -358,13 +372,21 @@
                     <a class="about__name" href="/our__projects.html">Наши работы</a>
                     <a class="about__name" href="/Requisites.html">Реквизиты</a>
                     <a class="about__name" href="/stock.html">Акции</a>
+                    <a class="about__name" href="/privacy.html">Политика конфиденциальности</a>
                 </div>
             </div>
-            <div class="copyright">2024 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
+            <div class="copyright">2025 &#169; Все права защищены (Разработка сайта: pin-code.pro)</div>
         </div>
     </footer>
+    <div class="cookie__popup">
+        <div class="cookie__message">
+            <p>Мы используем файлы куки, в соответствии с <a href="/privacy.html" target="_blank">Политикой конфиденциальности</a></p>
+            <button class="cookie__accept__btn">Понятно</button>
+        </div>
+    </div>
     <script src="/js/formmailer.js"></script>
     <script src="/js/EMAIL.js"></script>
     <script src="/js/burger.js"></script>
+    <script src="/js/cookies.js"></script>
 </body>
 </html>

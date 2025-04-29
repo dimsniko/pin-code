@@ -41,7 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const input = formReq[index];
             formRemoveError(input);
 
-            if (input.classList.contains('_email')) {
+            if (input.type === 'checkbox') {
+                if (!input.checked) {
+                    formAddError(input);
+                    error++;
+                }
+            }
+
+            else if (input.classList.contains('_email')) {
                 if (emailTest(input)) {
                     formAddError(input);
                     error++;

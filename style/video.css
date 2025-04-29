@@ -22,8 +22,16 @@ html {
     width: 100%;
     max-width: 800px;
     gap: 20px 0px;
-    line-height: 25px;
     /* text-wrap: balance; */
+}
+
+.hello {
+    line-height: 25px;
+}
+
+.list {
+    line-height: 25px;
+    list-style-position: inside;
 }
 
 #calc__video {
@@ -83,10 +91,6 @@ html {
     background-repeat: no-repeat;
     border-radius: 10px;
     opacity: 90%;
-}
-
-.list {
-    list-style-position: inside;
 }
 
 /* Section first end */

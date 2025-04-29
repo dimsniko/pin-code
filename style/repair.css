@@ -16,8 +16,11 @@
     width: 100%;
     max-width: 650px;
     gap: 20px 0px;
-    line-height: 25px;
     hyphens: auto;
+}
+
+.hello {
+    line-height: 25px;
 }
 
 .about__section__img {

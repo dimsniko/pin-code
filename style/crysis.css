@@ -16,7 +16,7 @@
     width: 100%;
     max-width: 800px;
     gap: 20px 0px;
-    line-height: 25px;
+    
 }
 
 .about__section__img {
@@ -30,8 +30,13 @@
     opacity: 90%;
 }
 
+.hello {
+    line-height: 25px;
+}
+
 .list {
     list-style-position: inside;
+    line-height: 25px;
 }
 
 .conditions {

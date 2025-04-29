@@ -17,10 +17,16 @@
     flex-direction: column;
     width: 100%;
     max-width: 550px;
-    gap: 20px 0px;
-    line-height: 25px;
-    /* text-wrap: balance; */
+    gap: 20px 0px;   
     hyphens: auto;
+}
+
+.it__outsoursing__hello {
+    line-height: 25px;
+}
+
+.about__it__outsoursing__text {
+    line-height: 25px;    
 }
 
 .it__outsoursing__img {

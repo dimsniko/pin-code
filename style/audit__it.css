@@ -16,9 +16,16 @@
     flex-direction: column;
     width: 100%;
     max-width: 550px;
-    row-gap: 20px;
-    line-height: 25px;
+    row-gap: 20px;    
     hyphens: auto;
+}
+
+.audit__hello {
+    line-height: 25px;
+}
+
+.about__audit__text {
+    line-height: 25px;
 }
 
 .audit__it__img {

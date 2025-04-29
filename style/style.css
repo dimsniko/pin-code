@@ -105,7 +105,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-top: calc(2.5vw + 20px);
-    margin-bottom: 2.5vw;    
+    margin-bottom: 2.5vw;
 }
 
 .title-h3 {
@@ -168,7 +168,7 @@ hr {
     text-align: center;
 }
 
-.zagolovok-bold {    
+.zagolovok-bold {
     font-weight: 400;
 }
 
@@ -276,11 +276,11 @@ hr {
 /* SWIPER-SLIDER START */
 
 .swiper-slide img {
-    object-fit: scale-down;    
+    object-fit: scale-down;
 }
 
 .swiper-slide {
-    text-align: center;    
+    text-align: center;
 }
 
 /* SWIPER-SLIDER END */
@@ -361,3 +361,82 @@ hr {
 }
 
 /* FOOTER END*/
+
+/* COOKIES START*/
+
+.cookie__popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #d6d6d6;
+    padding: 12px 15px;
+    border-radius: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.cookie__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cookie__message p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;    
+}
+
+.cookie__message a {
+    white-space: nowrap;
+    display: inline;
+    color: #0066cc;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cookie__accept__btn {
+    align-self: center;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #27A2DB;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .cookie__popup {
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
+    }
+}
+
+/* Десктопная версия */
+@media (min-width: 768px) {
+    .cookie__popup {
+        bottom: 20px;
+        left: 20px;
+        right: 0px;
+        border-radius: 8px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .cookie__message {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .cookie__message p {
+        font-size: 12px;
+    }
+    
+    .cookie__accept__btn {
+        padding: 8px 16px;
+    }
+}
