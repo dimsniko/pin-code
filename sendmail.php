@@ -12,7 +12,7 @@ $mail->isSMTP();                   // Отправка через SMTP
 $mail->Host   = 'mail.pin-code.pro';  // Адрес SMTP сервера
 $mail->SMTPAuth   = true;          // Enable SMTP authentication
 $mail->Username   = 'site@pin-code.pro';       // ваше имя пользователя (без домена и @)
-$mail->Password   = 'Derparol1#';    // ваш пароль
+$mail->Password   = 'Derparol1#@!';    // ваш пароль
 $mail->SMTPSecure = 'ssl';         // шифрование ssl
 $mail->Port   = 465;               // порт подключения
 $mail->SMTPDebug = 0;
